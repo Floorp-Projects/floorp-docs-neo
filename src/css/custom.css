@@ -1,0 +1,153 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.sp_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.sp_container .left-section {
+  text-align: left;
+}
+
+.sp_container .right-section {
+  text-align: center;
+}
+
+.sp_container h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.sp_container p {
+  font-size: 18px;
+  margin: 10px 0 20px 0;
+}
+
+.sp_container .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.sp_container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sp_container .get-started {
+  background-color: #7386d5;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.sp_container .open-website {
+  background-color: #1f4068;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.sp_container .logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sp_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sp_container .left-section,
+  .sp_container .right-section {
+    width: 100%;
+  }
+
+  .sp_container .buttons {
+    flex-direction: column;
+  }
+
+  .sp_container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sp_container .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sp_container h1 {
+    font-size: 36px;
+  }
+
+  .sp_container p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sp_container h1 {
+    font-size: 24px;
+  }
+
+  .sp_container p {
+    font-size: 14px;
+  }
+
+  .sp_container .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sp_container button {
+    font-size: 14px;
+  }
+}
+
+.navbar__item.fa-brands {
+  font-size: 20px;
+  margin-right: 8px;
+}

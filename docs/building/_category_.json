@@ -1,0 +1,7 @@
+{
+  "label": "Building Floorp",
+  "link": {
+    "type": "generated-index",
+    "description": "This section is dedicated to compiling Floorp from the source code"
+  }
+}

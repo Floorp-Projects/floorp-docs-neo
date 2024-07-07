@@ -1,0 +1,73 @@
+---
+title: Building Floorp on macOS
+---
+
+:::danger
+We cannot provide support if a build fails.
+Please understand this before proceeding with the following steps.
+:::
+
+## Requirements
+
+### Machine Specifications
+
+- **Memory:** Minimum 4GB RAM, 8GB+ recommended.
+- **Disk Space:** At least 40GB of free disk space.
+- **Operating System:** It's recommended to use the latest version of macOS. You should update to the latest version of macOS.
+
+### Required Tools
+
+- [**Brew**](https://brew.sh/) \
+Firefox requires some dependencies, which can be installed using Brew.
+- [**git**](https://git-scm.com/download/mac) \
+Git is a version control system used to download the Floorp & Firefox source code.
+- [**Xcode**](https://apps.apple.com/jp/app/xcode/id497799835?mt=12) \
+Xcode is a development environment for macOS. It is used to build Floorp on macOS.
+
+You need to set up your environment before building Floorp:
+
+```shell
+sudo xcode-select --switch /Applications/Xcode.app
+sudo xcodebuild -license
+```
+
+## Building Floorp
+
+1. Open your macOS Terminal.
+
+2. Clone the Floorp repository.
+
+```shell
+git clone https://github.com/Floorp-Projects/Floorp.git
+git submodule update --init --recursive
+   ```
+
+3. Run the following command to install the dependencies.
+Before building Floorp, you need to select a build option. Please choose the following:
+
+`[1] Build Floorp for Desktop.`
+
+The other choices are not supported yet. The next selection depends on your choice.
+
+```shell
+cd Floorp
+./mach bootstrap
+   ```
+
+4. Run the following command to build Floorp.
+```shell
+// Create mozconfig
+echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
+echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
+echo 'ac_add_options --with-app-name=floorp' >> mozconfig
+echo "ac_add_options --enable-bootstrap" >> mozconfig
+
+// build Floorp
+./mach configure
+./mach build
+   ```
+
+5. Run the following command to run Floorp.
+```shell
+./mach run
+```

@@ -1,0 +1,8 @@
+{
+  "label": "Issue Tracker",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section is the Floorp Issue tracker"
+  }
+}

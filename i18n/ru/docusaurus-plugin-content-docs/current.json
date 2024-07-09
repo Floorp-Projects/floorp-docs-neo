@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Design": {
+    "message": "Design",
+    "description": "The label for category Design in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Design.link.generated-index.description": {
+    "message": "This section is dedicated to customizing your Floorp setup",
+    "description": "The generated-index page description for category Design in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Issue Tracker": {
+    "message": "Issue Tracker",
+    "description": "The label for category Issue Tracker in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Issue Tracker.link.generated-index.description": {
+    "message": "This section is the Floorp Issue tracker",
+    "description": "The generated-index page description for category Issue Tracker in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Building Floorp": {
+    "message": "Building Floorp",
+    "description": "The label for category Building Floorp in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Building Floorp.link.generated-index.description": {
+    "message": "This section is dedicated to compiling Floorp from the source code",
+    "description": "The generated-index page description for category Building Floorp in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Other": {
+    "message": "Other",
+    "description": "The label for category Other in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Other.link.generated-index.description": {
+    "message": "This section is dedicated to other issues/tricks,",
+    "description": "The generated-index page description for category Other in sidebar tutorialSidebar"
+  }
+}

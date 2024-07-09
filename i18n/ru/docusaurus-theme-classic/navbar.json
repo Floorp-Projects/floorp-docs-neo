@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Документация Floorp",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Документация Floorp",
+    "description": "The alt text of navbar logo"
+  }
+}

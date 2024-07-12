@@ -1,0 +1,87 @@
+---
+title: Сборка Floorp на Linux
+---
+
+:::danger
+Мы не можем гарантировать поддержку в случае, если сборка Floorp не удалась. Пожалуйста, учтите это прежде чем приступать к последующим шагам.
+:::
+
+### Системные требования
+
+#### Характеристики:
+
+- Память: минимум 4 ГБ ОЗУ, рекомендуется 8 ГБ или больше.
+- Дисковое пространство: как минимум 40 ГБ свободного дискового пространства.
+- Операционная система: Ubuntu 20.04 LTS или более поздняя.
+
+#### Необходимые инструменты
+
+- [git](https://git-scm.com/download/linux)
+- [curl](https://curl.se/)
+- [python3](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- rustc: v1.77.2
+
+Ubuntu:
+
+```shell
+sudo apt install curl python3 pip libnotify-bin
+```
+
+Fedora:
+
+```shell
+sudo dnf install python3 python3-pip libnotify
+```
+
+### Сборка Floorp
+
+1. Откройте терминал Linux.
+
+2. Клонируйте репозиторий Floorp:
+
+```shell
+git clone https://github.com/Floorp-Projects/Floorp.git
+git submodule update --init --recursive
+   ```
+
+3. Прежде чем приступить к сборке Floorp, необходимо выбрать вариант сборки. Выберите пункт:
+
+`[1] Build Floorp for Desktop.`
+
+На данный момент другие варианты сборки не поддерживаются.
+
+```shell
+cd Floorp
+./mach bootstrap
+   ```
+
+4. Создание файла mozconfig
+
+Следующие команды создают файл mozconfig, в котором будут указаны параметры сборки Floorp:
+
+```shell
+// Create mozconfig
+echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
+echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
+echo 'ac_add_options --with-app-name=floorp' >> mozconfig
+echo "ac_add_options --enable-bootstrap" >> mozconfig
+   ```
+5. Сборка Floorp
+
+После создания файла mozconfig выполните следующие команды для сборки Floorp:
+
+```shell
+./mach configure
+./mach build
+   ```
+
+5. Запуск Floorp:
+
+Запустите собранный вами Floorp с помощью следующей команды:
+
+```shell
+./mach run
+   ```
+
+Поздравляем! Вы успешно собрали Floorp!

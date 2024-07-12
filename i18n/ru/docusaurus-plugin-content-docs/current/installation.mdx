@@ -8,111 +8,101 @@ import Support from '@Components/Support.js'
 
 ## Windows
 
-### Supported Operating Systems (32-bit and 64-bit)
+#### Поддерживаемые операционные системы (32-разрядные и 64-разрядные)
 
-- Windows 11
 - Windows 10
+- Windows 11
 
 :::caution
-While you can install Floorp on Windows 7 / 8 / 8.1, these OS versions are not supported.
+Не смотря на то, что вы можете установить Floorp на Windows 7 / 8 / 8.1, поддержка этих версий ОС отсутствует.
 :::
 
-### Recommended System Requirements
+#### Рекомендуемые системные требования
 
-- Pentium 4 processor with SSE2 support or higher
-- 512MB RAM (minimum) / 2GB RAM (recommended for 64-bit)
-- 200MB free space
+- Процессор Pentium 4 или более поздний с поддержкой SSE2
+- Оперативная память: 512 МБ / 2 ГБ (для 64-разрядной версии)
+- Свободное место на диске: 200 MB
 
-### Installation
+#### Установка Floorp
 
-- **Installer and Portable Version**
+- **Установщик и портативная версия**
 
-1. Visit the [official website](https://floorp.app/en/download) and download either the Windows installer or the Portable version.
-2. For the Portable version, you can use it immediately. For the installer, follow the on-screen instructions.
+  1. Установщик: Перейдите на [официальный сайт](https://floorp.app/en/download) и выберите любой установщик Windows или портативную версию Windows Portable.
+  2. Портативную версию можно использовать сразу. Для установщиков следуйте инструкциям на экране.
 
-:::tip[Differences]
-- The **online installer** installs Floorp from the internet.
-- The **offline installer** installs Floorp without needing an internet connection.
-- The **Portable version** does not require installation but may have some limitations.
-:::
+  :::tip[В чем разница?]
+  * Онлайн-установщик устанавливает Floorp из интернета.
+  * Офлайн-установщик устанавливает Floorp без использования интернет-соединения.
+
+  **Портативная версия не требует установки, но может иметь ограничения**
+  :::
 
 - **Winget**
 
-```shell
-winget install Ablaze.Floorp
+  ```shell
+  winget install Ablaze.Floorp
   ```
-Provided by **[@Hibi_10000](https://github.com/Hibi-10000)**.
-- **Scoop**
-```shell
-scoop bucket add extras
-scoop install extras/floorp
-  ```
-Provided by **[@SegoCode](https://github.com/SegoCode)**.
 
-## Mac
+  Предоставлено **[@Hibi_10000](https://github.com/Hibi-10000)**.
 
-### Supported Operating Systems
+### Mac
+
+#### Системные требования
 macOS Sierra 10.12 - macOS Sonoma 14
 
-### System Requirements
+#### Системные требования
 
-- Mac with Intel x86 or Apple Silicon processor
-- 512MB RAM
-- 200MB Free space
+- Mac с процессором Intel x86 или Apple Silicon
+- Оперативная память: 512 МБ
+- Свободное место на диске: 200 MB
 
-### Installation
+#### Установка
 
-1. Open the [official webiste](https://floorp.app/ja/download) and download the `floorp-macOS-universal.dmg`.
-2. Open the downloaded file and drag `Floorp.app` to the `Applications` folder.
-After verifying that Floorp appears in the Applications folder or the Launchpad, you can eject the Floorp Installer.
+1. Откройте [официальный вебсайт](https://floorp.app/ja/download) и в разделе `Платформы` выберите `MacOS`.
 
-## GNU/Linux
+2. Откройте загруженный файл и перетащите `Floorp.app` в папку Applications справа. После того, как вы убедитесь, что Floorp появился в папке «Программы» или на панели запуска, вы можете удалить установщик Floorp.
 
-### Software requirements
+### GNU/Linux
 
-- **The following packages are required to make Floorp work**:
+#### Требования к программному обеспечению
 
-  - GTK+ 3.14 or higher
-  - X.org 1.0 or higher (1.7 higher is recommended)
-  - libstdc++ 4.8.1 or higher
-  - glibc 2.17 or higher
+- **Для работы Floorp требуются следующие пакеты**:
+  - GTK+ 3.14 или выше
+  - X.org 1.0 или выше (рекомендуется 1.7 или выше)
+  - libstdc++ 4.8.1 или выше
+  - glibc 2.17 или выше
 
-- **For the best functionality, make sure you have the following packages installed:**:
+- **Для обеспечения наилучшей совместимости рекомендуется установить следующие пакеты**:
 
-  - NetworkManager 0.7 or higher
-  - DBus 1.0 or higher
-  - GNOME 2.16 or higher
+  - NetworkManager 0.7 или выше
+  - DBus 1.0 или выше
+  - GNOME 2.16 или выше
   - PulseAudio
 
-### Installation
+#### Установка
 
-Supported package managers:
-```text
-1. PPA (Ubuntu, Linux Mint, etc.)       "https://ppa.floorp.app"
+Ниже приведен список поддерживаемых менеджеров пакетов:
 
-2. Flatpak (All Linux Distributions)    "https://flathub.org/apps/one.ablaze.floorp"
+* **PPA** (Ubuntu, Linux Mint, и т.д.): "https://ppa.floorp.app"
 
-3. tarball (All Linux Distributions)    "https://GitHub.com/Floorp-Projects/Floorp/releases/latest"
+2. **Flatpak** (все дистрибутивы Linux): https://flathub.org/apps/one.ablaze.floorp"
 
-4. AUR (Arch-based distributions):
+3. **tarball** (все дистрибутивы Linux) : "https://github.com/Floorp-Projects/Floorp/releases/latest"
 
-  * floorp-bin    "https://aur.archlinux.org/packages/floorp-bin/" **Unofficial**
+4. **Неофициальные AUR** (дистрибутивы на базе Arch)
 
-  * floorp        "https://aur.archlinux.org/packages/floorp/" **Unofficial**
-```
+    * floorp-bin: "https://aur.archlinux.org/packages/floorp-bin/"
 
-The Flatpak version may have its own limitations due to the "sandbox". [Read more](/docs/issue-tracker/flatpak)
+    * floorp: "https://aur.archlinux.org/packages/floorp/"
 
-## Download from GitHub Releases
+Версия Flatpak может иметь свои ограничения из-за песочницы. [Подробнее](/docs/issue-tracker/flatpak)
 
-You can download releases above Floorp 10 from [GitHub Releases page](https://github.com/Floorp-Projects/Floorp/releases).
+#### Загрузка с релизов GitHub
 
-Please note that while it is possible to download and install older versions of Floorp from here, no support will be provided for them.
+Вы можете скачать релизы Floorp начиная с версии 10 с [страницы релизов GitHub](https://github.com/Floorp-Projects/Floorp/releases).
 
-## What is Floorp Daylight？
+**Дополнительная информация**
 
-Floorp Daylight is a beta version that gets updated more frequently. It may contain bugs due to features still under development.
-
-Additionally, some versions of Floorp Daylight might not be digitally signed due to the rapid release cycle.
+Хотя вы можете скачать и установить старые версии Floorp с этой страницы релизов GitHub, поддержка для них не предоставляется.
 
 <Support />

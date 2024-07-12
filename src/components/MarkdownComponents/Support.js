@@ -12,7 +12,7 @@ const Support = () => {
                 <li><Link to="https://twitter.com/Floorp_Browser">X (@Floorp_Browser)</Link></li>
                 <li><Link to="https://reddit.com/r/Floorp">Reddit (r/Floorp)</Link></li>
                 <li><Link to="https://misskey.io/@floorp@misskey.io">Misskey.io (@floorp@misskey.io)</Link></li>
-                <li><Link to="/contact"><Translate>Contact Us</Translate></Link></li>
+                <li><Link to="https://support.ablaze.one/contact"><Translate>Contact Us</Translate></Link></li>
             </ul>
         </div>
     );

@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 :::caution
-- This documentation is currently under construction.
+- This documentation is under construction.
 - Some information may be missing or incomplete.
   :::
 

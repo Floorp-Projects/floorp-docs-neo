@@ -1,3 +1,5 @@
+[日本語翻訳](README_ja.md)
+
 # Floorp Browser Documentation
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.

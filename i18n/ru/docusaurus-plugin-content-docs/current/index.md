@@ -14,7 +14,7 @@ sidebar_position: 1
 
 ### Как решать проблемы:
 
-* Шаг 1: Ознакомьтесь с разделом ["Трекер проблем"](/docs/category/issue-tracker).
+* Шаг 1: Ознакомьтесь с разделом ["Трекер проблем"](/docs/issue-tracker).
 
 * Шаг 2: Если вы не нашли решение, [сообщите об ошибке на GitHub](https://github.com/Floorp-Projects/Floorp/issues/new/choose).
 

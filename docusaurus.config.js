@@ -15,18 +15,18 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://regularentropy.github.io',
+  url: 'https://docs.floorp.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/floorp-docs-ref/',
+  baseUrl: '/floorp-docs-neo/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'regularentropy', // Usually your GitHub org/user name.
-  projectName: 'floorp-docs-ref', // Usually your repo name.
+  organizationName: 'Ablaze-MIRAI', // Usually your GitHub org/user name.
+  projectName: 'floorp-docs-neo', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   plugins: [
     [
@@ -88,7 +88,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         // Replace with your project's social card
-        image: 'img/docusaurus-social-card.jpg',
+        // image: 'img/docusaurus-social-card.jpg',
         navbar: {
           title: 'Floorp Docs',
           logo: {

@@ -23,3 +23,18 @@ $ npx docusaurus build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Commit style
+Every commit message **must** be named as following:
+* Language
+```
+docs | lang: changes
+
+Example: docs | ru: fix description
+```
+* Other change
+```
+docs | what was changed: changes
+
+Example: docs | packages: bump dependencies
+```

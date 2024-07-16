@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "Floorp Docs",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Floorp Logo",
+    "description": "The alt text of navbar logo"
+  }
+}

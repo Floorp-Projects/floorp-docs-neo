@@ -69,8 +69,6 @@ Create a pull request and wait for it to be tested and reviewed. If everything i
 git push origin new-language-branch
 ```
 
-Then create a pull request.
-
 ## Commit style
 Every commit message **must** be written in lowercase and follow this format:
 * Language

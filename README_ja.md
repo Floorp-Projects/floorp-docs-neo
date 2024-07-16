@@ -67,8 +67,6 @@ npx docusaurus start --locale new-locale
 git push origin new-language-branch
 ```
 
-その後、プルリクエストを作成します。
-
 ## コミットスタイル
 すべてのコミットメッセージは次のように**名前が付けられている必要があります**：
 * 言語

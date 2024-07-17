@@ -93,7 +93,7 @@
   height: 100px;
 }
 
-/* Responsive Styles */
+/* Tablets */
 @media (max-width: 768px) {
   .sp_container {
     flex-direction: column-reverse;
@@ -130,6 +130,7 @@
   }
 }
 
+/* Phones */
 @media (max-width: 480px) {
   .sp_container h1 {
     font-size: 24px;
@@ -140,8 +141,8 @@
   }
 
   .sp_container .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .sp_container button {

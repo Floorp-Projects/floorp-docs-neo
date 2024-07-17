@@ -25,9 +25,6 @@ function DocsLabels() {
             </div>
             <div className="right-section">
                 <img src={FloorpLogo} alt="Floorp Logo" className="logo" />
-                <h1>
-                    Floorp
-                </h1>
             </div>
         </div>
     );

@@ -1,0 +1,37 @@
+---
+title: ユーザーエージェントチェンジャー (無効な偽装による問題)
+description: Floorp の User Agent Changer に関する既知の問題
+misc:
+  tag: クラウドフレア, キャプチャ, ターンスタイル
+  status: wontfix
+---
+
+#### ユーザーエージェントチェンジャーが正常に動作しない
+
+Firefox (Floorp) の User Agent Changer はシンプルに作られており、これは想定内です。\
+あなたが使用している実際のブラウザーをウェブサイトに確認されることを防ぐ仕組みはありません。
+
+#### UA 関連の問題を解決するには？
+
+ユーザーエージェントは完璧ではないので、UA チェンジャーを使わないことをおすすめします。\
+それでも UA チェンジャーを使いたいのであれば、問題が発生するウェブサイトを除外することのできる拡張機能を使用することができます。
+
+### 関連 Issues
+
+- Cloudflare Turnstile
+
+  - [#697 User-Agent Spoofing does not work with cloudflare protected sites](https://github.com/Floorp-Projects/Floorp/issues/697)
+
+重複:
+
+- Cloudflare Turnstile
+
+  - [#812 Cannot complete Cloudflare captchas](https://github.com/Floorp-Projects/Floorp/issues/812)
+
+  - [#814](https://github.com/Floorp-Projects/Floorp/issues/814)
+
+  - [#861 I'm having a issue with cloudflare](https://github.com/Floorp-Projects/Floorp/issues/861)
+
+### 関連サービス
+
+Cloudflare Turnstile など

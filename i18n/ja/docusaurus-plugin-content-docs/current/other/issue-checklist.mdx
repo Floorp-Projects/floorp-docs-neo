@@ -1,0 +1,104 @@
+---
+title: Floorp に問題を提出する場合
+description: Issue を提出する際にすべきことのガイドライン
+---
+
+問題を迅速に解決するために、これらのガイドラインをご一読ください。
+
+## 問題を提出する場所
+
+[GitHub の Issues](https://github.com/Floorp-Projects/Floorp/issues) に問題を提出することができます。問題のタイトルと説明には日本語も使用できます。
+
+それが Floorp の問題かわからない場合は、[Ablaze の Discord](https://aka.ablaze.one/discord) または [Reddit (r/Floorp)](https://www.reddit.com/r/Floorp/) に投稿してみましょう！\
+Reddit に投稿する際は、[Do not post Issues or Feature Requests in Reddit (英語)](https://www.reddit.com/r/Floorp/comments/19f7762/do_not_post_issues_or_feature_requests_in_reddit/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) をご確認ください。
+
+コミュニティへの投稿は、あなたの問題の妥当性を確認するにとどまり、公式に問題を提出したことにはなりません。
+
+[X (旧 Twitter)](https://twitter.com/Floorp_Browser) や [Misskey.io](https://misskey.io/@floorp) でのサポートも行っておりますが、GitHub よりも優先度が低いことにご注意ください。
+
+## 問題を解決するために確認すべきこと
+
+### 1. 既存の問題を確認する
+
+あなたの問題を解決する方法があるかもしれません。\
+重複した Issue を提出すると、問題の解決に時間がかかります。
+
+この Docs の[既知の問題](/ja/issues)もご確認ください！
+
+### 2. 素の状態で問題が発生しているか確認する
+
+ブラウザーの環境が原因である可能性があります。
+
+以下の手順をお試しください。
+
+- **最新の Floorp に更新する**
+
+  その問題は最新バージョンで解決されているかもしれません。\
+  最新の Floorp を使用してみましょう。
+
+- **すべてのブラウザー拡張機能/アドオンを無効にする**
+
+  Floorp とアドオンの競合によって問題が発生する場合があります。\
+  これで解決した場合は、アドオンの開発者に連絡するか、他のアドオンを探してみましょう。
+
+- **ブラウザーのキャッシュと Cookie を削除する**
+
+  ブラウザーのキャッシュが原因である可能性があります。
+
+- **新しいプロファイルを作成する**
+
+  「プロファイル」とは、設定やログなどを分けて管理するブラウザーの仕組みのことです。\
+  Floorp の更新などによって、プログラム内のデータの扱い方を変更することで問題が発生することがあります。
+
+  [Firefox のプロファイルマネージャーのドキュメントはこちら](https://support.mozilla.org/ja/kb/profile-manager-create-and-remove-firefox-profiles)
+
+### 3. 問題が発生しているのは Floorp だけであることを確認する
+
+- **最新の Firefox ESR で問題が発生するか確認する**
+
+  Floorp は Firefox ESR (延長サポート版) を使用しています。\
+  Firefox ESR で問題が発生していないかご確認ください。\
+  Firefox ESR でも問題が発生する場合は、Firefox の開発元である Mozilla にご連絡ください。
+
+Floorp 固有の機能に関する問題の場合は、確認する必要はありません。
+
+### 4. すべての確認が終わったら
+
+このガイドラインに従って問題を確認していただき、ありがとうございます。
+
+[GitHub の Issues](https://github.com/Floorp-Projects/Floorp/issues) に問題を提出してください。
+
+これらの情報は、あなたの問題の解決に役立ちます。
+
+- **順序立てた詳しい説明**
+
+  問題を再現するために試したことを書いてください。
+
+  たとえば
+
+  ```text
+  手順:
+
+  1. 設定を開く
+  2. デザイン設定に移動
+  3. Floorp Daylight Fluerial デザインを選択
+
+  結果:
+
+  タブバーのレイアウトが崩れる
+  ```
+
+- **スクリーンショット**
+
+  問題のスクリーンショットを提出してください。
+
+- **ブラウザーツールボックスのコンソール出力**
+
+  `Ctrl` + `Shift` + `I` (Mac では `Cmd` + `Option` + `I`) で開発者ツールを呼び出すように、`Ctrl` + `Alt` + `Shift` + `I` (Mac では `Cmd` + `Option` + `Shift` + `I`) でブラウザーツールボックスを呼び出すことができます。  
+  このコンソールログは問題の解決に役立ちます。
+
+  [Firefox のブラウザーツールボックスのドキュメントはこちら (英語)](https://firefox-source-docs.mozilla.org/devtools-user/browser_toolbox/index.html)
+
+## 終わり
+
+ガイドラインをお読みいただきありがとうございます！

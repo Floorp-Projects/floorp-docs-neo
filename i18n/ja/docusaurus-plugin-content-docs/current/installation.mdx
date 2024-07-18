@@ -1,0 +1,118 @@
+---
+title: インストール手順
+sidebar_position: 2
+---
+
+## Windows
+
+### オペレーティングシステム (32-bit と 64-bit)
+
+- Windows 11
+- Windows 10
+
+:::caution
+Floorp は Windows 7 / 8 / 8.1 にインストールできますが、サポートは行われません。
+:::
+
+### 推奨ハードウェア環境
+
+- SSE2 をサポートする Pentium 4 以降のプロセッサー
+- 512MB の RAM / 64-bit 版は 2GB の RAM (メモリ)
+- 200MB の空き容量
+
+### インストール
+
+- **インストーラーと Portable**
+
+  1. [公式サイトの Download ページ](https://floorp.app/ja/download)を開き、いずれかの Windows 版インストーラーまたは Portable version をダウンロードします。
+  2. ポータブル版はこの段階で使用できます。インストーラーの場合は、これを起動して画面の指示に従います。
+
+  :::tip[これらの違いはなんですか？]
+  オンラインインストーラーは、ネットワークからインストーラーをダウンロードしてインストールします。\
+  オフラインインストーラーは、ネットワーク接続がなくても Floorp をインストールすることができます。
+
+  Portable 版はインストールを必要とせず、レジストリを汚染することなく使用できますが、いくつかの制約があります。
+  :::
+
+- **Winget**
+
+  ```shell
+  winget install Ablaze.Floorp
+  ```
+
+  [@Hibi_10000](https://github.com/Hibi-10000) によって提供されています。
+
+## Mac
+
+### オペレーティングシステム
+
+- macOS Sonoma 14
+- macOS Ventura 13
+- macOS Monterey 12
+- macOS Big Sur 11
+- macOS Catalina 10.15
+- macOS Mojave 10.14
+- macOS High Sierra 10.13
+- macOS Sierra 10.12
+
+### 推奨ハードウェア環境
+
+- Intel x86 または Apple シリコン プロセッサーを搭載した Mac
+- 512MB の RAM (メモリ)
+- 200MB の空き容量
+
+### インストール
+
+1. [公式サイトの Download ページ](https://floorp.app/ja/download)を開き、`floorp-macOS-universal.dmg` をダウンロードします。
+2. ダウンロードしたファイルを開き、`Floorp.app` を右の `Applications` フォルダーにドラッグ & ドロップします。
+3. Floorp が `アプリケーション` フォルダーまたは Launchpad に追加されたことを確認したら、作成された `Floorp Installer` 仮想ディスクを取り出します。
+
+## GNU/Linux
+
+### ソフトウェア要件
+
+- **次のライブラリまたはパッケージがないと、Floorp は動作しません:**
+
+  - GTK+ 3.14 以上
+  - X.org 1.0 以上 (1.7 以上を推奨)
+  - libstdc++ 4.8.1 以上
+  - glibc 2.17 以上
+
+- **最適な機能を得るために、次のライブラリまたはパッケージをお勧めします:**
+
+  - NetworkManager 0.7 以上
+  - DBus 1.0 以上
+  - GNOME 2.16 以上
+  - PulseAudio
+
+### インストール
+
+サポートされているパッケージマネージャーのリストは以下の通りです:
+
+```text
+1. PPA (Ubuntu, Linux Mint など)    "https://ppa.floorp.app"
+
+2. Flatpak (すべての Linux ディストリビューション)    "https://flathub.org/apps/one.ablaze.floorp"
+
+3. tarball (すべての Linux ディストリビューション)    "https://GitHub.com/Floorp-Projects/Floorp/releases/latest"
+
+4. AUR (Arch ベース ディストリビューション)
+
+  * floorp-bin    "https://aur.archlinux.org/packages/floorp-bin/" **非公式**
+
+  * floorp        "https://aur.archlinux.org/packages/floorp/" **非公式**
+```
+
+Flatpak 版は「サンドボックス」の影響で独自の問題が発生することがあります。詳しくは[こちら](/ja/issues/flatpak)をご覧ください。
+
+## GitHub Releases からダウンロードする
+
+[GitHub の Releases ページ](https://github.com/Floorp-Projects/Floorp/releases)では、バージョン 10 以降のすべてのバージョンを確認することができます。
+
+ここでは古いバージョンの Floorp をダウンロードおよびインストールすることも可能ですが、それらに対するサポートは行われないことに注意してください。
+
+## Floorp Daylight とはなんですか？
+
+Floorp Daylight は、Floorp の開発中の機能がいち早く実装されるベータ版です。通常版では発生しない重大な不具合が発生する可能性があります。
+
+また、リリース頻度を維持するため、Daylight 版にはコード署名証明書が付属していないことがあります。

@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Building": {
-    "message": "Building",
+    "message": "ビルド",
     "description": "The label for category Building in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Design": {
@@ -16,7 +16,7 @@
     "description": "The label for category Issue Tracker in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other": {
-    "message": "Other",
+    "message": "その他",
     "description": "The label for category Other in sidebar tutorialSidebar"
   }
 }

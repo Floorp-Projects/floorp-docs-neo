@@ -1,0 +1,74 @@
+---
+title: Windows で Floorp をビルドする
+---
+
+:::danger
+ビルドが正常に行えない場合のサポートはできかねます。ご理解の上、下記手順へお進みください。
+:::
+
+## 環境
+
+### マシンスペック
+
+- メモリ: 最小 4GB の RAM、8GB 以上が推奨されます。
+- ディスク: 少なくとも 40GB 以上の空き容量が必要です。
+- OS: Windows 10、またはそれ以降。最新バージョンの Windows の使用を推奨します。
+
+### 要求されるツール
+
+- [Mozilla Build Shell](https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe) \
+   Mozilla Build Shell は、MinGW-w64 ツールチェーンを含むツールセットです。\
+   これは Windows 上で Linux ライクな環境を提供し、\
+   Floorp のビルドに利用されます。
+
+- [git](https://git-scm.com/download/win) \
+   git はバージョン管理システムです。Floorp と Firefox のソースコードをダウンロードするために使用します。
+
+## Floorp をビルドする
+
+1. Mozilla Build Shell を開きます。
+
+   ```shell
+   C:\mozilla-build\start-shell.bat
+   ```
+
+2. Floorp リポジトリをクローンします。
+
+   ```shell
+   git clone https://github.com/Floorp-Projects/Floorp.git
+   git submodule update --init --recursive
+   ```
+
+3. 次のコマンドを実行し、依存するライブラリをインストールしてください。
+
+   ```shell
+   cd Floorp
+   ./mach bootstrap
+   ```
+
+   初めて Floorp をビルドする場合、ビルドオプションを選択する必要があります。  
+   `[1] Build Floorp for Desktop.` を選択してください。
+
+   その他の選択肢は現在サポートされていません。
+
+4. 次のコマンドを実行し、Floorp をビルドします。
+
+   ```shell
+   // mozconfigを作成
+   echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
+   echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
+   echo 'ac_add_options --with-app-name=floorp' >> mozconfig
+   echo "ac_add_options --enable-bootstrap" >> mozconfig
+
+   // Floorp をビルドする
+   ./mach configure
+   ./mach build
+   ```
+
+5. 次のコマンドを実行し、Floorp を実行します。
+
+   ```shell
+   ./mach run
+   ```
+
+おめでとうございます！ Floorp のビルドに成功しました！

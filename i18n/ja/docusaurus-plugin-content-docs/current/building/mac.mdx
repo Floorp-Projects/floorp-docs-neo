@@ -1,0 +1,78 @@
+---
+title: macOS で Floorp をビルドする
+---
+
+:::danger
+ビルドが正常に行えない場合のサポートはできかねます。ご理解の上、下記手順へお進みください。
+:::
+
+## 環境
+
+### マシンスペック
+
+- メモリ: 最小 4GB の RAM、8GB 以上が推奨されます。
+- ディスク: 少なくとも 40GB 以上の空き容量が必要です。
+- OS: 最新バージョンの macOS の使用を推奨します。
+
+### 要求されるツール
+
+- [Brew](https://brew.sh/) \
+   Floorp のビルドにはいくつかの依存関係が必要です。Brew を使って依存関係をインストールできます。
+
+- [git](https://git-scm.com/download/mac) \
+   git はバージョン管理システムです。Floorp と Firefox のソースコードをダウンロードするために使用します。\
+
+- [Xcode](https://apps.apple.com/jp/app/xcode/id497799835?mt=12) \
+   Xcode は macOS 用の開発環境です。Xcode を使うことで、macOS 上で Floorp をビルドすることができます。
+
+Floorp をビルドする前に Xcode をセットアップする必要があります:
+
+```shell
+sudo xcode-select --switch /Applications/Xcode.app
+sudo xcodebuild -license
+```
+
+## Floorp をビルドする
+
+1. macOS ターミナルを開きます。
+
+2. Floorpリポジトリをクローンします。
+
+   ```shell
+   git clone https://github.com/Floorp-Projects/Floorp.git
+   git submodule update --init --recursive
+   ```
+
+3. 次のコマンドを実行し、依存するライブラリをインストールしてください。
+
+   ```shell
+   cd Floorp
+   ./mach bootstrap
+   ```
+
+   初めて Floorp をビルドする場合、ビルドオプションを選択する必要があります。  
+   `[1] Build Floorp for Desktop.` を選択してください。
+
+   その他の選択肢は現在サポートされていません。
+
+4. 次のコマンドを実行し、Floorp をビルドします。
+
+   ```shell
+   // mozconfigを作成
+   echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
+   echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
+   echo 'ac_add_options --with-app-name=floorp' >> mozconfig
+   echo "ac_add_options --enable-bootstrap" >> mozconfig
+
+   // Floorp をビルドする
+   ./mach configure
+   ./mach build
+   ```
+
+5. 次のコマンドを実行し、Floorp を実行します。
+
+   ```shell
+   ./mach run
+   ```
+
+おめでとうございます！ Floorp のビルドに成功しました！

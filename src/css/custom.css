@@ -36,7 +36,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
+  width: 70%;
+  margin: auto;
   padding: 0 50px;
   box-sizing: border-box;
 }
@@ -91,10 +93,10 @@
   height: 100px;
 }
 
-/* Responsive Styles */
+/* Tablets */
 @media (max-width: 768px) {
   .sp_container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -115,8 +117,8 @@
   }
 
   .sp_container .logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .sp_container h1 {
@@ -128,6 +130,7 @@
   }
 }
 
+/* Phones */
 @media (max-width: 480px) {
   .sp_container h1 {
     font-size: 24px;
@@ -138,8 +141,8 @@
   }
 
   .sp_container .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .sp_container button {

@@ -9,13 +9,13 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 ### Installation
 
 ```
-$ npm install 
+$ pnpm install 
 ```
 
 ### Local Development
 
 ```
-$ npx docusaurus start
+$ pnpm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -23,7 +23,7 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ npx docusaurus build
+$ pnpm build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
@@ -59,7 +59,7 @@ Use the same `i18n` directory to add translations for static texts like labels, 
 ### 4. Test the Localized Site
 Run the following command to test your localized version:
 ```
-npx docusaurus start --locale new-locale
+pnpm start --locale new-locale
 ```
 
 ### 5. Contribute to the Floorp Docs

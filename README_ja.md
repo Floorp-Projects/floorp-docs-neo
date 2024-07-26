@@ -7,13 +7,13 @@
 ### インストール
 
 ```
-$ npm install 
+$ pnpm install 
 ```
 
 ### ローカル開発
 
 ```
-$ npx docusaurus start
+$ pnpm start
 ```
 
 このコマンドはローカル開発サーバーを起動し、ブラウザウィンドウを開きます。ほとんどの変更はサーバーを再起動することなくライブで反映されます。
@@ -21,7 +21,7 @@ $ npx docusaurus start
 ### ビルド
 
 ```
-$ npx docusaurus build
+$ pnpm build
 ```
 
 このコマンドは静的コンテンツを `build` ディレクトリに生成し、任意の静的コンテンツホスティングサービスを使用して配信することができます。
@@ -57,7 +57,7 @@ const config = {
 ### 4. ローカライズされたサイトをテストする
 ローカライズバージョンをテストするには、次のコマンドを実行します。
 ```
-npx docusaurus start --locale new-locale
+pnpm start --locale new-locale
 ```
 
 ### 5. Floorp ドキュメントに貢献する

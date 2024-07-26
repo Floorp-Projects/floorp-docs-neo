@@ -7,7 +7,7 @@ const Support = () => {
         <div>
             <h2><Translate>Need Support?</Translate></h2>
             <ul>
-                <li><Link to="https://discord.gg/AblazeCommunity"><Translate>Discord (Ablaze Community)</Translate></Link></li>
+                <li><Link to="https://aka.ablaze.one/discord"><Translate>Discord (Ablaze Community)</Translate></Link></li>
                 <li><Link to="https://twitter.com/Ablaze_MIRAI">X (@Ablaze_MIRAI)</Link></li>
                 <li><Link to="https://twitter.com/Floorp_Browser">X (@Floorp_Browser)</Link></li>
                 <li><Link to="https://reddit.com/r/Floorp">Reddit (r/Floorp)</Link></li>

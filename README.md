@@ -73,13 +73,13 @@ git push origin new-language-branch
 Every commit message **must** be written in lowercase and follow this format:
 * Language
 ```
-docs | lang: changes
+lang: changes
 
-Example: docs | ru: fix description
+Example: lang | ru: fix description
 ```
 * Other change
 ```
-docs | what was changed: changes
+type of change | what was changed: changes
 
-Example: docs | packages: bump dependencies
+Example: deps: bump dependencies
 ```

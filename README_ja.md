@@ -68,16 +68,16 @@ git push origin new-language-branch
 ```
 
 ## コミットスタイル
-すべてのコミットメッセージは次のように**名前が付けられている必要があります**：
+すべてのコミットメッセージは小文字で記述され、次の形式に従う必要があります：
 * 言語
 ```
-docs | lang: 変更内容
+lang: changes
 
-例: docs | ru: 説明を修正
+例: lang | ru: 説明を修正
 ```
 * その他の変更
 ```
-docs | 変更内容: 変更詳細
+type of change | what was changed: changes
 
-例: docs | パッケージ: 依存関係を更新
+例: deps: 依存関係を更新
 ```

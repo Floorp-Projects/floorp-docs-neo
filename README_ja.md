@@ -7,13 +7,13 @@
 ### インストール
 
 ```
-$ npm install 
+$ pnpm install 
 ```
 
 ### ローカル開発
 
 ```
-$ npx docusaurus start
+$ pnpm start
 ```
 
 このコマンドはローカル開発サーバーを起動し、ブラウザウィンドウを開きます。ほとんどの変更はサーバーを再起動することなくライブで反映されます。
@@ -21,7 +21,7 @@ $ npx docusaurus start
 ### ビルド
 
 ```
-$ npx docusaurus build
+$ pnpm build
 ```
 
 このコマンドは静的コンテンツを `build` ディレクトリに生成し、任意の静的コンテンツホスティングサービスを使用して配信することができます。
@@ -57,7 +57,7 @@ const config = {
 ### 4. ローカライズされたサイトをテストする
 ローカライズバージョンをテストするには、次のコマンドを実行します。
 ```
-npx docusaurus start --locale new-locale
+pnpm start --locale new-locale
 ```
 
 ### 5. Floorp ドキュメントに貢献する
@@ -68,16 +68,16 @@ git push origin new-language-branch
 ```
 
 ## コミットスタイル
-すべてのコミットメッセージは次のように**名前が付けられている必要があります**：
+すべてのコミットメッセージは小文字で記述され、次の形式に従う必要があります：
 * 言語
 ```
-docs | lang: 変更内容
+lang: changes
 
-例: docs | ru: 説明を修正
+例: lang | ru: 説明を修正
 ```
 * その他の変更
 ```
-docs | 変更内容: 変更詳細
+type of change | what was changed: changes
 
-例: docs | パッケージ: 依存関係を更新
+例: deps: 依存関係を更新
 ```

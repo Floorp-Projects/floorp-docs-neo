@@ -1,10 +1,9 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 import FloorpLogo from "/static/img/favicon.png"
 import Link from "@docusaurus/core/lib/client/exports/Link";
 
-import Translate, {translate} from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate';
 
 function DocsLabels() {
     return (

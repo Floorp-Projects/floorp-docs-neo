@@ -18,11 +18,11 @@ const config = {
   url: 'https://docs.floorp.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/floorp-docs-neo/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Ablaze-MIRAI', // Usually your GitHub org/user name.
+  organizationName: 'Floorp-Projects', // Usually your GitHub org/user name.
   projectName: 'floorp-docs-neo', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -45,7 +45,6 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['ja', 'en', 'ru'],
-    // locales: ['ja', 'en', 'ru', 'uk', 'hu'],
     path: 'i18n',
     localeConfigs: {
       ja: {

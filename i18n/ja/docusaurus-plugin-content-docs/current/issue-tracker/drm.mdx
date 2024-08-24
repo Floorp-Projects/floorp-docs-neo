@@ -2,7 +2,9 @@
 title: DRM (ビデオ再生の問題)
 ---
 
-#### DRM とは
+import Support from "@Components/Support.js";
+
+### DRM とは
 
 DRM (Digital Rights Management) は著作権保護メカニズムです。\
 DRM で保護されたコンテンツを再生しようとすると、ウェブサイトは必要な DRM が利用可能かどうかを確認します。\
@@ -11,38 +13,31 @@ DRM で保護されたコンテンツを再生しようとすると、ウェブ�
 Floorp は Widevine ライセンスを持っていません。\
 そのため、Floorp は保護されたビデオや音楽を再生することができません。
 
-#### Floorp がライセンスを持っていない理由
+### Floorp がライセンスを持っていない理由
 
 ライセンスを取得するには、Floorp 開発者は DRM プロバイダーに少なくとも 5000 米ドルを支払う必要があります。
 
 Floorp は、日本のソフトウェア開発者のグループである Ablaze の一員です。\
 グループは営利目的で運営されていないため、問題の解決は困難です。
 
-#### DRM で保護されたコンテンツを再生する方法
+### DRM で保護されたコンテンツを再生する方法
 
 Firefox や Chrome など、必要なライセンスを持っている主要なブラウザーを使用することができます。
 
 ### 関連 Issues
 
-- HBO Max, Netflix
-  - [#272 Cannot play videos (related DRM)](https://github.com/Floorp-Projects/Floorp/issues/272)
-
-重複:
-
-- Tidal
-
-  - [#204 S6007 error at https://listen.tidal.com/](https://github.com/Floorp-Projects/Floorp/issues/204)
-
-- Spotify
-
-  - [#584 Spotify skips songs](https://github.com/Floorp-Projects/Floorp/issues/584)
-
-  - [#650 Spotify web player skips most songs](https://github.com/Floorp-Projects/Floorp/issues/650)
-
-- Netflix, Disney+ Hotstar
-
-  - [#761 Unable to use streaming platforms like netflix or hotstar](https://github.com/Floorp-Projects/Floorp/issues/761)
+- HBO Max, Netflix:
+  - Issue [#272](https://github.com/Floorp-Projects/Floorp/issues/272): Cannot play videos (related to DRM)
+- Tidal:
+  - Issue [#204](https://github.com/Floorp-Projects/Floorp/issues/204): Error S6007 on Tidal
+- Spotify:
+  - Issue [#584](https://github.com/Floorp-Projects/Floorp/issues/584): Spotify skips songs
+  - Issue [#650](https://github.com/Floorp-Projects/Floorp/issues/650): Spotify web player issues
+- Netflix, Disney+ Hotstar:
+  - Issue [#761](https://github.com/Floorp-Projects/Floorp/issues/761): Issues with Netflix and Hotstar on Floorp
 
 ### 関連サービス
 
 HBO Max, Netflix, Tidal, Spotify, Disney+ Hotstar, Amazon Prime Video など
+
+<Support />

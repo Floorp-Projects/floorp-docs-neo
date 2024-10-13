@@ -6,6 +6,9 @@
 
 ### インストール
 
+###  Floorp Docs Neoは現在、Windowsではビルドできません。WSLまたはLinuxをご使用ください。
+
+
 ```
 $ pnpm install 
 ```

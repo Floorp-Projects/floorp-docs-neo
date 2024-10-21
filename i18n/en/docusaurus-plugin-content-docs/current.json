@@ -3,9 +3,9 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Design": {
-    "message": "Design",
-    "description": "The label for category Design in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.features": {
+    "message": "features",
+    "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Design.link.generated-index.description": {
     "message": "This section is dedicated to customizing your Floorp setup",

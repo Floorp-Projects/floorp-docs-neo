@@ -34,6 +34,7 @@ const config = {
       {
         alias: {
           '@Components': path.resolve(__dirname, '/src/components/MarkdownComponents'),
+          '@img': path.resolve(__dirname, '/static/img'),
         },
       },
     ],

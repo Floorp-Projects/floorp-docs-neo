@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.features": {
-    "message": "features",
+    "message": "Features",
     "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Design.link.generated-index.description": {

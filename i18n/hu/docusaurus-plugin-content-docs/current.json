@@ -8,7 +8,7 @@
     "description": "The label for category Building in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.features": {
-    "message": "features",
+    "message": "Features",
     "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Issue Tracker": {

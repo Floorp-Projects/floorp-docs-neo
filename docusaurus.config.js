@@ -134,12 +134,6 @@ const config = {
           darkTheme: prismThemes.dracula,
         },
       }),
-  scripts: [
-    {
-      src: '/js/redirect.js',
-      async: true,
-    }
-  ]
 };
 
 export default config;

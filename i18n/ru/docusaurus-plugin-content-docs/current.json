@@ -3,14 +3,15 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Design": {
-    "message": "Дизайн",
-    "description": "The label for category Design in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.features": {
+    "message": "Функции",
+    "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Design.link.generated-index.description": {
     "message": "Этот раздел посвящен настройке вашего Floorp",
     "description": "The generated-index page description for category Design in sidebar tutorialSidebar"
   },
+  
   "sidebar.tutorialSidebar.category.Issue Tracker": {
     "message": "Трекер проблем",
     "description": "The label for category Issue Tracker in sidebar tutorialSidebar"

@@ -1,44 +1,45 @@
-[日本語翻訳](README_ja.md)
+[English Translation](README_en.md)
 
-# Floorp Browser Documentation
+# Floorp ブラウザ ドキュメント
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+このウェブサイトは、モダンな静的サイトジェネレーターである[Docusaurus](https://docusaurus.io/)を使用して構築されています。
 
-## Foundation
+### インストール
 
-### Installation
+###  Floorp Docs Neoは現在、Windowsではビルドできません。WSLまたはLinuxをご使用ください。
+
 
 ```
 $ pnpm install 
 ```
 
-### Local Development
+### ローカル開発
 
 ```
 $ pnpm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+このコマンドはローカル開発サーバーを起動し、ブラウザウィンドウを開きます。ほとんどの変更はサーバーを再起動することなくライブで反映されます。
 
-### Build
+### ビルド
 
 ```
 $ pnpm build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+このコマンドは静的コンテンツを `build` ディレクトリに生成し、任意の静的コンテンツホスティングサービスを使用して配信することができます。
 
-## How to Add a New Language
+## 新しい言語を追加する方法
 
-### 0. Create a Branch for New Language
-To get started, create a new branch named after your target language and switch to it.
+### 0. 新しい言語のブランチを作成する
+まず最初に、ターゲット言語にちなんで名付けられた新しいブランチを作成し、切り替えます。
 ```
 git checkout -b new-locale
 ```
-This will create and switch to a new branch for your localization work.
+これにより、新しいローカリゼーション作業のためのブランチが作成され、切り替わります。
 
-### 1. Add a New Localization to the Config File
-To add a new locale, update the [Docusaurus config file](/docusaurus.config.js) with the new locale.
+### 1. 設定ファイルに新しいローカリゼーションを追加する
+新しいロケールを追加するには、新しいロケールで[Docusaurus設定ファイル](/docusaurus.config.js)を更新します。
 ```js
 const config = {
   i18n: {
@@ -50,36 +51,36 @@ const config = {
   }
 };
 ```
-### 2. Translate Your Content
-For each document, page, or blog post you want to translate, create a version in the target language. Place these files in the appropriate directory within the i18n folder of your Docusaurus project. For example, to add Spanish translations for a document, place the translated file in `i18n/es/docusaurus-plugin-content-docs/current/your-doc.md`.
+### 2. コンテンツを翻訳する
+翻訳したい各ドキュメント、ページ、またはブログ投稿に対して、ターゲット言語のバージョンを作成します。これらのファイルをDocusaurusプロジェクトの `i18n` フォルダ内の適切なディレクトリに配置します。例えば、ドキュメントのスペイン語翻訳を追加するには、翻訳ファイルを `i18n/es/docusaurus-plugin-content-docs/current/your-doc.md` に配置します。
 
-### 3. Translate Static and Theme Text
-Use the same `i18n` directory to add translations for static texts like labels, buttons, etc., that are part of site's theme or UI. These translations typically go in the `i18n/es/code.json` file for a locale `es`.
+### 3. 静的およびテーマテキストを翻訳する
+サイトのテーマやUIの一部であるラベル、ボタンなどの静的テキストの翻訳を追加するには、同じ `i18n` ディレクトリを使用します。これらの翻訳は通常、ロケール `es` 用の `i18n/es/code.json` ファイルに入れます。
 
-### 4. Test the Localized Site
-Run the following command to test your localized version:
+### 4. ローカライズされたサイトをテストする
+ローカライズバージョンをテストするには、次のコマンドを実行します。
 ```
 pnpm start --locale new-locale
 ```
 
-### 5. Contribute to the Floorp Docs
-Create a pull request and wait for it to be tested and reviewed. If everything is approved, it will be merged.
+### 5. Floorp ドキュメントに貢献する
+プルリクエストを作成し、テストおよびレビューを待ちます。すべてが承認されると、マージされます。
 
 ```
 git push origin new-language-branch
 ```
 
-## Commit style
-Every commit message **must** be written in lowercase and follow this format:
-* Language
+## コミットスタイル
+すべてのコミットメッセージは小文字で記述され、次の形式に従う必要があります：
+* 言語
 ```
 lang: changes
 
-Example: lang | ru: fix description
+例: lang | ru: 説明を修正
 ```
-* Other change
+* その他の変更
 ```
 type of change | what was changed: changes
 
-Example: deps: bump dependencies
+例: deps: 依存関係を更新
 ```

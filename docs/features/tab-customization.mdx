@@ -1,0 +1,91 @@
+---
+title: Tab Scrolling, New Tab Opening Location, and Other Tab Customizations
+description: How to customize tab scrolling, new tab opening location, and other settings in Floorp
+---
+
+import Support from "@Components/Support.js";
+import TabCustomize from "@img/features/tab-customize.png";
+
+:::note
+This document applies to Floorp version 12 and later. It does not apply to Floorp versions 11 and earlier.
+:::
+
+### Tab Customization in Floorp
+
+Floorp offers options for tab pinning, scrolling, new tab opening location, minimum tab size, closing tabs with double-click, and more.
+These options are designed to be used in conjunction with other tab bar options.
+
+These options can be found in "Settings" > "Tabs and Appearance" > "Tabs".
+
+<img src={TabCustomize} width="50%" alt="Tab Customization"/>
+
+<hr />
+
+### Tab Customization
+
+#### Scrolling
+
+Configure whether to switch tabs by scrolling and how scrolling behaves.
+- Switch tabs by scrolling
+
+    When this option is enabled, tabs will switch when scrolled.
+    By default, this is disabled, and instead, the tab bar will scroll when overflow occurs.
+
+- Reverse tab scrolling
+
+    When this option is enabled, tab scrolling direction will be reversed.
+    This is disabled by default. It is ignored if the "Switch tabs by scrolling" option is disabled.
+
+- Loop tab scrolling
+
+    When this option is enabled, scrolling will loop back to the first tab after reaching the last tab.
+    This is disabled by default. It is ignored if the "Switch tabs by scrolling" option is disabled.
+
+<hr />
+
+#### New Tab Opening Location
+
+Set where new tabs should open.
+
+- Follow Firefox behavior
+
+    The location where new tabs open will follow Firefox behavior. When this setting is selected, the location of new tabs will change based on your link opening choices and actions.
+    This setting is selected by default.
+
+- Open at the end of the workspace
+
+    New tabs will open at the end of the workspace.
+
+- Open after the current tab
+
+    New tabs will open immediately after the current tab.
+
+<hr />
+
+#### Other Settings
+
+Configure other settings. Set behaviors for pinned tabs, closing tabs with double-click, minimum tab size, and more.
+
+- Show title of pinned tabs
+
+    When this option is enabled, the titles of pinned tabs will be displayed.
+    This is disabled by default.
+
+- Close tabs with double-click
+
+    When this option is enabled, tabs can be closed by double-clicking.
+    This is disabled by default.
+
+- Minimum tab width
+
+    Set the minimum width of tabs. The unit is pixels (px). This is the minimum size, so tabs may be larger depending on other settings.
+    The default value is 76.
+
+- Minimum tab height
+
+    Set the minimum height of tabs. The unit is pixels (px). This is the minimum size, so tabs may be taller depending on other settings.
+    The default value is 30.
+
+<hr />
+
+<Support />

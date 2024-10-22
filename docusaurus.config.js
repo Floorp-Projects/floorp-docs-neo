@@ -110,7 +110,7 @@ const config = {
               alt: 'Github'
             },
             {
-              type: "localeDropdown", position: "right", queryString: '?persistLocale=true',
+              type: "localeDropdown", position: "right", queryString: '?persistLocale=false',
             }
           ],
         },

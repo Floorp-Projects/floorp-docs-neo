@@ -1,0 +1,84 @@
+---
+title: How to Migrate from Floorp 11 to Floorp 12 and Changes
+description: How to Migrate from Floorp 11 to Floorp 12 and Changes
+---
+
+import Support from "@Components/Support.js";
+import Settings from "@img/features/setting-overview.png";
+
+
+:::note
+This document applies to Floorp 12 and later versions. It does not apply to Floorp 11 and earlier versions.
+:::
+
+### Overview of Floorp 12
+
+The new major version Floorp 12 has been completely reborn, discarding all previous code base and rebuilding with a new one.
+This is like a completely different browser that fundamentally changes the code base that has continued from Floorp 8 through Floorp 11.
+
+All features from settings pages to interface, workspaces, and PWA have been modified to create a more sophisticated browser.
+
+### About Feature Changes
+
+#### Settings
+
+The settings page has been reorganized. The method of adding Floorp settings to Firefox settings that continued through Floorp 11 has been discontinued.
+With this update, Firefox settings and Floorp settings are completely separated, adopting a method to access Floorp settings through the Firefox settings page.
+
+The newly designed settings page includes the following features:
+
+- Homepage
+- Workspace customization
+- Keyboard shortcut management
+- Web app management and settings
+- Profile and account management
+- About Floorp
+
+The homepage is displayed when opening Floorp settings. This feature, which didn't exist in Floorp 11, displays information about Floorp, setup status, and privacy-related information.
+Additionally, Ablaze account management will be available in the future, allowing synchronization of notes and workspaces when logged into an Ablaze account.
+
+The new settings page with increased support information has become more convenient for users.
+
+New settings page:
+<img src={Settings} width="100%" alt="Settings page reorganization" />
+<hr />
+
+#### Workspaces
+
+Workspaces are now shared across all windows.
+While Floorp 11's workspaces existed separately for each window with an implementation closer to tab groups,
+Floorp 12 now shares workspaces between windows, similar to [Vivaldi browser](https://vivaldi.com/).
+
+Additionally, the workspace management dialog has been changed to no longer use Firefox native dialogs. Name changes can also be made in one place.
+
+<hr />
+
+#### Split View
+
+No changes.
+
+<hr />
+
+#### Browser Manager Sidebar (Floorp Sidebar)
+
+Not implemented.
+
+However, the Browser Manager Sidebar has been renamed in Floorp 12. It will now be called "Panel Sidebar."
+
+<hr />
+
+#### Web Apps (Progressive Web Apps)
+
+Not implemented.
+
+<hr />
+
+### How to Migrate to Floorp 12
+
+There is currently no direct migration path from Floorp 11 to Floorp 12, as Floorp 12 is not yet fully compatible with Floorp 11.
+
+If you want to safely maintain your current environment, we recommend waiting to migrate to Floorp 12 until after Firefox ESR128 ends, as Floorp 11 will continue to be supported until then.
+Conversely, if you want to try Floorp 12 early, you can copy and save your Floorp 11 profile, install Floorp 12 on top of it,
+migrate that profile as-is, and return to Floorp 11 at any time.
+
+<Support />

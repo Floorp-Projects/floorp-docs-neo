@@ -15,8 +15,8 @@ importers:
         specifier: 3.6.1
         version: 3.6.1(@algolia/client-search@4.24.0)(@mdx-js/react@3.1.0(@types/react@18.3.3)(react@18.3.1))(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(search-insights@2.15.0)(typescript@5.5.4)
       '@fortawesome/fontawesome-free':
-        specifier: ^6.6.0
-        version: 6.6.0
+        specifier: ^6.7.0
+        version: 6.7.0
       '@mdx-js/react':
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.3.3)(react@18.3.1)
@@ -872,8 +872,8 @@ packages:
     resolution: {integrity: sha512-nS3WCvepwrnBEgSG5vQu40XG95lC9Jeh/odV5u5IhU1eQFEGDst9xBi6IK5yZdsGvbuaXBZLZtOqWYtuuFa/rQ==}
     engines: {node: '>=18.0'}
 
-  '@fortawesome/fontawesome-free@6.6.0':
-    resolution: {integrity: sha512-60G28ke/sXdtS9KZCpZSHHkCbdsOGEhIUGlwq6yhY74UpTiToIh8np7A8yphhM4BWsvNFtIvLpi4co+h9Mr9Ow==}
+  '@fortawesome/fontawesome-free@6.7.0':
+    resolution: {integrity: sha512-lXTP8oiLGM97Aqjn47nod9awKe574HRfCngFizr7FiHTadKTiPkoVn0Mzg+tZBLD1XpE4CRvcF7/UM3g1jyVYw==}
     engines: {node: '>=6'}
 
   '@hapi/hoek@9.3.0':
@@ -6130,7 +6130,7 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@fortawesome/fontawesome-free@6.6.0': {}
+  '@fortawesome/fontawesome-free@6.7.0': {}
 
   '@hapi/hoek@9.3.0': {}
 

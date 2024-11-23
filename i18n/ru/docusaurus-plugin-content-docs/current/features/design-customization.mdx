@@ -1,37 +1,71 @@
 ---
-title: Настройте ваш дизайн Floorp
+title: Настройка интерфейса и дизайна Floorp
+description: Узнайте, как изменить интерфейс и дизайн браузера Floorp
 ---
 
-import Support from '@Components/Support.js'
+import Support from "@Components/Support.js";
+import InterfaceCustomize from "@img/features/preferences-TabAndAppearance.png";
+import Proton from "@img/features/firefox-proton-dark.jpg";
+import Lepton from "@img/features/firefox-lepton-dark.jpg";
+import Photon from "@img/features/firefox-photon-dark.jpg";
+import ProtonFix from "@img/features/firefox-proton-dark.jpg";
+import Fluerial from "@img/features/floorp-fluerial-dark.jpg";
 
-:::note
-Этот документ опубликован с разрешения администратора
-[Floorp Unofficial Support](https://fs-un.super.site/en/design).
-Некоторые фрагменты текста могли быть изменены для улучшения ясности.
-:::
+## О дизайне Floorp
 
-### Изменение дизайна Floorp
+Чтобы настроить интерфейс и дизайн Floorp, перейдите в «Настройки Floorp» > нажмите «Внешний вид» в боковой панели настроек. В верхней части страницы находятся параметры настройки интерфейса.  
+Здесь вы можете изменить дизайн для настройки общего внешнего вида браузера Floorp.
 
-#### Настройки оформления
+### Настройки интерфейса  
+<img src={InterfaceCustomize} width="50%" alt="Настройки интерфейса Floorp"/>
 
-В меню настроек Floorp перейдите на вкладку Внешний вид (Designs). Вы можете выбрать дизайн браузера Floorp из следующего списка:
+<hr />
 
-- Firefox Proton UI (Текущий интерфейс Firefox)
-- Firefox Proton UI Fix (Модифицированная версия)
-- Firefox Photon UI (Старый интерфейс Firefox)
-- Firefox Lepton UI (Старый интерфейс Firefox)
-- Fluerial UI (Похоже на Chrome)
-- Fluent UI (Похоже на Edge, только для Windows и macOS)
-- Gnome UI (Только для Linux)
+### Доступные дизайны:
 
-#### Смена темы
+- **Firefox Proton**  
+  Оригинальный дизайн Firefox, используемый с версии Firefox 89.  
+  
+  <img src={Proton} width= "225px" height= "75px"/>
 
-Посетите Менеджер дополнений, введя `about:addons` в адресной строке. Вы можете выбрать одну из предустановленных тем: Системная тема, Светлая, Темная и Floorp Alpenglow.
+<hr />
 
-Для поиска дополнительных тем от сторонних разработчиков посетите веб-сайт [дополнений Firefox](https://addons.mozilla.org/)
+- **Lepton**  
+  Кастомный дизайн от [black7375](https://github.com/black7375), схожий с интерфейсом Microsoft Edge.  
+
+  <img src={Lepton} width= "225px" height= "75px"/>
+
+<hr />
+
+- **Photon**  
+  Кастомный дизайн от [black7375](https://github.com/black7375), использовавшийся в Firefox 88.  
+
+  <img src={Photon} width= "225px" height= "75px"/>
+
+<hr />
+
+- **Proton Fix**  
+  Улучшенная версия дизайна Firefox Proton, созданная [black7375](https://github.com/black7375).  
+
+  <img src={ProtonFix} width= "225px" height= "75px"/>
+
+<hr />
+
+- **Fluerial UI**  
+  Оригинальный дизайн Floorp, вдохновленный Material Design.  
+  
+  <img src={Fluerial} width= "225px" height= "75px"/>
+
+<hr />
+
+## Смена темы
+
+Перейдите в менеджер дополнений (about:addons).  
+По умолчанию доступны следующие темы: Системная, Светлая, Тёмная и Floorp Alpenglow.  
+Для выбора дополнительных тем вы можете посетить [Firefox Add-ons](https://addons.mozilla.org/).
 
 :::danger
-Редактирование CSS также возможно для дальнейшей настройки темы, но официально Floorp не поддерживает эту функцию. Вы действуете на свой страх и риск.
+Редактирование CSS также возможно, но не поддерживается. Все действия вы выполняете на свой страх и риск.
 :::
 
 <Support />

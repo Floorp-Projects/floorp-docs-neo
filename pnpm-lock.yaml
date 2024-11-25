@@ -40,8 +40,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@docusaurus/module-type-aliases':
-        specifier: 3.6.2
-        version: 3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 3.6.3
+        version: 3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@docusaurus/types':
         specifier: 3.6.3
         version: 3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1007,12 +1007,6 @@ packages:
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
-
-  '@docusaurus/module-type-aliases@3.6.2':
-    resolution: {integrity: sha512-NrJkL2rLTCjHtWOqUvWzwqvJrsKLj0gVJeV6q5yeKdKKgItietcTf2fTRkM9LHKSUN8CBDXxwHABeQvTahvmXQ==}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
 
   '@docusaurus/module-type-aliases@3.6.3':
     resolution: {integrity: sha512-MjaXX9PN/k5ugNvfRZdWyKWq4FsrhN4LEXaj0pEmMebJuBNlFeGyKQUa9DRhJHpadNaiMLrbo9m3U7Ig5YlsZg==}
@@ -6288,24 +6282,6 @@ snapshots:
       - esbuild
       - supports-color
       - typescript
-      - uglify-js
-      - webpack-cli
-
-  '@docusaurus/module-type-aliases@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@docusaurus/types': 3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/history': 4.7.11
-      '@types/react': 18.3.3
-      '@types/react-router-config': 5.0.11
-      '@types/react-router-dom': 5.3.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-helmet-async: 2.0.5(react@18.3.1)
-      react-loadable: '@docusaurus/react-loadable@6.0.0(react@18.3.1)'
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - supports-color
       - uglify-js
       - webpack-cli
 

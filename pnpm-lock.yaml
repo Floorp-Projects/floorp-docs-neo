@@ -30,8 +30,8 @@ importers:
         specifier: ^8.2.0
         version: 8.2.0
       prism-react-renderer:
-        specifier: ^2.4.0
-        version: 2.4.0(react@18.3.1)
+        specifier: ^2.4.1
+        version: 2.4.1(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -1108,12 +1108,6 @@ packages:
   '@docusaurus/theme-translations@3.6.3':
     resolution: {integrity: sha512-Gb0regclToVlngSIIwUCtBMQBq48qVUaN1XQNKW4XwlsgUyk0vP01LULdqbem7czSwIeBAFXFoORJ0RPX7ht/w==}
     engines: {node: '>=18.0'}
-
-  '@docusaurus/types@3.6.2':
-    resolution: {integrity: sha512-117Wsk6xXrWEAsCYCXS3TGJv5tkdIZDcd7T/V0UJvKYmY0gyVPPcEQChy8yTdjbIkbB2q4fa7Jpox72Qv86mqQ==}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
 
   '@docusaurus/types@3.6.3':
     resolution: {integrity: sha512-xD9oTGDrouWzefkhe9ogB2fDV96/82cRpNGx2HIvI5L87JHNhQVIWimQ/3JIiiX/TEd5S9s+VO6FFguwKNRVow==}
@@ -4047,8 +4041,8 @@ packages:
     resolution: {integrity: sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==}
     engines: {node: '>=4'}
 
-  prism-react-renderer@2.4.0:
-    resolution: {integrity: sha512-327BsVCD/unU4CNLZTWVHyUHKnsqcvj2qbPlQ8MiBE2eq2rgctjigPA1Gp9HLF83kZ20zNN6jgizHJeEsyFYOw==}
+  prism-react-renderer@2.4.1:
+    resolution: {integrity: sha512-ey8Ls/+Di31eqzUxC46h8MksNuGx/n0AAC8uKpwFau4RPDYLuE3EXTp8N8G2vX2N7UC/+IXeNUnlWBGGcAG+Ig==}
     peerDependencies:
       react: '>=16.0.0'
 
@@ -6634,7 +6628,7 @@ snapshots:
       lodash: 4.17.21
       nprogress: 0.2.0
       postcss: 8.4.40
-      prism-react-renderer: 2.4.0(react@18.3.1)
+      prism-react-renderer: 2.4.1(react@18.3.1)
       prismjs: 1.29.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -6674,7 +6668,7 @@ snapshots:
       '@types/react-router-config': 5.0.11
       clsx: 2.1.1
       parse-numeric-range: 1.3.0
-      prism-react-renderer: 2.4.0(react@18.3.1)
+      prism-react-renderer: 2.4.1(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tslib: 2.6.3
@@ -6734,26 +6728,6 @@ snapshots:
     dependencies:
       fs-extra: 11.2.0
       tslib: 2.6.3
-
-  '@docusaurus/types@3.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@mdx-js/mdx': 3.0.1
-      '@types/history': 4.7.11
-      '@types/react': 18.3.3
-      commander: 5.1.0
-      joi: 17.13.3
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-helmet-async: 1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      utility-types: 3.11.0
-      webpack: 5.95.0
-      webpack-merge: 5.10.0
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - supports-color
-      - uglify-js
-      - webpack-cli
 
   '@docusaurus/types@3.6.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -10255,7 +10229,7 @@ snapshots:
 
   pretty-time@1.1.0: {}
 
-  prism-react-renderer@2.4.0(react@18.3.1):
+  prism-react-renderer@2.4.1(react@18.3.1):
     dependencies:
       '@types/prismjs': 1.26.4
       clsx: 2.1.1

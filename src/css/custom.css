@@ -91,8 +91,8 @@
 }
 
 .sp_container .logo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 /* Tablets */
@@ -119,8 +119,8 @@
   }
 
   .sp_container .logo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   .sp_container h1 {
@@ -147,8 +147,8 @@
   }
 
   .sp_container .logo {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
   .sp_container button {

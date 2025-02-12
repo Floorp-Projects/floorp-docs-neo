@@ -9,26 +9,26 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 :root {
-  --ifm-color-primary: #831fea;
-  --ifm-color-primary-dark: #7614da;
-  --ifm-color-primary-darker: #6f13ce;
-  --ifm-color-primary-darkest: #5c10aa;
-  --ifm-color-primary-light: #9037ec;
-  --ifm-color-primary-lighter: #9743ed;
-  --ifm-color-primary-lightest: #ab68f1;
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #0711e8;
-  --ifm-color-primary-dark: #060fd1;
-  --ifm-color-primary-darker: #060ec5;
-  --ifm-color-primary-darkest: #050ca2;
-  --ifm-color-primary-light: #0f19f8;
-  --ifm-color-primary-lighter: #1b25f8;
-  --ifm-color-primary-lightest: #3e46f9;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 

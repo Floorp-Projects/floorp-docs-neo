@@ -3,21 +3,23 @@ title: インストール手順
 sidebar_position: 2
 ---
 
+import Support from "@Components/Support.js";
+
 ## Windows
 
-### オペレーティングシステム (32-bit と 64-bit)
+### オペレーティングシステム
 
-- Windows 11
-- Windows 10
+- Windows 11 64-bit
+- Windows 10 64-bit
 
 :::caution
 Floorp は Windows 7 / 8 / 8.1 にインストールできますが、サポートは行われません。
 :::
 
-### 推奨ハードウェア環境
+### ハードウェア要件
 
-- SSE2 をサポートする Pentium 4 以降のプロセッサー
-- 512MB の RAM / 64-bit 版は 2GB の RAM (メモリ)
+- SSE4.1 をサポートするプロセッサー
+- 2GB の RAM (メモリ)
 - 200MB の空き容量
 
 ### インストール
@@ -40,20 +42,19 @@ Floorp は Windows 7 / 8 / 8.1 にインストールできますが、サポー�
   winget install Ablaze.Floorp
   ```
 
-  [@Hibi_10000](https://github.com/Hibi-10000) によって提供されています。
+  **[@Hibi_10000](https://github.com/Hibi-10000)** によって提供されています。
+- **Scoop**
+  ```shell
+  scoop bucket add extras
+  scoop install extras/floorp
+  ```
+  **[@SegoCode](https://github.com/SegoCode)** によって提供されています。
 
 ## Mac
 
 ### オペレーティングシステム
 
-- macOS Sonoma 14
-- macOS Ventura 13
-- macOS Monterey 12
-- macOS Big Sur 11
-- macOS Catalina 10.15
-- macOS Mojave 10.14
-- macOS High Sierra 10.13
-- macOS Sierra 10.12
+macOS Sierra 10.12 - macOS Sequoia 15
 
 ### 推奨ハードウェア環境
 
@@ -116,3 +117,5 @@ Flatpak 版は「サンドボックス」の影響で独自の問題が発生す
 Floorp Daylight は、Floorp の開発中の機能がいち早く実装されるベータ版です。通常版では発生しない重大な不具合が発生する可能性があります。
 
 また、リリース頻度を維持するため、Daylight 版にはコード署名証明書が付属していないことがあります。
+
+<Support />

@@ -6,12 +6,10 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## Foundation
 
-###  Floorp Docs Neo cannot be built on Windows at the moment. Please use either WSL or Linux.
- 
 ### Installation
 
 ```
-$ pnpm install 
+$ pnpm install
 ```
 
 ### Local Development

@@ -4,18 +4,25 @@ title: ポータブル版を既定のブラウザーに設定できない
 
 import Support from "@Components/Support.js";
 
-### ポータブル版 Floorp は Windows の既定のブラウザーに設定できません
+:::caution
+ポータブル版 Floorp は Windows の既定のブラウザーに設定できません。
+:::
 
 Floorp Portable は既定のブラウザーに設定できない仕様となっております。
 
-Floorp はインストーラーを用いて Windows にブラウザーとして登録していますが、ポータブル版にはインストーラーがありません。\
-そのため、ポータブル版を既定のブラウザーに設定する公式のオプションはありません。
+## なぜ既定のブラウザーに設定できないのですか？
 
-想定されたものなのでサポートは行えませんが、ポータブル版ブラウザーを Windows に登録するサードパーティー製のソフトウェアを使用することができます。
+Windows では通常、ブラウザーはインストーラーによって登録され、デフォルトのブラウザーとして設定できるようになります。Floorp のポータブル版にはインストーラーが含まれていないため、既定のブラウザーとして選択できるようにするために必要な登録が行われません。
 
-関連 Issue をご覧ください。
+## 代替手段
 
-### 関連 Issues
+公式に推奨することはできませんが、ポータブル版のソフトウェアを既定として登録できるサードパーティのソフトウェアを使用する方法があります。自己責任でお使いください。
+
+また、 .bat スクリプトを使った[回避策](https://docs.floorp.app/en/others/floorp-portable-default-browser/)も存在します。
+
+詳細については、関連 Issue をご確認ください。
+
+## 関連 Issues
 
 - Issue [#967](https://github.com/Floorp-Projects/Floorp/issues/967): Can't set as default browser in Portable version
 

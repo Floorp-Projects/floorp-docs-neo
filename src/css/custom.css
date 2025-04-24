@@ -53,11 +53,11 @@
 
 .sp_container h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 60px;
 }
 
 .sp_container p {
-  font-size: 18px;
+  font-size: 24px;
   margin: 10px 0 20px 0;
 }
 
@@ -75,26 +75,28 @@
 }
 
 .sp_container .get-started {
-  background-color: #7386d5;
+  background-color: #831feaB3;
   color: #ffffff;
   padding: 15px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .sp_container .open-website {
-  background-color: #1f4068;
+  background-color: #0711e8B3;
   color: #ffffff;
   padding: 15px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .sp_container .logo {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .sp_container {
     flex-direction: column-reverse;
     justify-content: center;
@@ -117,8 +119,8 @@
   }
 
   .sp_container .logo {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 
   .sp_container h1 {
@@ -132,6 +134,10 @@
 
 /* Phones */
 @media (max-width: 480px) {
+  .sp_container {
+    width: 100%;
+  }
+
   .sp_container h1 {
     font-size: 24px;
   }
@@ -141,8 +147,8 @@
   }
 
   .sp_container .logo {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
   }
 
   .sp_container button {

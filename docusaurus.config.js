@@ -56,13 +56,7 @@ const config = {
       },
       ru: {
         label: "Русский",
-      },
-      uk: {
-        label: "Українська",
-      },
-      hu: {
-        label: "Magyar",
-      },
+      }
     }
   },
   presets: [

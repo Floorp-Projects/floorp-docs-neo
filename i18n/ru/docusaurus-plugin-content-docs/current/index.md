@@ -27,7 +27,7 @@ sidebar_position: 1
 
 - **Сообщества поддержки**:
   * Reddit: [r/Floorp](https://www.reddit.com/r/Floorp/) — обсуждение функций и проблем
-  * Discord: [Ablaze Community](https://aka.ablaze.one/discord) — техническая поддержка в реальном времени
+  * Discord: [Floorp Projects](https://discord.floorp.app) — техническая поддержка в реальном времени
 
 - **Официальный сайт проекта**:  
   [https://floorp.app/](https://floorp.app/) — загрузки, новости и блог разработчиков

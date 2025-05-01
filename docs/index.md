@@ -21,5 +21,5 @@ Here, you'll find comprehensive guides on newly added features and instructions 
 
 - **Floorp Communities**
     - [Reddit: r/Floorp](https://www.reddit.com/r/Floorp/)
-    - [Ablaze Community Discord](https://aka.ablaze.one/discord)
+    - [Floorp Projects Discord](https://discord.floorp.app/)
 - **Floorp Website**: Visit us at [floorp.app](https://floorp.app/) for more information.

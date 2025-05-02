@@ -1,0 +1,11 @@
+name: 🌐 Translation
+description: Report localization issues
+labels: ["i18n"]
+body:
+- type: dropdown
+  attributes:
+    label: Language
+    options: [English, Japanese, Russian]
+- type: textarea
+  attributes:
+    label: Issue Description

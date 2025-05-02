@@ -111,12 +111,12 @@ const config = {
         //   links: [
         //       {
         //         label: 'Discord',
-        //         href: 'https://discord.com/invite/f8NFWjx6Rt',
+        //         href: 'https://discord.floorp.app',
         //         image: 'img/favicon.png',
         //       },
         //       {
         //       label: 'X',
-        //           href: 'https://twitter.com/floorp_browser',
+        //           href: 'https://x.com/floorp_browser',
         //       },
         //   ],
         //   copyright: `Copyright © ${new Date().getFullYear()} Ablaze. Built with Docusaurus.`,

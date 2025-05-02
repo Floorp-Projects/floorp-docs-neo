@@ -1,0 +1,13 @@
+name: 🐛 Docs Bug
+description: Report errors in existing documentation
+labels: ["bug", "documentation"]
+body:
+- type: textarea
+  attributes:
+    label: Wrong Information
+    description: What's incorrect and what should it say?
+  validations: {required: true}
+- type: input
+  attributes:
+    label: Affected File
+    description: File path or URL

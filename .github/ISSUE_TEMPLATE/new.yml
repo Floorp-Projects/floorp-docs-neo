@@ -1,0 +1,12 @@
+name: ✨ New Docs Request
+description: Suggest new documentation needed
+labels: ["enhancement"]
+body:
+- type: textarea
+  attributes:
+    label: Knowledge Gap
+    description: What's missing and why it's important
+- type: input
+  attributes:
+    label: Suggested Location
+    description: Where should this be added?

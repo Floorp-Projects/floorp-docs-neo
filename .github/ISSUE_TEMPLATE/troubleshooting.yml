@@ -1,0 +1,7 @@
+name: 🔧 Troubleshooting Guide
+description: Request new troubleshooting content
+body:
+- type: textarea
+  attributes:
+    label: Problem Scenario
+    description: Describe the error case

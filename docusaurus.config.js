@@ -90,7 +90,7 @@ const config = {
           },
           items: [
             {
-              href: 'https://discord.com/invite/f8NFWjx6Rt',
+              href: 'https://discord.floorp.app',
               position: 'right',
               className: "fa-brands fa-discord",
               alt: 'Discord'

@@ -19,5 +19,5 @@ sidebar_position: 1
 
 - **Floorp コミュニティ**:
   - [Reddit: r/Floorp](https://www.reddit.com/r/Floorp/)
-  - [Ablaze Community Discord](https://aka.ablaze.one/discord)
+  - [Floorp Projects Discord](https://discord.floorp.app/)
 - **Floorp 公式サイト**: [floorp.app](https://floorp.app/) をご覧ください。

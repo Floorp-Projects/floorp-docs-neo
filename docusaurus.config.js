@@ -96,7 +96,7 @@ const config = {
               alt: 'Discord'
             },
             {
-              href: 'https://github.com/Floorp-Projects/Floorp',
+              href: 'https://github.com/Floorp-Projects/floorp-docs-neo',
               position: 'right',
               className: "fa-brands fa-github",
               alt: 'Github'

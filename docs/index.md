@@ -15,7 +15,7 @@ Here, you'll find comprehensive guides on newly added features and instructions 
 ### How to Troubleshoot
 
 1. **Check the "Issue Tracker" section**: Most common problems and their solutions are listed here.
-2. **Report issues on GitHub**: If you can't find a solution, please review the [checklist](/docs/other/issue-checklist/) and report the issue on our [GitHub page](https://github.com/Floorp-Projects/Floorp/issues/new/choose).
+2. **Report issues**: If you can't find a solution, please review the [checklist](/docs/other/issue-checklist/) and report the issue on our [GitHub page](https://github.com/Floorp-Projects/Floorp/issues/new/choose) or [Discord community](https://discord.floorp.app).
 
 ### Additional Resources
 

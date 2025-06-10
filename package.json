@@ -15,8 +15,8 @@
     "gh-deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@docusaurus/core": "3.8.0",
-    "@docusaurus/preset-classic": "3.8.0",
+    "@docusaurus/core": "3.8.1",
+    "@docusaurus/preset-classic": "3.8.1",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
@@ -27,8 +27,8 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.8.0",
-    "@docusaurus/types": "3.8.0",
+    "@docusaurus/module-type-aliases": "3.8.1",
+    "@docusaurus/types": "3.8.1",
     "gh-pages": "^6.3.0"
   },
   "browserslist": {

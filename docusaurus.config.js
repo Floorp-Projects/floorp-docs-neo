@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 const path = require('path');
 
@@ -78,54 +78,79 @@ const config = {
   ],
 
   themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-      ({
-        // Replace with your project's social card
-        // image: 'img/docusaurus-social-card.jpg',
-        navbar: {
-          title: 'Floorp Docs',
-          logo: {
-            alt: 'Floorp Logo',
-            src: 'img/favicon.png',
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      // image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'Floorp Docs',
+        logo: {
+          alt: 'Floorp Logo',
+          src: 'img/favicon.png',
+        },
+        items: [
+          {
+            href: 'https://discord.floorp.app',
+            position: 'right',
+            className: "fa-brands fa-discord",
+            alt: 'Discord'
           },
-          items: [
-            {
-              href: 'https://discord.floorp.app',
-              position: 'right',
-              className: "fa-brands fa-discord",
-              alt: 'Discord'
-            },
-            {
-              href: 'https://github.com/Floorp-Projects/floorp-docs-neo',
-              position: 'right',
-              className: "fa-brands fa-github",
-              alt: 'Github'
-            },
-            {
-              type: "localeDropdown", position: "right", queryString: '?persistLocale=false',
-            }
-          ],
+          {
+            href: 'https://github.com/Floorp-Projects/floorp-docs-neo',
+            position: 'right',
+            className: "fa-brands fa-github",
+            alt: 'Github'
+          },
+          {
+            type: "localeDropdown", position: "right", queryString: '?persistLocale=false',
+          }
+        ],
+      },
+      // footer: {
+      //   style: 'dark',
+      //   links: [
+      //       {
+      //         label: 'Discord',
+      //         href: 'https://discord.floorp.app',
+      //         image: 'img/favicon.png',
+      //       },
+      //       {
+      //       label: 'X',
+      //           href: 'https://x.com/floorp_browser',
+      //       },
+      //   ],
+      //   copyright: `Copyright © ${new Date().getFullYear()} Ablaze. Built with Docusaurus.`,
+      // },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+      mermaid: {
+        theme: { light: 'neutral', dark: 'dark' },
+        options: {
+          gantt: {
+            fontSize: 27.5,
+            taskFontSize: 27.5,
+            sectionFontSize: 27.5,
+            taskMargin: 20,
+            gridLineStartPadding: 400,
+            leftPadding: 200,
+            topPadding: 80,
+            rightPadding: 120,
+            bottomPadding: 80,
+            barHeight: 100,
+          },
         },
-        // footer: {
-        //   style: 'dark',
-        //   links: [
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discord.floorp.app',
-        //         image: 'img/favicon.png',
-        //       },
-        //       {
-        //       label: 'X',
-        //           href: 'https://x.com/floorp_browser',
-        //       },
-        //   ],
-        //   copyright: `Copyright © ${new Date().getFullYear()} Ablaze. Built with Docusaurus.`,
-        // },
-        prism: {
-          theme: prismThemes.github,
-          darkTheme: prismThemes.dracula,
-        },
-      }),
+      },
+    }),
+
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: [
+    '@docusaurus/theme-mermaid',
+  ],
 };
 
 export default config;

@@ -6,16 +6,16 @@ description: How to use and customize Floorp's workspace features
 import Support from "@Components/Support.js";
 import ToolBarButton from "@img/features/workspaces-toolbar-button.webp";
 
-### What are Workspace Features?
+### What Are Workspace Features?
 
 Workspace features are functions for grouping and managing tabs.
 For example, if you create a workspace named "Shopping", all tabs within that workspace belong to the "Shopping" group.
-Similarly, if you create another workspace named "Blog", all tabs within that workspace belong to the "Blog" group.
+If you create another workspace named "Blog", all tabs within that workspace will belong to the "Blog" group.
 
-Also, only one workspace can be displayed in a window at a time.
+Only one workspace can be displayed in a window at a time.
 
-By grouping tabs in this way, the number of visible tabs decreases, making the visual appearance cleaner and improving browsing efficiency.
-However, workspaces that are not visible remain open in the background, so you won't lose any data you've entered.
+By grouping tabs this way, the number of visible tabs decreases, making the visual appearance cleaner and improving browsing efficiency.
+However, workspaces that are not visible remain open in the background, so you won't lose any entered data.
 
 <hr />
 
@@ -23,48 +23,44 @@ However, workspaces that are not visible remain open in the background, so you w
 
 <img src={ToolBarButton} height="350px" alt="How to use workspace features" style={{margin: "10px 0"}}/>
 
-To use workspace features, click the toolbar button shown in the image. After that, a panel for managing workspaces will appear.
+To use workspace features, click the toolbar button shown in the image. A workspace management panel will then appear.
 
-By default, a workspace named "New Workspace (0)" is created. The highlighted workspace is the currently open workspace.
+By default, a workspace named "New Workspace (0)" is created. The highlighted workspace indicates the currently active one.
 
 To create a new workspace, click the "Create New Workspace..." button.
 
-To rename or customize a workspace, right-click on the workspace button and select "Manage Workspace".
-You can also customize the currently open workspace by clicking the "⚙" icon in the bottom right corner.
+To rename or customize a workspace, right-click the workspace button and select "Manage Workspace".
+You can also customize the currently open workspace by clicking the "⚙" icon in the bottom-right corner.
 
 :::info
-From Floorp 12 onwards, Floorp workspaces are shared between windows. Additionally, a sync feature using Ablaze Accounts is planned to be added in the future.
+Starting with Floorp 12, workspaces are shared between windows. A sync feature using Ablaze Accounts is planned for future implementation.
 :::
 
 <hr />
 
 ### About Workspace Container Features
 
-This feature, introduced in [Floorp 11.4.0](https://blog.ablaze.one/3510/2023-09-22/), allows you to apply Firefox's container feature to open workspaces in advance.
+This feature, introduced in [Floorp 11.4.0](https://blog.ablaze.one/3510/2023-09-22/), allows applying Firefox's container feature for automatically opening workspaces.
 
-As explained in "How to Use Workspace Features", right-click on the workspace button and select "Manage Workspace".
-You can select a container tab from the "Container Tab" select box in the management dialog.
+As explained in "How to Use Workspace Features", right-click the workspace button and select "Manage Workspace".
+You can select a container tab from the "Container Tab" dropdown menu in the management dialog.
 
-For information about container tabs, please refer to [this official Mozilla document](https://support.mozilla.org/kb/containers#firefox).
+For information about container tabs, see [Mozilla's official documentation](https://support.mozilla.org/kb/containers#firefox).
 
 <hr />
 
 ### Customizing Workspace Features
 
-Floorp provides various customization options to make workspace features more convenient to use. Here are some of these options:
+Floorp provides various customization options:
 
-- Close popup when selecting a workspace
+- **Close popup when selecting a workspace**  
+  Enabled by default. Controls whether the popup closes when selecting a workspace.
 
-    This is enabled by default. It sets whether to close the popup when selecting a workspace.
+- **Display workspace name next to toolbar button**  
+  Enabled by default. Shows the workspace name beside the toolbar button.
 
-- Display workspace name next to the toolbar button
-
-    This is enabled by default. It sets whether to display the workspace name next to the workspace toolbar button.
-
-- Manage workspaces in the panel sidebar
-
-    This is disabled by default. It sets whether to manage workspaces in the panel sidebar.
-    When this feature is enabled, you can manage workspaces only on the panel sidebar. You won't be able to manage workspaces using the toolbar button.
+- **Manage workspaces in panel sidebar**  
+  Disabled by default. When enabled, workspace management moves to the panel sidebar and becomes unavailable via the toolbar button.
 
 <hr />
 

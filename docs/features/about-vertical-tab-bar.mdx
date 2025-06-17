@@ -1,6 +1,6 @@
 ---
-title: About Vertical Tab Bar in Floorp 12 and Later
-description: About Vertical Tab Bar in Floorp 12 and Later
+title: About Vertical Tabs in Floorp 12 and Later
+description: About Vertical Tabs in Floorp 12 and Later
 ---
 
 import Support from "@Components/Support.js";
@@ -8,22 +8,22 @@ import VerticalTab from "@img/features/firefox-verticaltab.webp";
 
 ### About Vertical Tab Bar in Floorp 12 and Later
 
-The vertical tabs implemented by Floorp are no longer available in Floorp 12 and later.
-This is because Mozilla, the upstream of Floorp, has implemented vertical tabs in Firefox, eliminating the need for Floorp to maintain them.
-If you wish to use vertical tabs going forward, please use Firefox's vertical tabs.
+The vertical tabs previously implemented by Floorp are no longer available in version 12 and later.\
+This change occurred because Mozilla, Floorp's upstream provider, has implemented vertical tabs in Firefox, eliminating the need for separate maintenance by Floorp.\
+To use vertical tabs going forward, we recommend using Firefox's implementation.
 
-Here's how Firefox looks with vertical tabs enabled:
+Here is how Firefox appears with vertical tabs enabled:
 <img src={VerticalTab} width="50%" alt="Firefox Vertical Tabs"/>
 
 <hr />
 
 ### Differences Between Floorp and Firefox Vertical Tabs
 
-There are several differences between the vertical tabs implemented in Firefox and those in Floorp.
+There are several differences between the vertical tabs implemented in Firefox and those in Floorp.\
 Please note that Firefox's vertical tabs operate in the same location as the sidebar, so they are not specifically designed to always display tabs.
 
-While Floorp does its best to ensure its sidebar implementation doesn't conflict with Firefox, issues may still occur.
+While Floorp strives to ensure sidebar compatibility with Firefox, some conflicts may still occur.
 
-Currently, vertical tabs can be enabled from "Firefox Settings > Firefox Lab > Vertical Tabs".
+Currently, vertical tabs can be enabled via "Customize Sidebar" with `Firefox Settings > Show Sidebar` enabled.
 
 <Support />

@@ -160,3 +160,12 @@
   font-size: 20px;
   margin-right: 8px;
 }
+
+
+[aria-roledescription="gantt"] text {
+  font-size: 25px;
+}
+
+.titleText {
+  font-size: 30px !important;
+}

@@ -41,6 +41,9 @@ importers:
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      react-player:
+        specifier: ^3.3.1
+        version: 3.3.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@docusaurus/module-type-aliases':
         specifier: 3.8.1
@@ -1237,6 +1240,31 @@ packages:
   '@mermaid-js/parser@0.4.0':
     resolution: {integrity: sha512-wla8XOWvQAwuqy+gxiZqY+c7FokraOTHRWMsbB4AgRx9Sy7zKslNyejy7E+a77qHfey5GXw/ik3IXv/NHMJgaA==}
 
+  '@mux/mux-data-google-ima@0.2.8':
+    resolution: {integrity: sha512-0ZEkHdcZ6bS8QtcjFcoJeZxJTpX7qRIledf4q1trMWPznugvtajCjCM2kieK/pzkZj1JM6liDRFs1PJSfVUs2A==}
+
+  '@mux/mux-player-react@3.5.1':
+    resolution: {integrity: sha512-tm32fSo9IBA/J8AD99bp64CyBkmv8jtsn4RhSHgNufvfWJUMBFJ7cfXgLsxiG/VdegpfBLRatMC5YiuZjoZ6yg==}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+      '@types/react-dom': '*'
+      react: ^17.0.2 || ^17.0.0-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+      react-dom: ^17.0.2 || ^17.0.2-0 || ^18 || ^18.0.0-0 || ^19 || ^19.0.0-0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
+  '@mux/mux-player@3.5.1':
+    resolution: {integrity: sha512-PSi3mPb4LrEh4i3xUdodaEvMrbbpKbL2yaewRjsqBr3PFb+hd/Dp1KtyaAnXaBCHl09hDURUSrqYpg1cZvwDiQ==}
+
+  '@mux/mux-video@0.26.1':
+    resolution: {integrity: sha512-gkMdBAgNlB4+krANZHkQFzYWjWeNsJz69y1/hnPtmNQnpvW+O7oc71OffcZrbblyibSxWMQ6MQpYmBVjXlp6sA==}
+
+  '@mux/playback-core@0.30.1':
+    resolution: {integrity: sha512-rnO1NE9xHDyzbAkmE6ygJYcD7cyyMt7xXqWTykxlceaoSXLjUqgp42HDio7Lcidto4x/O4FIa7ztjV2aCBCXgQ==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1370,6 +1398,9 @@ packages:
   '@svgr/webpack@8.1.0':
     resolution: {integrity: sha512-LnhVjMWyMQV9ZmeEy26maJk+8HTIbd59cH4F2MJ439k9DqejRisfFNGAPvRYlKETuh9LrImlS8aKsBgKjMA8WA==}
     engines: {node: '>=14'}
+
+  '@svta/common-media-library@0.12.4':
+    resolution: {integrity: sha512-9EuOoaNmz7JrfGwjsrD9SxF9otU5TNMnbLu1yU4BeLK0W5cDxVXXR58Z89q9u2AnHjIctscjMTYdlqQ1gojTuw==}
 
   '@szmarczak/http-timer@5.0.1':
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
@@ -1625,6 +1656,12 @@ packages:
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
+  '@vercel/edge@1.2.2':
+    resolution: {integrity: sha512-1+y+f6rk0Yc9ss9bRDgz/gdpLimwoRteKHhrcgHvEpjbP1nyT3ByqEMWm2BTcpIO5UtDmIFXc8zdq4LR190PDA==}
+
+  '@vimeo/player@2.29.0':
+    resolution: {integrity: sha512-9JjvjeqUndb9otCCFd0/+2ESsLk7VkDE6sxOBy9iy2ukezuQbplVRi+g9g59yAurKofbmTi/KcKxBGO/22zWRw==}
+
   '@webassemblyjs/ast@1.14.1':
     resolution: {integrity: sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ==}
 
@@ -1831,6 +1868,15 @@ packages:
   batch@0.6.1:
     resolution: {integrity: sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==}
 
+  bcp-47-match@2.0.3:
+    resolution: {integrity: sha512-JtTezzbAibu8G0R9op9zb3vcWZd9JF6M0xOYGPn0fNCd7wOpRB1mU2mH9T8gaBGbAAyIIVgB2G7xG0GP98zMAQ==}
+
+  bcp-47-normalize@2.3.0:
+    resolution: {integrity: sha512-8I/wfzqQvttUFz7HVJgIZ7+dj3vUaIyIxYXaTRP1YWoSDfzt6TUmxaKZeuXR62qBmYr+nvuWINFRl6pZ5DlN4Q==}
+
+  bcp-47@2.1.0:
+    resolution: {integrity: sha512-9IIS3UPrvIa1Ej+lVDdDwO7zLehjqsaByECw0bu2RRGP73jALm6FYbzI5gWbgHLvNdkvfXB5YrSbocZdOS0c0w==}
+
   big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
@@ -1920,8 +1966,16 @@ packages:
   caniuse-lite@1.0.30001721:
     resolution: {integrity: sha512-cOuvmUVtKrtEaoKiO0rSc29jcjwMwX5tOHDy4MgVFEWiUXj4uBMJkwI8MDySkgXidpMiHUcviogAvFi4pA2hDQ==}
 
+  castable-video@1.1.10:
+    resolution: {integrity: sha512-/T1I0A4VG769wTEZ8gWuy1Crn9saAfRTd1UYTb8xbOPlN78+zOi/1nU2dD5koNkfE5VWvgabkIqrGKmyNXOjSQ==}
+
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
+
+  ce-la-react@0.3.0:
+    resolution: {integrity: sha512-84SEDLNHaAjykzlkqgKRq95hA3qnxrsTrwh4hTgBq6tfpINqajxz4bkz9q4orhUfpqDPQRgdCzYTF3bHcvTIlQ==}
+    peerDependencies:
+      react: '>=17.0.0'
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -1994,9 +2048,15 @@ packages:
     resolution: {integrity: sha512-neHB9xuzh/wk0dIHweyAXv2aPGZIVk3pLMe+/RNzINf17fe0OG96QroktYAUm7SM1PBnzTabaLboqqxDyMU+SQ==}
     engines: {node: '>=6'}
 
+  cloudflare-video-element@1.3.3:
+    resolution: {integrity: sha512-qrHzwLmUhisoIuEoKc7iBbdzBNj2Pi7ThHslU/9U/6PY9DEvo4mh/U+w7OVuzXT9ks7ZXfARvDBfPAaMGF/hIg==}
+
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
+
+  codem-isoboxer@0.3.10:
+    resolution: {integrity: sha512-eNk3TRV+xQMJ1PEj0FQGY8KD4m0GPxT487XJ+Iftm7mVa9WpPFDMWqPt+46buiP5j5Wzqe5oMIhqBcAeKfygSA==}
 
   collapse-white-space@2.1.0:
     resolution: {integrity: sha512-loKTxY1zCOuG4j9f6EPnuyyYkf58RnhhWTvRoZEokgB+WbdXehfjFviyOVYkqzEWz1Q5kRiZdBYS5SwxbQYwzw==}
@@ -2267,6 +2327,9 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
+  custom-media-element@1.4.5:
+    resolution: {integrity: sha512-cjrsQufETwxjvwZbYbKBCJNvmQ2++G9AvT45zDi7NXL9k2PdVcs2h0jQz96J6G4TMKRCcEsoJ+QTgQD00Igtjw==}
+
   cytoscape-cose-bilkent@4.1.0:
     resolution: {integrity: sha512-wgQlVIUJF13Quxiv5e1gstZ08rnZj2XaLHGoFMYXz7SkNfCDOOteKBE6SYRfA9WxxI/iBc3ajfDoc6hb/MRAHQ==}
     peerDependencies:
@@ -2422,6 +2485,12 @@ packages:
 
   dagre-d3-es@7.0.11:
     resolution: {integrity: sha512-tvlJLyQf834SylNKax8Wkzco/1ias1OPw8DcUMDE7oUIoSEW25riQVuiu/0OWEFqT0cxHT3Pa9/D82Jr47IONw==}
+
+  dash-video-element@0.1.6:
+    resolution: {integrity: sha512-4gHShaQjcFv6diX5EzB6qAdUGKlIUGGZY8J8yp2pQkWqR0jX4c6plYy0cFraN7mr0DZINe8ujDN1fssDYxJjcg==}
+
+  dashjs@5.0.3:
+    resolution: {integrity: sha512-TXndNnCUjFjF2nYBxDVba+hWRpVkadkQ8flLp7kHkem+5+wZTfRShJCnVkPUosmjS0YPE9fVNLbYPJxHBeQZvA==}
 
   dayjs@1.11.13:
     resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
@@ -3009,6 +3078,12 @@ packages:
   history@4.10.1:
     resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==}
 
+  hls-video-element@1.5.6:
+    resolution: {integrity: sha512-KPdvSR+oBJPiCVb+m6pd2mn3rJEjNbaK8pGhSkxFI2pmyvZIeTVQrPbEO9PT/juwXHwhvCoKJnNxAuFwJG9H5A==}
+
+  hls.js@1.6.7:
+    resolution: {integrity: sha512-QW2fnwDGKGc9DwQUGLbmMOz8G48UZK7PVNJPcOUql1b8jubKx4/eMHNP5mGqr6tYlJNDG1g10Lx2U/qPzL6zwQ==}
+
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
@@ -3117,6 +3192,9 @@ packages:
     engines: {node: '>=16.x'}
     hasBin: true
 
+  immediate@3.0.6:
+    resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
+
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
@@ -3124,6 +3202,9 @@ packages:
   import-lazy@4.0.0:
     resolution: {integrity: sha512-rKtvo6a868b5Hu3heneU+L4yEQ4jYKLtjpnPeUdK7h0yzXGmyBTypknlkCvHFBqfX9YlorEiMM6Dnq/5atfHkw==}
     engines: {node: '>=8'}
+
+  imsc@1.1.5:
+    resolution: {integrity: sha512-V8je+CGkcvGhgl2C1GlhqFFiUOIEdwXbXLiu1Fcubvvbo+g9inauqT3l0pNYXGoLPBj3jxtZz9t+wCopMkwadQ==}
 
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -3393,6 +3474,9 @@ packages:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
     engines: {node: '>=6'}
 
+  lie@3.1.1:
+    resolution: {integrity: sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==}
+
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
@@ -3411,6 +3495,9 @@ packages:
   local-pkg@1.1.1:
     resolution: {integrity: sha512-WunYko2W1NcdfAFpuLUoucsgULmgDBRkdxHxWQ7mK0cQqwPiy8E1enjuRBrhLtZkB5iScJ1XIPdhVEFK8aOLSg==}
     engines: {node: '>=14'}
+
+  localforage@1.10.0:
+    resolution: {integrity: sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==}
 
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
@@ -3534,6 +3621,12 @@ packages:
 
   mdn-data@2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
+
+  media-chrome@4.11.1:
+    resolution: {integrity: sha512-+2niDc4qOwlpFAjwxg1OaizK/zKV6y7QqGm4nBFEVlSaG0ZBgOmfc4IXAPiirZqAlZGaFFUaMqCl1SpGU0/naA==}
+
+  media-tracks@0.3.3:
+    resolution: {integrity: sha512-9P2FuUHnZZ3iji+2RQk7Zkh5AmZTnOG5fODACnjhCVveX1McY3jmCRHofIEI+yTBqplz7LXy48c7fQ3Uigp88w==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -3756,10 +3849,19 @@ packages:
     resolution: {integrity: sha512-2eznPJP8z2BFLX50tf0LuODrpINqP1RVIm/CObbTcBRITQgmC/TjcREF1NeTBzIcR5XO/ukWo+YHOjBbFwIupg==}
     hasBin: true
 
+  mux-embed@5.11.0:
+    resolution: {integrity: sha512-uczzXVraqMRmyYmpGh2zthTmBKvvc5D5yaVKQRgGhFOnF7E4nkhqNkdkQc4C0WTPzdqdPl5OtCelNWMF4tg5RQ==}
+
+  mux-embed@5.9.0:
+    resolution: {integrity: sha512-wmunL3uoPhma/tWy8PrDPZkvJpXvSFBwbD3KkC4PG8Ztjfb1X3hRJwGUAQyRz7z99b/ovLm2UTTitrkvStjH4w==}
+
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  native-promise-only@0.8.1:
+    resolution: {integrity: sha512-zkVhZUA3y8mbz652WrL5x0fB0ehrBkulWT3TomAQ9iDtyXZvzKeEA6GPxAItBYeNYl5yngKRX612qHOhvMkDeg==}
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -3937,6 +4039,9 @@ packages:
   pascal-case@3.1.2:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
 
+  path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
+
   path-data-parser@0.1.0:
     resolution: {integrity: sha512-NOnmBpt5Y2RWbuv0LMzsayp3lVylAHLPUTut412ZA3l+C4uw4ZVkQbjShYCQ8TCpUMdPapr4YjUqLYD6v68j+w==}
 
@@ -4002,6 +4107,9 @@ packages:
 
   pkg-types@2.1.0:
     resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
+
+  player.style@0.1.9:
+    resolution: {integrity: sha512-aFmIhHMrnAP8YliFYFMnRw+5AlHqBvnqWy4vHGo2kFxlC+XjmTXqgg62qSxlE8ubAY83c0ViEZGYglSJi6mGCA==}
 
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
@@ -4504,6 +4612,13 @@ packages:
       react-loadable: '*'
       webpack: '>=4.41.1 || 5.x'
 
+  react-player@3.3.1:
+    resolution: {integrity: sha512-wE/xLloneXZ1keelFCaNeIFVNUp4/7YoUjfHjwF945aQzsbDKiIB0LQuCchGL+la0Y1IybxnR0R6Cm3AiqInMw==}
+    peerDependencies:
+      '@types/react': ^17.0.0 || ^18 || ^19
+      react: ^17.0.2 || ^18 || ^19
+      react-dom: ^17.0.2 || ^18 || ^19
+
   react-router-config@5.1.1:
     resolution: {integrity: sha512-DuanZjaD8mQp1ppHjgnnUnyOlqYXZVjnov/JzFhjLEwd3Z4dYjMSnqrEzzGThH47vpCOqPPwJM2FtthLeJ8Pbg==}
     peerDependencies:
@@ -4683,6 +4798,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
+  sax@1.2.1:
+    resolution: {integrity: sha512-8I2a3LovHTOpm7NV5yOyO8IHqgVsfK4+UuySrXU8YXkSRX7k6hCV9b3HrkKCr3nMpgj+0bmocaJJWpvp1oc7ZA==}
+
   sax@1.4.1:
     resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
 
@@ -4852,6 +4970,9 @@ packages:
     resolution: {integrity: sha512-r46gZQZQV+Kl9oItvl1JZZqJKGr+oEkB08A6BzkiR7593/7IbtuncXHd2YoYeTsG4157ZssMu9KYvUHLcjcDoA==}
     engines: {node: '>=6.0.0'}
 
+  spotify-audio-element@1.0.2:
+    resolution: {integrity: sha512-YEovyyeJTJMzdSVqFw/Fx19e1gdcD4bmZZ/fWS0Ji58KTpvAT2rophgK87ocqpy6eJNSmIHikhgbRjGWumgZew==}
+
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
@@ -4934,6 +5055,9 @@ packages:
   stylis@4.3.6:
     resolution: {integrity: sha512-yQ3rwFWRfwNUY7H5vpU0wfdkNSnvnJinhF9830Swlaxl03zsOjCfmX0ugac+3LtK0lYSgwL/KXc8oYL3mG4YFQ==}
 
+  super-media-element@1.4.2:
+    resolution: {integrity: sha512-9pP/CVNp4NF2MNlRzLwQkjiTgKKe9WYXrLh9+8QokWmMxz+zt2mf1utkWLco26IuA3AfVcTb//qtlTIjY3VHxA==}
+
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
@@ -4982,6 +5106,9 @@ packages:
   thunky@1.1.0:
     resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==}
 
+  tiktok-video-element@0.1.0:
+    resolution: {integrity: sha512-PVWUlpDdQ/LPXi7x4/furfD7Xh1L72CgkGCaMsZBIjvxucMGm1DDPJdM9IhWBFfo6tuR4cYVO/v596r6GG/lvQ==}
+
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
 
@@ -5024,6 +5151,9 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
+  twitch-video-element@0.1.2:
+    resolution: {integrity: sha512-/up4KiWiTYiav+CUo+/DbV8JhP4COwEKSo8h1H/Zft/5NzZ/ZiIQ48h7erFKvwzalN0GfkEGGIfwIzAO0h7FHQ==}
+
   type-fest@0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
@@ -5046,6 +5176,10 @@ packages:
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
+    hasBin: true
+
+  ua-parser-js@1.0.40:
+    resolution: {integrity: sha512-z6PJ8Lml+v3ichVojCiB8toQJBuwR42ySM4ezjXIqXK3M0HczmKQ3LF4rhU55PfD99KEEXQG6yb7iOMyvYuHew==}
     hasBin: true
 
   ufo@1.6.1:
@@ -5168,6 +5302,9 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
+  vimeo-video-element@1.5.3:
+    resolution: {integrity: sha512-OQWyGS9nTouMqfRJyvmAm/n6IRhZ7x3EfPAef+Q+inGBeHa3SylDbtyeB/rEBd4B/T/lcYBW3rjaD9W2DRYkiQ==}
+
   vscode-jsonrpc@8.2.0:
     resolution: {integrity: sha512-C+r0eKJUIfiDIfwJhria30+TYWPtuHJXHtI7J0YlOmKAo7ogxP20T0zxB7HZQIFhIyvoBPwWskjxrvAtfjyZfA==}
     engines: {node: '>=14.0.0'}
@@ -5194,6 +5331,10 @@ packages:
 
   wbuf@1.7.3:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
+
+  weakmap-polyfill@2.0.4:
+    resolution: {integrity: sha512-ZzxBf288iALJseijWelmECm/1x7ZwQn3sMYIkDr2VvZp7r6SEKuT8D0O9Wiq6L9Nl5mazrOMcmiZE/2NCenaxw==}
+    engines: {node: '>=8.10.0'}
 
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
@@ -5270,6 +5411,9 @@ packages:
   wildcard@2.0.1:
     resolution: {integrity: sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==}
 
+  wistia-video-element@1.3.3:
+    resolution: {integrity: sha512-ZVC8HH8uV3mQGcSz10MACLDalao/0YdVverNN4GNFsOXiumfqSiZnRVc8WZEywgVckBkR7+yerQYESYPDzvTfQ==}
+
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -5322,6 +5466,9 @@ packages:
   yocto-queue@1.2.1:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
+
+  youtube-video-element@1.6.1:
+    resolution: {integrity: sha512-FDRgXlPxpe1bh6HlhL6GfJVcvVNaZKCcLEZ90X1G3Iu+z2g2cIhm2OWj9abPZq1Zqit6SY7Gwh13H9g7acoBnQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -7387,6 +7534,42 @@ snapshots:
     dependencies:
       langium: 3.3.1
 
+  '@mux/mux-data-google-ima@0.2.8':
+    dependencies:
+      mux-embed: 5.9.0
+
+  '@mux/mux-player-react@3.5.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@mux/mux-player': 3.5.1(react@19.1.0)
+      '@mux/playback-core': 0.30.1
+      prop-types: 15.8.1
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    optionalDependencies:
+      '@types/react': 19.1.6
+
+  '@mux/mux-player@3.5.1(react@19.1.0)':
+    dependencies:
+      '@mux/mux-video': 0.26.1
+      '@mux/playback-core': 0.30.1
+      media-chrome: 4.11.1(react@19.1.0)
+      player.style: 0.1.9(react@19.1.0)
+    transitivePeerDependencies:
+      - react
+
+  '@mux/mux-video@0.26.1':
+    dependencies:
+      '@mux/mux-data-google-ima': 0.2.8
+      '@mux/playback-core': 0.30.1
+      castable-video: 1.1.10
+      custom-media-element: 1.4.5
+      media-tracks: 0.3.3
+
+  '@mux/playback-core@0.30.1':
+    dependencies:
+      hls.js: 1.6.7
+      mux-embed: 5.11.0
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -7535,6 +7718,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@svta/common-media-library@0.12.4': {}
 
   '@szmarczak/http-timer@5.0.1':
     dependencies:
@@ -7841,6 +8026,13 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
+  '@vercel/edge@1.2.2': {}
+
+  '@vimeo/player@2.29.0':
+    dependencies:
+      native-promise-only: 0.8.1
+      weakmap-polyfill: 2.0.4
+
   '@webassemblyjs/ast@1.14.1':
     dependencies:
       '@webassemblyjs/helper-numbers': 1.13.2
@@ -8083,6 +8275,19 @@ snapshots:
 
   batch@0.6.1: {}
 
+  bcp-47-match@2.0.3: {}
+
+  bcp-47-normalize@2.3.0:
+    dependencies:
+      bcp-47: 2.1.0
+      bcp-47-match: 2.0.3
+
+  bcp-47@2.1.0:
+    dependencies:
+      is-alphabetical: 2.0.1
+      is-alphanumerical: 2.0.1
+      is-decimal: 2.0.1
+
   big.js@5.2.2: {}
 
   binary-extensions@2.3.0: {}
@@ -8204,7 +8409,15 @@ snapshots:
 
   caniuse-lite@1.0.30001721: {}
 
+  castable-video@1.1.10:
+    dependencies:
+      custom-media-element: 1.4.5
+
   ccount@2.0.1: {}
+
+  ce-la-react@0.3.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
 
   chalk@4.1.2:
     dependencies:
@@ -8292,7 +8505,11 @@ snapshots:
       kind-of: 6.0.3
       shallow-clone: 3.0.1
 
+  cloudflare-video-element@1.3.3: {}
+
   clsx@2.1.1: {}
+
+  codem-isoboxer@0.3.10: {}
 
   collapse-white-space@2.1.0: {}
 
@@ -8566,6 +8783,8 @@ snapshots:
 
   csstype@3.1.3: {}
 
+  custom-media-element@1.4.5: {}
+
   cytoscape-cose-bilkent@4.1.0(cytoscape@3.32.0):
     dependencies:
       cose-base: 1.0.3
@@ -8749,6 +8968,24 @@ snapshots:
     dependencies:
       d3: 7.9.0
       lodash-es: 4.17.21
+
+  dash-video-element@0.1.6:
+    dependencies:
+      custom-media-element: 1.4.5
+      dashjs: 5.0.3
+
+  dashjs@5.0.3:
+    dependencies:
+      '@svta/common-media-library': 0.12.4
+      bcp-47-match: 2.0.3
+      bcp-47-normalize: 2.3.0
+      codem-isoboxer: 0.3.10
+      fast-deep-equal: 3.1.3
+      html-entities: 2.6.0
+      imsc: 1.1.5
+      localforage: 1.10.0
+      path-browserify: 1.0.1
+      ua-parser-js: 1.0.40
 
   dayjs@1.11.13: {}
 
@@ -9434,6 +9671,14 @@ snapshots:
       tiny-warning: 1.0.3
       value-equal: 1.0.1
 
+  hls-video-element@1.5.6:
+    dependencies:
+      custom-media-element: 1.4.5
+      hls.js: 1.6.7
+      media-tracks: 0.3.3
+
+  hls.js@1.6.7: {}
+
   hoist-non-react-statics@3.3.2:
     dependencies:
       react-is: 16.13.1
@@ -9561,12 +9806,18 @@ snapshots:
 
   image-size@2.0.2: {}
 
+  immediate@3.0.6: {}
+
   import-fresh@3.3.1:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
   import-lazy@4.0.0: {}
+
+  imsc@1.1.5:
+    dependencies:
+      sax: 1.2.1
 
   imurmurhash@0.1.4: {}
 
@@ -9783,6 +10034,10 @@ snapshots:
 
   leven@3.1.0: {}
 
+  lie@3.1.1:
+    dependencies:
+      immediate: 3.0.6
+
   lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
@@ -9800,6 +10055,10 @@ snapshots:
       mlly: 1.7.4
       pkg-types: 2.1.0
       quansync: 0.2.10
+
+  localforage@1.10.0:
+    dependencies:
+      lie: 3.1.1
 
   locate-path@5.0.0:
     dependencies:
@@ -10042,6 +10301,15 @@ snapshots:
   mdn-data@2.0.28: {}
 
   mdn-data@2.0.30: {}
+
+  media-chrome@4.11.1(react@19.1.0):
+    dependencies:
+      '@vercel/edge': 1.2.2
+      ce-la-react: 0.3.0(react@19.1.0)
+    transitivePeerDependencies:
+      - react
+
+  media-tracks@0.3.3: {}
 
   media-typer@0.3.0: {}
 
@@ -10436,7 +10704,13 @@ snapshots:
       dns-packet: 5.6.1
       thunky: 1.1.0
 
+  mux-embed@5.11.0: {}
+
+  mux-embed@5.9.0: {}
+
   nanoid@3.3.11: {}
+
+  native-promise-only@0.8.1: {}
 
   negotiator@0.6.3: {}
 
@@ -10614,6 +10888,8 @@ snapshots:
       no-case: 3.0.4
       tslib: 2.8.1
 
+  path-browserify@1.0.1: {}
+
   path-data-parser@0.1.0: {}
 
   path-exists@4.0.0: {}
@@ -10665,6 +10941,12 @@ snapshots:
       confbox: 0.2.2
       exsolve: 1.0.5
       pathe: 2.0.3
+
+  player.style@0.1.9(react@19.1.0):
+    dependencies:
+      media-chrome: 4.11.1(react@19.1.0)
+    transitivePeerDependencies:
+      - react
 
   points-on-curve@0.2.0: {}
 
@@ -11203,6 +11485,24 @@ snapshots:
       react-loadable: '@docusaurus/react-loadable@6.0.0(react@19.1.0)'
       webpack: 5.99.9
 
+  react-player@3.3.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      '@mux/mux-player-react': 3.5.1(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@types/react': 19.1.6
+      cloudflare-video-element: 1.3.3
+      dash-video-element: 0.1.6
+      hls-video-element: 1.5.6
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      spotify-audio-element: 1.0.2
+      tiktok-video-element: 0.1.0
+      twitch-video-element: 0.1.2
+      vimeo-video-element: 1.5.3
+      wistia-video-element: 1.3.3
+      youtube-video-element: 1.6.1
+    transitivePeerDependencies:
+      - '@types/react-dom'
+
   react-router-config@5.1.1(react-router@5.3.4(react@19.1.0))(react@19.1.0):
     dependencies:
       '@babel/runtime': 7.27.6
@@ -11465,6 +11765,8 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
+  sax@1.2.1: {}
+
   sax@1.4.1: {}
 
   scheduler@0.26.0: {}
@@ -11686,6 +11988,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  spotify-audio-element@1.0.2: {}
+
   sprintf-js@1.0.3: {}
 
   srcset@4.0.0: {}
@@ -11763,6 +12067,8 @@ snapshots:
 
   stylis@4.3.6: {}
 
+  super-media-element@1.4.2: {}
+
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
@@ -11805,6 +12111,8 @@ snapshots:
 
   thunky@1.1.0: {}
 
+  tiktok-video-element@0.1.0: {}
+
   tiny-invariant@1.3.3: {}
 
   tiny-warning@1.0.3: {}
@@ -11833,6 +12141,8 @@ snapshots:
 
   tslib@2.8.1: {}
 
+  twitch-video-element@0.1.2: {}
+
   type-fest@0.21.3: {}
 
   type-fest@1.4.0: {}
@@ -11850,6 +12160,8 @@ snapshots:
 
   typescript@5.5.4:
     optional: true
+
+  ua-parser-js@1.0.40: {}
 
   ufo@1.6.1: {}
 
@@ -11980,6 +12292,10 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
+  vimeo-video-element@1.5.3:
+    dependencies:
+      '@vimeo/player': 2.29.0
+
   vscode-jsonrpc@8.2.0: {}
 
   vscode-languageserver-protocol@3.17.5:
@@ -12005,6 +12321,8 @@ snapshots:
   wbuf@1.7.3:
     dependencies:
       minimalistic-assert: 1.0.1
+
+  weakmap-polyfill@2.0.4: {}
 
   web-namespaces@2.0.1: {}
 
@@ -12150,6 +12468,10 @@ snapshots:
 
   wildcard@2.0.1: {}
 
+  wistia-video-element@1.3.3:
+    dependencies:
+      super-media-element: 1.4.2
+
   wrap-ansi@7.0.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -12184,5 +12506,7 @@ snapshots:
   yallist@3.1.1: {}
 
   yocto-queue@1.2.1: {}
+
+  youtube-video-element@1.6.1: {}
 
   zwitch@2.0.4: {}

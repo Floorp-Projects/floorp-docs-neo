@@ -13,74 +13,39 @@ This represents a fundamentally different browser that uses a new codebase inste
 
 All features from settings to workspaces and Progressive Web Apps (PWA) have been redesigned to create a more sophisticated browser.
 
-### About Feature Changes
+## About Feature Changes
 
-Please check our blog for the latest info. The release notes for Floorp 12 Release Candidate 1 are [here](https://blog.floorp.app/release/12.0.0-RC1.html).
+Floorp 12 introduces significant improvements and new features to enhance your browsing experience.\
+This update includes many new features, changes, and removals.
 
-#### Settings
-
-The settings page has been reorganized. The method of adding Floorp settings to Firefox settings that continued through Floorp 11 has been discontinued.
-With this update, Firefox settings and Floorp settings are completely separated, adopting a method to access Floorp settings through the Firefox settings page.
-
-The redesigned settings page includes:
-
-- Homepage configuration
-- Workspace customization
-- Keyboard shortcut management
-- Web app management
-- Profile and account controls
-- About Floorp information
-
-The homepage is displayed when opening Floorp settings. This feature, which didn't exist in Floorp 11, displays information about Floorp, setup status, and privacy-related information.\
-Future updates will integrate Ablaze Account management for syncing notes and workspaces when logged in.
-
-The updated settings page now provides better support documentation and user guidance.
-
-New settings page:
-<img src={Settings} width="100%" alt="Redesigned settings interface" />
-<hr />
-
-#### Workspaces
-
-Workspaces are now shared across all windows.
-Unlike Floorp 11's window-specific implementation that resembled tab groups,\
-Floorp 12 uses a unified workspace system similar to [Vivaldi Browser](https://vivaldi.com).
-
-The workspace management interface no longer uses Firefox's native dialogs, allowing centralized name changes and configuration.
+For the latest information, please check the blog. The release notes for the stable version v12.1.0 are available [here](https://blog.floorp.app/release/12.1.0.html).
 
 <hr />
 
-#### Split View
+## How to Migrate to Floorp 12
 
-No significant changes.
+### Download from the Official Website
 
-<hr />
+If you download Floorp from the official website, Floorp 12 will be selected automatically.
 
-#### Panel Sidebar (Floorp's Sidebar)
+### Upgrade from Floorp 11
 
-The Browser Manager Sidebar has been renamed in Floorp 12.
+If you are already using Floorp 11, installing version 11.20.0 or later will display guidance on the settings page for upgrading to Floorp 12.
 
-<hr />
+<img src={Upgrade} width="50%" alt="Settings page of Floorp 11.20.0"/>
 
-#### Progressive Web Apps (PWA)
+Upgrading to Floorp 12 will be offered as an opt-in (explicit permission required) until mid-September 2025.\
+During this period, you will not be upgraded automatically.
 
-Not implemented.
+After that, Floorp 12 will be downloaded automatically for Floorp 11 users. This is because support for Firefox ESR 128, which Floorp 11 is based on, will end in September.
 
-<hr />
+:::warning
 
-### How to Migrate to Floorp 12
+Floorp 11 and Floorp 12 have different codebases and are not fully compatible.\
+Upgrading may result in loss of Tabs information and Workspaces.
 
-There is currently no direct migration path from Floorp 11 to Floorp 12 due to compatibility differences.
+**Be sure to back up your data in advance and start the upgrade when you have enough time!**
 
-For risk-averse users:
-1. Maintain Floorp 11 until Firefox ESR 128 support ends
-2. Backup your Floorp 11 profile before testing Floorp 12
-3. Install Floorp 12 separately to preserve your stable environment
-
-For early adopters:
-1. Back up your Floorp 11 profile
-2. Perform clean Floorp 12 installation
-3. Manually migrate essential settings
-4. Maintain ability to revert to Floorp 11
+:::
 
 <Support />

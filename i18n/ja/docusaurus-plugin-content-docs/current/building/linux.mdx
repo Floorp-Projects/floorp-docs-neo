@@ -6,75 +6,46 @@ title: Linux で Floorp をビルドする
 ビルドが正常に行えない場合のサポートはできかねます。ご理解の上、下記手順へお進みください。
 :::
 
+:::danger
+2025 年 8 月 21 日現在、Floorp は WSL2 上に構築可能ですが、開発用途では機能しません。
+:::
+
 ## 環境
 
 ### マシンスペック
 
-- メモリ: 最小 4GB の RAM、8GB 以上が推奨されます。
+- メモリ: 最小 4GB の RAM。8GB 以上を推奨します。
 - ディスク: 少なくとも 40GB 以上の空き容量が必要です。
-- OS: Ubuntu 20.04 LTS、またはそれ以降。最新バージョンの使用を推奨します。
+- OS: 最新バージョンの Ubuntu。
 
-### 要求されるツール
+### 必要なツール
 
 - [git](https://git-scm.com/download/linux)
-- [curl](https://curl.se/)
-- [python3](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- rustc: v1.77.2
+- [deno](https://deno.com/)
 
-Ubuntu:
+## インストール手順
 
-```shell
-sudo apt install curl python3 pip libnotify-bin
+1. Deno をインストールします:
+```bash
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
-Fedora:
-
-```shell
-sudo dnf install python3 python3-pip libnotify
+2. Floorp リポジトリをクローンします:
+```bash
+git clone https://github.com/Floorp-Projects/Floorp
+cd Floorp
 ```
 
-## Floorp をビルドする
+3. 依存関係にあるものをインストールします:
+```bash
+deno install
+```
 
-1. Linux ターミナルを開きます。
+4. Floorp をビルドします:
+```bash
+deno task dev
+```
 
-2. Floorp リポジトリをクローンします。
-
-   ```shell
-   git clone https://github.com/Floorp-Projects/Floorp.git
-   git submodule update --init --recursive
-   ```
-
-3. 次のコマンドを実行し、依存するライブラリをインストールしてください。
-
-   ```shell
-   cd Floorp
-   ./mach bootstrap
-   ```
-
-   初めて Floorp をビルドする場合、ビルドオプションを選択する必要があります。  
-   `[1] Build Floorp for Desktop.` を選択してください。
-
-   その他の選択肢は現在サポートされていません。
-
-4. 次のコマンドを実行し、Floorp をビルドします。
-
-   ```shell
-   // mozconfigを作成
-   echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
-   echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
-   echo 'ac_add_options --with-app-name=floorp' >> mozconfig
-   echo "ac_add_options --enable-bootstrap" >> mozconfig
-
-   // Floorp をビルドする
-   ./mach configure
-   ./mach build
-   ```
-
-5. 次のコマンドを実行し、Floorp を実行します。
-
-   ```shell
-   ./mach run
-   ```
+最初の実行で GitHub Actions からバイナリをダウンロードして、ブラウザーを起動します。ホットリロードまたは HMR がサポートされている場合は、ソースコードを変更すると自動的に再読み込みされるため、再起動の必要はありません。
 
 おめでとうございます！ Floorp のビルドに成功しました！

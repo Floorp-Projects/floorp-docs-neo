@@ -10,69 +10,42 @@ title: macOS で Floorp をビルドする
 
 ### マシンスペック
 
-- メモリ: 最小 4GB の RAM、8GB 以上が推奨されます。
+- メモリ: 最小 4GB の RAM。8GB 以上を推奨します。
 - ディスク: 少なくとも 40GB 以上の空き容量が必要です。
-- OS: 最新バージョンの macOS の使用を推奨します。
+- OS: 最新バージョンの macOS。
 
-### 要求されるツール
+### 必要なツール
 
-- [Brew](https://brew.sh/) \
-   Floorp のビルドにはいくつかの依存関係が必要です。Brew を使って依存関係をインストールできます。
+- [git](https://git-scm.com/download/linux)
+- [deno](https://deno.com/)
 
-- [git](https://git-scm.com/download/mac) \
-   git はバージョン管理システムです。Floorp と Firefox のソースコードをダウンロードするために使用します。\
+## インストール手順
 
-- [Xcode](https://apps.apple.com/jp/app/xcode/id497799835?mt=12) \
-   Xcode は macOS 用の開発環境です。Xcode を使うことで、macOS 上で Floorp をビルドすることができます。
+1. Deno をインストールします:
+```bash
+# Homebrew を使用 (推奨)
+brew install deno
 
-Floorp をビルドする前に Xcode をセットアップする必要があります:
-
-```shell
-sudo xcode-select --switch /Applications/Xcode.app
-sudo xcodebuild -license
+# または curl を使用:
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
-## Floorp をビルドする
+2. Floorp リポジトリをクローンします:
+```bash
+git clone https://github.com/Floorp-Projects/Floorp
+cd Floorp
+```
 
-1. macOS ターミナルを開きます。
+3. 依存関係にあるものをインストールします:
+```bash
+deno install
+```
 
-2. Floorpリポジトリをクローンします。
+4. Floorp をビルドします:
+```bash
+deno task dev
+```
 
-   ```shell
-   git clone https://github.com/Floorp-Projects/Floorp.git
-   git submodule update --init --recursive
-   ```
-
-3. 次のコマンドを実行し、依存するライブラリをインストールしてください。
-
-   ```shell
-   cd Floorp
-   ./mach bootstrap
-   ```
-
-   初めて Floorp をビルドする場合、ビルドオプションを選択する必要があります。  
-   `[1] Build Floorp for Desktop.` を選択してください。
-
-   その他の選択肢は現在サポートされていません。
-
-4. 次のコマンドを実行し、Floorp をビルドします。
-
-   ```shell
-   // mozconfigを作成
-   echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
-   echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
-   echo 'ac_add_options --with-app-name=floorp' >> mozconfig
-   echo "ac_add_options --enable-bootstrap" >> mozconfig
-
-   // Floorp をビルドする
-   ./mach configure
-   ./mach build
-   ```
-
-5. 次のコマンドを実行し、Floorp を実行します。
-
-   ```shell
-   ./mach run
-   ```
+最初の実行で GitHub Actions からバイナリをダウンロードして、ブラウザーを起動します。ホットリロードまたは HMR がサポートされている場合は、ソースコードを変更すると自動的に再読み込みされるため、再起動の必要はありません。
 
 おめでとうございます！ Floorp のビルドに成功しました！

@@ -10,11 +10,11 @@ title: Windows で Floorp をビルドする
 
 ### マシンスペック
 
-- メモリ: 最小 4GB の RAM、8GB 以上が推奨されます。
+- メモリ: 最小 4GB の RAM。8GB 以上を推奨します。
 - ディスク: 少なくとも 40GB 以上の空き容量が必要です。
-- OS: Windows 10、またはそれ以降。最新バージョンの Windows の使用を推奨します。
+- OS: 最新バージョンの Windows。
 
-### 要求されるツール
+### 必要なツール
 
 - [Mozilla Build Shell](https://ftp.mozilla.org/pub/mozilla/libraries/win32/MozillaBuildSetup-Latest.exe) \
    Mozilla Build Shell は、MinGW-w64 ツールチェーンを含むツールセットです。\
@@ -24,51 +24,38 @@ title: Windows で Floorp をビルドする
 - [git](https://git-scm.com/download/win) \
    git はバージョン管理システムです。Floorp と Firefox のソースコードをダウンロードするために使用します。
 
-## Floorp をビルドする
+## インストール手順
 
-1. Mozilla Build Shell を開きます。
+1. Deno をインストールします:
+```bash
+irm https://deno.land/install.ps1 | iex
+```
 
-   ```shell
-   C:\mozilla-build\start-shell.bat
-   ```
+2. PowerShell 7 以上をインストールします:
+```bash
+# Winget を使用 (推奨)
+winget install --id Microsoft.PowerShell --source winget
 
-2. Floorp リポジトリをクローンします。
+# または GitHub の Releases ページからダウンロード:
+# https://github.com/PowerShell/PowerShell/releases
+```
 
-   ```shell
-   git clone https://github.com/Floorp-Projects/Floorp.git
-   git submodule update --init --recursive
-   ```
+2. Floorp リポジトリをクローンします:
+```bash
+git clone https://github.com/Floorp-Projects/Floorp
+cd Floorp
+```
 
-3. 次のコマンドを実行し、依存するライブラリをインストールしてください。
+3. 依存関係にあるものをインストールします:
+```bash
+deno install
+```
 
-   ```shell
-   cd Floorp
-   ./mach bootstrap
-   ```
+4. Floorp をビルドします:
+```bash
+deno task dev
+```
 
-   初めて Floorp をビルドする場合、ビルドオプションを選択する必要があります。  
-   `[1] Build Floorp for Desktop.` を選択してください。
-
-   その他の選択肢は現在サポートされていません。
-
-4. 次のコマンドを実行し、Floorp をビルドします。
-
-   ```shell
-   // mozconfigを作成
-   echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
-   echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
-   echo 'ac_add_options --with-app-name=floorp' >> mozconfig
-   echo "ac_add_options --enable-bootstrap" >> mozconfig
-
-   // Floorp をビルドする
-   ./mach configure
-   ./mach build
-   ```
-
-5. 次のコマンドを実行し、Floorp を実行します。
-
-   ```shell
-   ./mach run
-   ```
+最初の実行で GitHub Actions からバイナリをダウンロードして、ブラウザーを起動します。ホットリロードまたは HMR がサポートされている場合は、ソースコードを変更すると自動的に再読み込みされるため、再起動の必要はありません。
 
 おめでとうございます！ Floorp のビルドに成功しました！

@@ -4,6 +4,9 @@ description: Learn about the Mouse Gestures feature available in Floorp 12 and l
 ---
 
 import Support from "@Components/Support.js";
+import Reload from "@img/features/gesture-actions-reload.webp";
+import General from "@img/features/gesture-settings-general.webp";
+import Edit from "@img/features/gesture-settings-edit.webp";
 
 :::note
 
@@ -17,25 +20,86 @@ Since Floorp 12, the mouse gesture feature allows you to perform various browser
 
 Typically, browsers are operated by clicking buttons or text on the UI. Experienced users may also use keyboard shortcuts.\
 However, since web browsing is often done with a mouse, wouldn't it be convenient to perform browser actions using only the mouse?\
-The mouse gesture feature in Floorp was developed to meet this need.
+The Mouse Gesture feature in Floorp was developed to meet this need.
 
-Unlike traditional UI operations or keyboard shortcuts, which require finding buttons or pressing multiple keys, mouse gestures let you quickly perform actions anywhere on the page using just the mouse.
+Unlike traditional UI operations or keyboard shortcuts, which require finding buttons or pressing multiple keys, Mouse Gestures let you quickly perform actions anywhere on the page using just the mouse.
 
 <hr />
 
 ### How to Use Mouse Gestures
 
-Mouse Gestures are enabled by default. You can disable them via "Floorp Hub" > "Mouse Gestures".
+Mouse Gestures are disabled by default. You can enable them via "Floorp Hub" > "Mouse Gestures".
 
-By default, basic actions such as `Back`, `Forward`, and `Reload` are registered.\
+By default, basic Actions such as `Back`, `Forward`, and `Reload` are registered.\
 For example, holding the right mouse button and moving left will go back to the previous page. Holding the right mouse button and moving up then down will reload the page.
 
-While performing a gesture, the mouse trail is displayed. When you release the button with the action name shown, the action is executed.
+While performing a Gesture, the mouse trail is displayed. When you release the button with the Action name shown, the Action is executed.
+
+<img src={Reload} width="100%" alt="Example of Mouse Gesture control"/>
 
 <hr />
 
 ### Customizing Mouse Gestures
 
-You can freely customize both the gestures and the actions they perform. Set up your favorite gestures to create a comfortable browsing experience.
+You can freely customize both the Gestures and the Actions they perform. Set up your favorite Gestures to create a comfortable browsing experience.
+
+#### Customizing Basic Settings
+
+Since version 12, Floorp-specific settings have been consolidated in the Floorp Hub. You can access it by finding and clicking "Floorp Hub" in the settings sidebar, or by entering `about:hub` in the address bar.
+
+<img src={General} width="100%" alt="Basic Mouse Gesture settings"/>
+
+To change Mouse Gesture settings, click "Mouse Gestures" in the Floorp Hub sidebar, or open `about:hub#/features/gesture`.
+
+- **Enable mouse gestures**
+
+    When enabled, you can use the Mouse Gesture feature. Disabled by default.
+
+- **Show gesture trail**
+
+    When enabled, a line will be displayed along the mouse cursor during Gestures. Enabled by default.
+
+- **Gesture sensitivity**
+
+    The higher the value (closer to the right), the more tolerant Gestures are of hand movements (hand shake). The default value is `40`.
+
+- **Trail width**
+
+    The higher the value (closer to the right), the thicker the line displayed along the mouse cursor during Gestures. The default value is `6px`.
+
+- **Trail color**
+
+    You can change the color of the line displayed along the mouse cursor during Gestures. The default is green `#37ff00`.
+
+    You can enter a hex color code, or click the color display to open the system color picker and choose your favorite color.
+
+#### Customizing Gesture Actions
+
+Gestures and Actions can be added, changed, or deleted as needed. Try setting up your own custom Actions!
+
+- **Add Gesture**
+
+    Click "Add Gesture" at the bottom of the Gesture Action list to add a new Gesture Action. Details are explained in the next section.
+
+- **Edit Gesture**
+
+    Click "Add Gesture" or the "Edit" button for an existing Gesture Action to open the Gesture editing screen.
+
+    Open the "Action" dropdown list to select what operation the Gesture will perform.
+
+    Click the arrow buttons in the Gesture editing screen to add directions to the "Pattern" one by one.\
+    To remove added patterns, click the `x` button next to the arrow or the "Reset" button.
+
+    Finally, click "Save" to complete the edit.
+
+<img src={Edit} width="100%" alt="Gesture Action edit ecreen"/>
+
+- **Duplicate Gesture**
+
+    Click the second button in the Gesture Action list to open a screen for adding a Gesture Action with the same contents. Edit and save as you like.
+
+- **Delete Gesture**
+
+    Click the trash can button in the Gesture Action list to delete that Gesture Action.
 
 <Support />

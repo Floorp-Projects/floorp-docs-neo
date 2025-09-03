@@ -1,84 +1,56 @@
 ---
-title: Сборка Floorp на MacOS
+title: Сборка Floorp на macOS
 ---
 
 :::danger
-Мы не можем гарантировать поддержку в случае, если сборка Floorp не удалась. Пожалуйста, учтите это прежде чем приступать к последующим шагам.
+Мы не сможем предоставить поддержку в случае сбоя сборки.  
+Пожалуйста, примите это во внимание, прежде чем приступать к следующим шагам.
 :::
 
-### Системные требования
+## Требования
 
-- Память: минимум 4 ГБ ОЗУ, рекомендуется 8 ГБ или больше.
-- Дисковое пространство: как минимум 40 ГБ свободного дискового пространства.
-- Операционная система: Рекомендуется использовать последнюю версию macOS. Обновите macOS до последней доступной версии для обеспечения оптимальной работы.
+### Характеристики компьютера
+
+- Оперативная память: Минимум 4 ГБ, рекомендуется 8 ГБ и более.
+- Дисковое пространство: Не менее 40 ГБ свободного места на диске.
+- Операционная система: Последняя версия macOS.
 
 ### Необходимые инструменты
 
-- [Brew](https://brew.sh/) \
-Firefox зависит от некоторых библиотек и утилит, которые можно установить с помощью Homebrew
+- [git](https://git-scm.com/download/linux)
+- [deno](https://deno.com/)
 
-- [git](https://git-scm.com/download/mac) \
-Git - это система контроля версий, которая будет использоваться для скачивания исходного кода Floorp и Firefox
+### Шаги установки
 
-- [Xcode](https://apps.apple.com/jp/app/xcode/id497799835?mt=12) \
-Xcode - это интегрированная среда разработки (IDE) от Apple для macOS. Она используется для сборки Floorp в операционной системе macOS
+1. Установите Deno:
 
-Подготовка среды для сборки Floorp:
+```bash
+# С помощью Homebrew (рекомендуется)
+brew install deno
 
-```shell
-sudo xcode-select --switch /Applications/Xcode.app
-sudo xcodebuild -license
+# Или с помощью curl:
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
-### Сборка Floorp
+2. Клонируйте репозиторий Floorp:
 
-1. Откройте терминал MacOS.
-
-2. Клонируйте репозиторий Floorp.
-
-```shell
-git clone https://github.com/Floorp-Projects/Floorp.git
-git submodule update --init --recursive
-   ```
-
-3. Прежде чем приступить к сборке Floorp, необходимо выбрать вариант сборки. Выберите пункт:
-
-`[1] Build Floorp for Desktop.`
-
-На данный момент другие варианты сборки не поддерживаются.
-
-```shell
+```bash
+git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
-./mach bootstrap
-   ```
+```
 
-4. Создание файла mozconfig
+3. Установите зависимости:
 
-Следующие команды создают файл mozconfig, в котором будут указаны параметры сборки Floorp:
+```bash
+deno install
+```
 
-```shell
-// Create mozconfig
-echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
-echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
-echo 'ac_add_options --with-app-name=floorp' >> mozconfig
-echo "ac_add_options --enable-bootstrap" >> mozconfig
-   ```
+4. Соберите Floorp:
 
-5. Сборка Floorp
+```bash
+deno task dev
+```
 
-После создания файла mozconfig выполните следующие команды для сборки Floorp:
-
-```shell
-./mach configure
-./mach build
-   ```
-
-5. Запуск Floorp
-
-Запустите собранный вами Floorp с помощью следующей команды:
-
-```shell
-./mach run
-   ```
+При первом запуске будет загружен бинарный файл из GitHub Actions. Браузер запустится и будет автоматически перезагружаться при изменении исходного кода (с использованием горячей перезагрузки или HMR, если поддерживается), так что вам не потребуется его перезапускать.
 
 Поздравляем! Вы успешно собрали Floorp!

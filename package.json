@@ -19,7 +19,7 @@
     "@docusaurus/preset-classic": "3.8.1",
     "@docusaurus/theme-mermaid": "^3.8.1",
     "@fortawesome/fontawesome-free": "^7.0.0",
-    "@mdx-js/react": "^3.1.0",
+    "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "docusaurus-plugin-module-alias": "^0.0.2",
     "path-to-regexp": "^8.2.0",

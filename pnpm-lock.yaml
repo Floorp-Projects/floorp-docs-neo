@@ -18,8 +18,8 @@ importers:
         specifier: ^3.8.1
         version: 3.8.1(@docusaurus/plugin-content-docs@3.8.1(@mdx-js/react@3.1.1(@types/react@19.1.6)(react@19.1.1))(acorn@8.15.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.5.4))(@mdx-js/react@3.1.1(@types/react@19.1.6)(react@19.1.1))(acorn@8.15.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(typescript@5.5.4)
       '@fortawesome/fontawesome-free':
-        specifier: ^7.0.0
-        version: 7.0.0
+        specifier: ^7.0.1
+        version: 7.0.1
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.1.6)(react@19.1.1)
@@ -1184,8 +1184,8 @@ packages:
     resolution: {integrity: sha512-P1ml0nvOmEFdmu0smSXOqTS1sxU5tqvnc0dA4MTKV39kye+bhQnjkIKEE18fNOvxjyB86k8esoCIFM3x4RykOQ==}
     engines: {node: '>=18.0'}
 
-  '@fortawesome/fontawesome-free@7.0.0':
-    resolution: {integrity: sha512-X48nISrSOa89zu2VMljC4XaRf8NmgTwQBVHfS2Nu5G00ZwM31oOVrAtGxZF3b6wDYf9lJsf/Eq4cCSFKIkOWPQ==}
+  '@fortawesome/fontawesome-free@7.0.1':
+    resolution: {integrity: sha512-RLmb9U6H2rJDnGxEqXxzy7ANPrQz7WK2/eTjdZqyU9uRU5W+FkAec9uU5gTYzFBH7aoXIw2WTJSCJR4KPlReQw==}
     engines: {node: '>=6'}
 
   '@hapi/hoek@9.3.0':
@@ -7439,7 +7439,7 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@fortawesome/fontawesome-free@7.0.0': {}
+  '@fortawesome/fontawesome-free@7.0.1': {}
 
   '@hapi/hoek@9.3.0': {}
 

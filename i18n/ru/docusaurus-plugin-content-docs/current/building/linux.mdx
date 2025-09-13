@@ -3,82 +3,54 @@ title: Сборка Floorp на Linux
 ---
 
 :::danger
-Мы не можем гарантировать поддержку в случае, если сборка Floorp не удалась. Пожалуйста, учтите это прежде чем приступать к последующим шагам.
+Мы не можем предоставить поддержку в случае сбоя сборки.  
+Пожалуйста, примите это во внимание, прежде чем приступать к следующим шагам.
 :::
 
-### Системные требования
-- Память: минимум 4 ГБ ОЗУ, рекомендуется 8 ГБ или больше.
-- Дисковое пространство: как минимум 40 ГБ свободного дискового пространства.
-- Операционная система: Ubuntu 20.04 LTS или более поздняя.
+:::danger
+По состоянию на 21 августа 2025 года Floorp можно собрать в WSL2, однако он не пригоден для разработки.
+:::
+
+## Требования
+
+### Характеристики компьютера
+
+- Оперативная память: Минимум 4 ГБ, рекомендуется 8 ГБ и более.
+- Дисковое пространство: Не менее 10 ГБ свободного места.
+- Операционная система: Последняя версия Ubuntu.
 
 ### Необходимые инструменты
 
 - [git](https://git-scm.com/download/linux)
-- [curl](https://curl.se/)
-- [python3](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/)
-- rustc: v1.77.2
+- [deno](https://deno.com/)
 
-Ubuntu:
+### Шаги установки
 
-```shell
-sudo apt install curl python3 pip libnotify-bin
+1. Установите Deno:
+
+```bash
+curl -fsSL https://deno.land/install.sh | sh
 ```
-
-Fedora:
-
-```shell
-sudo dnf install python3 python3-pip libnotify
-```
-
-### Сборка Floorp
-
-1. Откройте терминал Linux.
 
 2. Клонируйте репозиторий Floorp:
 
-```shell
-git clone https://github.com/Floorp-Projects/Floorp.git
-git submodule update --init --recursive
-   ```
-
-3. Прежде чем приступить к сборке Floorp, необходимо выбрать вариант сборки. Выберите пункт:
-
-`[1] Build Floorp for Desktop.`
-
-На данный момент другие варианты сборки не поддерживаются.
-
-```shell
+```bash
+git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
-./mach bootstrap
-   ```
+```
 
-4. Создание файла mozconfig
+3. Установите зависимости:
 
-Следующие команды создают файл mozconfig, в котором будут указаны параметры сборки Floorp:
+```bash
+deno install
+```
 
-```shell
-// Create mozconfig
-echo 'ac_add_options --with-branding=browser/branding/official' >> mozconfig
-echo 'ac_add_options --with-app-basename=Floorp' >> mozconfig
-echo 'ac_add_options --with-app-name=floorp' >> mozconfig
-echo "ac_add_options --enable-bootstrap" >> mozconfig
-   ```
-5. Сборка Floorp
+4. Соберите Floorp:
 
-После создания файла mozconfig выполните следующие команды для сборки Floorp:
+```bash
+deno task dev
+```
 
-```shell
-./mach configure
-./mach build
-   ```
-
-5. Запуск Floorp:
-
-Запустите собранный вами Floorp с помощью следующей команды:
-
-```shell
-./mach run
-   ```
+При первом запуске будет загружен бинарный файл из GitHub Actions. Браузер запустится и будет автоматически перезагружаться при изменении исходного кода (с использованием горячей перезагрузки или HMR, если поддерживается), так что вам не потребуется его перезапускать.
 
 Поздравляем! Вы успешно собрали Floorp!

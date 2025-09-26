@@ -15,7 +15,7 @@
     "gh-deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@docusaurus/core": "3.8.1",
+    "@docusaurus/core": "3.9.0",
     "@docusaurus/preset-classic": "3.8.1",
     "@docusaurus/theme-mermaid": "^3.8.1",
     "@fortawesome/fontawesome-free": "^7.0.1",

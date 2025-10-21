@@ -29,7 +29,7 @@
     "react-player": "^3.3.3"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.1",
+    "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "gh-pages": "^6.3.0"
   },

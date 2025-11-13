@@ -36,22 +36,23 @@ winget install --id Microsoft.PowerShell --source winget
 # https://github.com/PowerShell/PowerShell/releases
 ```
 
-2. Clone the Floorp repository:
+3. Clone the Floorp repository:
 ```bash
 git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
+4. Download `floorp-windows-x86_64-moz-artifact.zip` from the latest successful Daily Runtime Build on the [Floorp-runtime Actions page](https://github.com/Floorp-Projects/Floorp-runtime/actions) and place it in the root of the cloned repository.
 
-3. Install dependencies:
+5. Install dependencies:
 ```bash
 deno install
 ```
 
-4. Build Floorp:
+6. Build Floorp:
 ```bash
-deno task dev
+deno task feles-build dev
 ```
 
-First run downloads the binary from GitHub Actions. A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
+A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
 
 Congratulations! You have successfully built Floorp!

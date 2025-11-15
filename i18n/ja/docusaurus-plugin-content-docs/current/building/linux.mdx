@@ -26,26 +26,56 @@ title: Linux で Floorp をビルドする
 ## インストール手順
 
 1. Deno をインストールします:
+
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
 ```
 
 2. Floorp リポジトリをクローンします:
+
 ```bash
 git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-3. 依存関係にあるものをインストールします:
+3. GitHub Token を設定します:
+
+GitHub Actions からアーティファクトをダウンロードするために GITHUB_TOKEN が必要です。
+
+次のいずれかの方法を選択してください:
+
+**方法 1: .env ファイルを使用（推奨）**
+リポジトリのルートに `.env` ファイルを作成し、以下を追加します:
+
+```
+GITHUB_TOKEN=your_token_here
+```
+
+**方法 2: 環境変数を使用**
+
+```bash
+export GITHUB_TOKEN=your_token_here
+```
+
+**GitHub Token の作成方法:**
+
+1. https://github.com/settings/tokens にアクセス
+2. 「Generate new token (classic)」をクリック
+3. `public_repo` スコープを選択（プライベートリポジトリの場合は `repo`）
+4. 生成されたトークンをコピーして、上記の方法で設定
+
+5. 依存関係にあるものをインストールします:
+
 ```bash
 deno install
 ```
 
-4. Floorp をビルドします:
+6. Floorp をビルドします:
+
 ```bash
-deno task dev
+deno task feles-build dev
 ```
 
-最初の実行で GitHub Actions からバイナリをダウンロードして、ブラウザーを起動します。ホットリロードまたは HMR がサポートされている場合は、ソースコードを変更すると自動的に再読み込みされるため、再起動の必要はありません。
+ブラウザーが起動し、ソースコードを変更すると自動的に再読み込みされます（ホットリロードまたは HMR がサポートされている場合）。再起動の必要はありません。
 
 おめでとうございます！ Floorp のビルドに成功しました！

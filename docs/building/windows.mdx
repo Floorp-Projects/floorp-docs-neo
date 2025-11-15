@@ -22,12 +22,14 @@ Please understand this before proceeding with the following steps.
 
 ## Installation steps
 
-1. Install Deno: 
+1. Install Deno:
+
 ```bash
 irm https://deno.land/install.ps1 | iex
 ```
 
 2. Install PowerShell 7 or later:
+
 ```bash
 # Using Winget (recommended)
 winget install --id Microsoft.PowerShell --source winget
@@ -36,22 +38,51 @@ winget install --id Microsoft.PowerShell --source winget
 # https://github.com/PowerShell/PowerShell/releases
 ```
 
-2. Clone the Floorp repository:
+3. Clone the Floorp repository:
+
 ```bash
 git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-3. Install dependencies:
+4. Set up GitHub Token:
+
+GITHUB_TOKEN is required to download artifacts from GitHub Actions.
+
+Choose one of the following methods:
+
+**Option 1: Using .env file (recommended)**
+Create a `.env` file in the repository root and add:
+
+```
+GITHUB_TOKEN=your_token_here
+```
+
+**Option 2: Using environment variable**
+
+```bash
+$env:GITHUB_TOKEN="your_token_here"
+```
+
+**How to create a GitHub Token:**
+
+1. Go to https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Select the `public_repo` scope (or `repo` for private repositories)
+4. Copy the generated token and set it as described above
+
+5. Install dependencies:
+
 ```bash
 deno install
 ```
 
-4. Build Floorp:
+6. Build Floorp:
+
 ```bash
-deno task dev
+deno task feles-build dev
 ```
 
-First run downloads the binary from GitHub Actions. A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
+A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
 
 Congratulations! You have successfully built Floorp!

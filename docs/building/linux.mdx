@@ -26,7 +26,7 @@ As of August 21, 2025, Floorp can be built on WSL2 but is not functional for dev
 
 ## Installation steps
 
-1. Install Deno: 
+1. Install Deno:
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
 ```
@@ -37,16 +37,39 @@ git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-3. Install dependencies:
+3. Set up GitHub Token:
+
+GITHUB_TOKEN is required to download artifacts from GitHub Actions.
+
+Choose one of the following methods:
+
+**Option 1: Using .env file (recommended)**
+Create a `.env` file in the repository root and add:
+```
+GITHUB_TOKEN=your_token_here
+```
+
+**Option 2: Using environment variable**
+```bash
+export GITHUB_TOKEN=your_token_here
+```
+
+**How to create a GitHub Token:**
+1. Go to https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Select the `public_repo` scope (or `repo` for private repositories)
+4. Copy the generated token and set it as described above
+
+5. Install dependencies:
 ```bash
 deno install
 ```
 
-4. Build Floorp:
+6. Build Floorp:
 ```bash
-deno task dev
+deno task feles-build dev
 ```
 
-First run downloads the binary from GitHub Actions. A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
+A browser will launch and automatically reload when you change the source code (using hot reload or HMR if supported), so you won't need to restart.
 
 Congratulations! You have successfully built Floorp!

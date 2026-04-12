@@ -25,9 +25,6 @@ const config = {
   organizationName: 'Floorp-Projects', // Usually your GitHub org/user name.
   projectName: 'floorp-docs-neo', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
-
   plugins: [
     [
       'docusaurus-plugin-module-alias',
@@ -146,6 +143,10 @@ const config = {
 
   markdown: {
     mermaid: true,
+    hooks: { 
+      onBrokenMarkdownLinks: 'throw',
+      onBrokenMarkdownImages: 'throw',
+    }
   },
 
   themes: [

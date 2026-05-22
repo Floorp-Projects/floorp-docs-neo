@@ -1,0 +1,73 @@
+---
+title: Tab Bar Layout
+description: Learn how to use horizontal, vertical, and multi-row tabs in Floorp
+---
+
+import Support from "@Components/Support.js";
+import VerticalTab from "@img/features/tab-layout/firefox-verticaltab.webp";
+
+### Changing the Tab Bar Layout
+
+#### From Floorp Hub
+
+1. Navigate to **Floorp Hub > Tab & Appearance** (`about:hub#/features/design`).
+2. Scroll down to the "Tab Bar" section and select your preferred tab bar style.
+
+Here, you can choose from horizontal, vertical, or multi-row tabs. Please also refer to "Changing the Tab Bar Position".
+
+#### From Firefox Settings
+
+1. Navigate to **Settings > General** (`about:preferences#general`).
+2. Scroll down to the "Browser Layout" section and select "Vertical Tabs".
+
+Here, you can choose between horizontal or vertical tabs. You can also configure whether to display the native Firefox sidebar.
+
+### Horizontal Tabs
+
+This is the default selection. It features the classic layout where tabs are arranged horizontally. Since it uses a relatively small screen area, it is well-suited for smaller displays.
+
+### Vertical Tabs
+
+Tabs are arranged vertically, allowing you to view many tabs at once. This layout requires a wider screen area than horizontal tabs, making it ideal for larger displays.
+
+<img src={VerticalTab} width="100%" alt="Firefox Vertical Tabs"/>
+
+#### Vertical Tabs in Floorp 12 and Later
+
+The vertical tabs previously implemented by Floorp are no longer available in version 12 and later.
+
+This change occurred because Mozilla, Floorp's upstream provider, has implemented vertical tabs in Firefox, eliminating the need for separate maintenance by Floorp.\
+To use vertical tabs going forward, we recommend using the same vertical tabs provided by Firefox.
+
+#### Differences Between Floorp and Firefox Vertical Tabs
+
+The vertical tabs implemented in Firefox differ in several ways from Floorp's previous vertical tabs.\
+Please note that Firefox's vertical tabs operate in the same location as the sidebar, meaning they are not inherently designed to always display tabs.
+
+While Floorp strives to ensure compatibility with Firefox's sidebar, some issues or conflicts may still occur.
+
+### Multi-row Tabs
+
+At first glance, this layout resembles horizontal tabs. However, when the number of tabs increases and reaches the edge of the window, they wrap down and display in a new row below. This allows you to view an extremely large number of tabs simultaneously, as long as your screen real estate permits.
+
+#### Limit the Number of Tab Bar Rows
+
+This setting restricts the multi-row tabs to a specified number of rows. Once this limit is reached, the tab bar will scroll horizontally, similar to standard horizontal tabs.
+
+### Changing the Tab Bar Position
+
+In the "Tab Bar" section under **Floorp Hub > Tab & Appearance** (`about:hub#/features/design`), you can also change the physical position of the tab bar.
+
+Note that most of these settings do not apply to vertical tabs.
+
+- **Default**: Displays almost identically to standard Firefox.
+- **Hide Tab Bar**: Completely hides the tab bar.
+- **Hide Tab Bar & Title Bar**: Hides both the tab bar and the title bar. The window control buttons (minimize, maximize, close) will move to the toolbar.
+- **Show Tab Bar at Bottom of Navigation Bar**: Displays the tab bar underneath the toolbar, creating a layout similar to Safari.
+- **Show Tab Bar at Bottom of Window**: Displays the tab bar at the very bottom of the window. The window control buttons will move to the toolbar.
+
+:::warning
+Custom CSS modifications might conflict with these settings.
+:::
+
+<Support />

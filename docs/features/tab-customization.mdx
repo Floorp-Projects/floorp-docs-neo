@@ -1,87 +1,105 @@
 ---
-title: Tab Scrolling, New Tab Opening Location, and Other Tab Customizations
-description: How to customize tab scrolling, new tab opening location, and other settings in Floorp
+title: Tab Behavior and Display
+description: Learn how to customize tab switching, opening positions, and other tab settings in Floorp
 ---
 
 import Support from "@Components/Support.js";
 import TabCustomize from "@img/features/tab-customize.webp";
 
-### Tab Customization in Floorp
+### Customizing Tabs in Floorp
 
-Floorp offers options for tab pinning, scrolling, new tab opening location, minimum tab size, closing tabs with double-click, and more.
-These options are designed to be used in conjunction with other tab bar options.
+Floorp offers various options for tab pinning, scrolling, new tab opening positions, minimum tab sizes, and closing tabs via double-click.\
+These options are designed to work seamlessly alongside other tab bar configurations.
 
-These options can be found in "Settings" > "Tabs and Appearance" > "Tabs".
+You can modify these settings by navigating to **Settings > Tab & Appearance > Tabs**.
 
 <img src={TabCustomize} width="50%" alt="Tab Customization"/>
 
-<hr />
+### Customizing Tab Behavior
 
-### Tab Customization
+#### Scroll
 
-#### Scrolling
+Configure whether to switch tabs by scrolling the mouse wheel, and how that scrolling behaves.
 
-Configure whether to switch tabs by scrolling and how scrolling behaves.
 - Switch tabs by scrolling
 
-    When this option is enabled, tabs will switch when scrolled.
-    By default, this is disabled, and instead, the tab bar will scroll when overflow occurs.
+    When enabled, you can switch between tabs simply by scrolling on the tab bar.\
+    By default, this feature is disabled, and the tab bar will instead scroll horizontally when tabs overflow.
 
 - Reverse tab scroll
 
-    When this option is enabled, tab scrolling direction will be reversed.
-    This is disabled by default. It is ignored if the "Switch tabs by scrolling" option is disabled.
+    When enabled, the direction for switching tabs via scrolling is reversed.\
+    This is disabled by default and requires the "Switch tabs by scrolling" option to be enabled.
 
 - Loop tab scroll
 
-    When this option is enabled, scrolling will loop back to the first tab after reaching the last tab.
-    This is disabled by default. It is ignored if the "Switch tabs by scrolling" option is disabled.
+    When enabled, scrolling past the last tab wraps around back to the first tab (and vice versa).\
+    This is disabled by default and requires the "Switch tabs by scrolling" option to be enabled.
 
-<hr />
+:::tip
+
+You can also switch tabs using keyboard shortcuts, mouse gestures, or the command palette.
+
+:::
 
 #### New Tab Opening Position
 
-Set where new tabs should open.
+Set the default location where newly opened tabs are placed.
 
 - Follow Firefox's behavior
 
-    The location where new tabs open will follow Firefox behavior. When this setting is selected, the location of new tabs will change based on your link opening choices and actions.
-    This setting is selected by default.
+    The location of new tabs changes dynamically based on how you open a link and your current browsing actions.\
+    This is the default setting.
 
 - Open at the end of the tab bar
 
-    New tabs will open at the end of the tab bar.
+    Always opens new tabs at the very end of the tab bar.
 
 - Open next to the current tab
 
-    New tabs will open next to the current tab.
-
-<hr />
+    Always opens new tabs immediately to the right of your currently active tab.
 
 #### Other Settings
 
-Configure other settings. Set behaviors for pinned tabs, closing tabs with double-click, minimum tab size, and more.
+Configure additional preferences such as pinned tab behavior, double-click actions, and dimensions.
 
-- Show title of pinned tabs
+- Show pinned tab titles
 
-    When this option is enabled, the titles of pinned tabs will be displayed.
+    When enabled, the text title of pinned tabs is displayed alongside their favicon.\
     This is disabled by default.
 
-- Close tabs with double-click
+- Close tab by double-clicking
 
-    When this option is enabled, tabs can be closed by double-clicking.
+    When enabled, you can instantly close a tab by double-clicking it.
     This is disabled by default.
 
 - Minimum tab width
 
-    Set the minimum width of tabs. The unit is pixels (px). This is the minimum size, so tabs may be larger depending on other settings.
-    The default value is 76.
+    Sets the minimum width of tabs in pixels (px). Note that this is a minimum threshold; tabs may become larger depending on your layout settings.\
+    The default value is `76`.
 
 - Minimum tab height
 
-    Set the minimum height of tabs. The unit is pixels (px). This is the minimum size, so tabs may be taller depending on other settings.
-    The default value is 30.
+    Sets the minimum height of tabs in pixels (px). This is a minimum threshold; tabs may become taller depending on your layout settings.\
+    The default value is `30`.
 
-<hr />
+#### Tab Sleep Exception
+
+Firefox includes a native feature that automatically unloads tabs from memory when system RAM runs low to prevent browser crashes.\
+Floorp allows you to specify certain websites to be excluded from this automatic unloading behavior.
+
+You can enter exception patterns using the following formats:
+
+- `floorp.app`
+
+    Excludes all URLs containing `floorp.app` from being automatically unloaded.
+
+- `*.floorp.app`
+
+    Excludes subdomains of `floorp.app` (such as `docs.floorp.app` or `blog.floorp.app`) from being unloaded. Note that the main domain `floorp.app` itself is not excluded by this specific pattern.
+
+- `https://docs.floorp.app/*`
+
+    Excludes all pages residing within `docs.floorp.app` from being automatically unloaded.
 
 <Support />

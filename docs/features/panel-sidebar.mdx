@@ -1,0 +1,144 @@
+---
+title: Panel Sidebar
+description: Learn how to use the Panel Sidebar feature in Floorp
+---
+
+import Support from "@Components/Support.js";
+import Split from "@img/features/panel-sidebar/split.webp";
+
+### Websites You Can Always Keep by Your Side
+
+The Panel Sidebar is Floorp's unique sidebar that allows you to quickly open registered websites in a compact, split view. It was previously known as the Browser Manager Sidebar.
+
+Imagine playing a game while reading a walkthrough guide, or writing an article with a translation tool open beside you.\
+In times like these, a split layout is incredibly useful. Fortunately, Firefox features a built-in Split View functionality.
+
+However, what if you usually prefer to view only your main website and only want a split view when you actually need it? Setting up Split View every single time can feel like a bit of a hassle.
+
+That is where Floorp’s Panel Sidebar comes to the rescue. By registering your frequently used sites to the sidebar, you can instantly display them in a split layout with a single click whenever necessary.
+
+The Panel Sidebar hosts Web Panels, shortcuts for settings and add-ons, and in some configurations, [your workspaces](/docs/features/workspaces).
+
+<img src={Split} width="100%" alt="Browsing a website while checking a user guide in the sidebar"/>
+
+:::note
+
+The Panel Sidebar is a distinct feature entirely separate from Firefox's native sidebar.
+
+:::
+
+### Adding and Editing Web Panels
+
+Clicking the `+` button at the bottom of the Web Panel list opens the panel creation interface.
+
+For more granular adjustments, you can configure them via **Floorp Hub > Panel Sidebar** (`about:hub#/features/sidebar`).
+
+- **Panel Type**
+
+    - **Web**
+
+        Adds a standard website.
+
+        Specifying a "Container" ensures that this Web Panel always opens within that specific container environment. For more information regarding container tabs, please refer to the [official Mozilla documentation](https://support.mozilla.org/kb/containers#firefox).
+
+        Enabling "Use Mobile User Agent" forces Floorp to announce to the website that *it is a mobile device*. While this often switches the page to its mobile layout, note that some sites may not change, or might display a mobile layout regardless of this setting.
+
+    - **Sidebar Tool**
+
+        Adds internal Floorp pages. As of version 12.14.2, you can choose from the Browser Manager, Bookmarks, History, Downloads, and Notes.
+
+    - **Extension**
+
+        Adds pages from your installed extensions. Note that certain extensions may not support being displayed in the sidebar.
+
+- **URL**
+
+    This URL will be the initial page loaded when you open the panel. If you add a panel directly via the Panel Sidebar button, the URL of your currently active tab will be automatically filled in.
+
+- **Icon**
+
+    This can only be configured in Floorp Hub. It allows you to specify a direct image URL for the panel icon. In most cases, Floorp will fetch the website's favicon automatically even if left blank.
+
+    :::note
+
+    While Floorp 11 included an option to configure the icon provider, this setting has been removed in Floorp 12.
+
+    :::
+
+- **Width (px)**
+
+    The panel will initially open with this specific width. If set to `0`, the "Global Web Panel Width" will be used instead (explained below).
+
+- **Zoom Level**
+
+    This can only be configured in Floorp Hub and applies exclusively to "Web" panels.
+
+    The default value is `1.0`. Increasing this value will render the page in a zoomed-in state.
+
+- **Editing / Deleting**
+
+    In the panel list under Floorp Hub > Panel Sidebar (`about:hub#/features/sidebar`), clicking the pencil icon allows you to edit a panel, and the trash can icon deletes it.
+
+### Changing Panel Sidebar Settings
+
+- **Unload when closing panel**
+
+    When enabled, the web page will be automatically unloaded from memory as soon as you close the panel. It will require a fresh reload the next time you open it.
+
+- **Sidebar Position**
+
+    Changes the physical position of the Panel Sidebar. It is placed on the right side by default.
+
+- **Global Web Panel Width**
+
+    When an individual Web Panel's width is set to `0`, the width configured here will be applied instead. This is useful when you want multiple Web Panels to share a unified default width.
+
+### Using the Panel Toolbar
+
+- **Back / Forward / Reload**
+
+    Navigates through the page history or refreshes the page. These function identically to the main browser navigation buttons.
+
+- **Home Page**
+
+    Reloads and returns to the initial URL configured for that specific panel.
+
+- **Floating Sidebar**
+
+    Overlays the Web Panel on top of the main web page, allowing you to freely move and resize it. Clicking the button again returns the panel to the standard split layout.
+
+- **Open in New Tab**
+
+    Opens the page currently loaded in the Web Panel as a standard browser tab.
+
+- **Close**
+
+    Hides the panel. The web page remains loaded in the background.
+
+    However, if "Unload Panel When Closed" is enabled, the page will be closed and unloaded instantly upon hiding.
+
+### Right-Clicking a Panel
+
+Right-clicking a panel button reveals a context menu with special options. Web panels offer the widest variety of configurations.
+
+- **Unload this webpanel**
+
+    Terminates the panel's active process and returns it to an unloaded state to free up system memory. It will reload the next time it is opened.
+
+- **Mute/Unmute this webpanel**
+
+    Toggles audio output for the specific panel, allowing you to silence background noise instantly.
+
+- **Change zoom level**
+
+    Allows you to scale the display size of the page inside the panel up or down.
+
+- **Switch User agent to Mobile/Desktop Version at this Webpanel**
+
+    Forces Floorp to announce to the website that *it is a mobile device*. While this often switches the page to its mobile layout, note that some sites may not change, or might display a mobile layout regardless of this setting.
+
+- **Delete this panel**
+
+    Deletes the panel from your sidebar shortcut list. This action cannot be undone.
+
+<Support />

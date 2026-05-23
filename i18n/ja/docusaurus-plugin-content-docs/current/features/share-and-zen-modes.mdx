@@ -1,0 +1,42 @@
+---
+title: 共有モードと禅モード
+description: Floorp で余計な情報を隠す方法を学ぶ
+---
+
+import Support from "@Components/Support.js";
+import ShareDisabled from "@img/features/share-and-zen-modes/share-disabled.webp";
+import ShareEnabled from "@img/features/share-and-zen-modes/share-enabled.webp";
+import ReactPlayer from 'react-player';
+
+### 人のために隠す、自分のために隠す
+
+Floorp は情報量の多いブラウザーである、という印象をお持ちの人は多いかもしれません。\
+それも間違いではありませんが、実は情報量を減らす方法も用意されていることはご存知でしょうか？
+
+たとえば、人にウェブサイトの画面を見せる必要があるのに、タブやブックマークが個人情報まみれであることに気づくかもしれません。\
+あるいは、執筆に集中したいのに、画面に表示される他のタブが気になって仕方ないかもしれません。
+
+この記事では、必要な情報に集中し、自分のプライバシーを尊重できる 2 つの機能をご紹介します。
+
+### 共有モードを使う
+
+共有モードは、Floorp の **メニューバー > ツール** から有効にできます。
+
+共有モードを有効にすると、タブ、ブックマークツールバー、ツールバーの拡張機能の情報が隠されます。
+
+<img src={ShareDisabled} width="100%" alt="共有モードが無効の状態の例"/>
+
+<img src={ShareEnabled} width="100%" alt="共有モードが有効の状態の例"/>
+
+### 禅モードを使う
+
+禅モードは、Floorp の **メニューバー > ツール** に加えて、[キーボードショートカット](/docs/features/shortcuts)、[マウスジェスチャー](/docs/features/gesture)、コマンドパレットでも有効にできます。
+
+禅モードを有効にすると、タブバーやツールバー、パネルサイドバーなどの情報が隠され、カーソルを合わせている間だけ再表示されるようになります。一部の要素には禅モードが適用されないことがあります。
+
+<ReactPlayer
+  style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
+  src='https://youtu.be/YiTI6Qi9GWw'
+/>
+
+<Support />

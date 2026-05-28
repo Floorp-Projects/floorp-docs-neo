@@ -1,0 +1,86 @@
+---
+title: インターフェイスとテーマ
+description: Floorp ブラウザーの外観とデザインを変更する方法を学ぶ
+---
+
+import Support from "@Components/Support.js";
+import InterfaceCustomize from "@img/features/interface-and-themes/preferences-TabAndAppearance.webp";
+import Proton from "@img/features/interface-and-themes/firefox-proton-dark.webp";
+import Lepton from "@img/features/interface-and-themes/firefox-lepton-dark.webp";
+import Photon from "@img/features/interface-and-themes/firefox-photon-dark.webp";
+import ProtonFix from "@img/features/interface-and-themes/firefox-proton-dark.webp";
+import Fluerial from "@img/features/interface-and-themes/floorp-fluerial-dark.webp";
+import Favicon from "@img/features/interface-and-themes/use-favicon-color.webp";
+
+### Floorp のデザインについて
+
+Floorp のインターフェイスとデザインをカスタマイズするには、「**Floorp Hub**」に移動し、ページ内サイドバーの「**タブと外観**」をクリックしましょう。上部に「インターフェイス」設定が表示されます。\
+ここでは、デザインを変更して Floorp の全体的な外観を修正できます。
+
+:::tip
+
+Floorp Hub > タブと外観 の他のセクションについては、以下の記事をご確認ください:
+
+- [タブバー](/docs/features/tab-bar-layout)
+- [タブ](/docs/features/tab-customization)
+- [UI をカスタマイズ](/docs/features/advanced-ui-customization)
+
+:::
+
+### インターフェイスのカスタマイズ設定
+<img src={InterfaceCustomize} width="60%" alt="インターフェースのカスタマイズ設定"/>
+
+<hr />
+
+#### 利用可能なデザイン
+
+- Proton
+
+Firefox オリジナルのデザイン。Firefox 89 以降で使用されています。
+<img src={Proton} width="225px" height="75px"/>
+
+<hr />
+
+- Lepton
+
+[black7375](https://github.com/black7375) によるカスタムデザイン。Microsoft Edge に似ているといわれています。
+<img src={Lepton} width="225px" height="75px"/>
+
+<hr />
+
+- Photon
+
+[black7375](https://github.com/black7375) によるカスタムデザイン。Firefox 88 以前で使用されていました。
+<img src={Photon} width="225px" height="75px"/>
+
+<hr />
+
+- Firefox UI Fix
+
+[black7375](https://github.com/black7375) によるカスタムデザイン。Firefox Proton の改善版です。
+<img src={ProtonFix} width="225px" height="75px"/>
+
+<hr />
+
+- Fluerial
+
+Floorp のオリジナルデザイン。マテリアルデザインにインスパイアされています。
+<img src={Fluerial} width="225px" height="75px"/>
+
+<hr />
+### ナビゲーションバーの背景をファビコンの色に合わせる
+
+有効にすると、現在のタブのファビコンの色がナビゲーションバーの背景に反映されます。
+<img src={Favicon} width="100%"/>
+
+<hr />
+### テーマを変更する
+
+アドオンマネージャー (`about:addons`) にアクセスしてください。デフォルトでは、システムテーマ、ライト、ダーク、Floorp Alpenglow から選択できます。\
+[Firefox Browser ADD-ONS](https://addons.mozilla.org/) では、さらに多くのサードパーティ製テーマを探すことができます。
+
+:::warning
+CSS の編集も可能ですが、それらに関する公式なサポートは行われません。自己責任でお願いします。
+:::
+
+<Support />

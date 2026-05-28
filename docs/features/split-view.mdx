@@ -1,22 +1,29 @@
 ---
 title: Split View
-description: Information about Floorp's Split View feature
+description: Learn about the enhanced Split View feature in Floorp
 ---
 
 import Support from "@Components/Support.js";
+import GridView from "@img/features/split-view/grid.webp";
 
-## Temporary Unavailability Notice
+### Firefox Includes Built-in Split View
 
-The Split View feature, which was implemented by Floorp, is currently unavailable as of version 12.5.1 and later due to the update to Firefox 145.
+Floorp previously featured its own custom Split View implementation. However, following the official introduction of native split view in Firefox 149, it has been replaced by the upstream implementation.
 
-### Reason for Unavailability
+For more information regarding Firefox's native split view, please refer to [Mozilla Support](https://support.mozilla.org/kb/split-view-firefox).
 
-Mozilla has announced plans to implement a native split view feature in Firefox 146 and later versions. As a result, Floorp's custom implementation of this feature has been temporarily disabled to avoid conflicts with the upcoming native implementation.
+### Splitting Three or More Tabs
 
-### Expected Availability
+Floorp builds upon Firefox's native split view, allowing you to display even more tabs simultaneously.
 
-If everything proceeds as planned, the split view functionality is expected to become available again within approximately one month through Firefox's native implementation.
+When you select a tab that is already in split view, a dedicated button appears in the address bar. Clicking this button allows you to add more subdivisions or change how your split views are arranged.
 
-We appreciate your patience and understanding as we work to integrate the new native split view feature once it becomes available in Firefox.
+<img src={GridView} width="100%" alt="4 tabs displayed in a grid layout"/>
+
+:::tip
+
+As of version 12.14.2, you can split up to 4 tabs simultaneously.
+
+:::
 
 <Support />

@@ -53,6 +53,9 @@ const config = {
       },
       ru: {
         label: "Русский",
+      },
+      zh: {
+        label: "中文",
       }
     }
   },

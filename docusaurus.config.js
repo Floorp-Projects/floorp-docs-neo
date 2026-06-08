@@ -35,6 +35,13 @@ const config = {
         },
       },
     ],
+    [
+      'docusaurus-lunr-search',
+      {
+        languages: ['en', 'ru', 'ja']
+      } 
+    ],
+
   ],
 
   // Even if you don't use internationalization, you can use this field to set
@@ -100,6 +107,9 @@ const config = {
           },
           {
             type: "localeDropdown", position: "right", queryString: '?persistLocale=false',
+          },
+          {
+            type: "search", position: "right",
           }
         ],
       },

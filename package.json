@@ -20,7 +20,10 @@
     "@docusaurus/theme-mermaid": "^3.10.1",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
+    "docusaurus-lunr-search": "^3.6.0",
     "docusaurus-plugin-module-alias": "^0.0.2",
+    "lunr": "^2.3.9",
+    "lunr-languages": "^1.20.0",
     "path-to-regexp": "^8.4.2",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.6",
@@ -52,5 +55,5 @@
       "webpackbar": "^7.0.0"
     }
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.5.2"
 }

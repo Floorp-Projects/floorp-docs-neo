@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ⚠️ Floorp Browser Issues
+    url: https://github.com/Floorp-Projects/Floorp
+    about: This repo is for documentation only. Report browser bugs in the main Floorp repo, not here.
+    
+  - name: 💬 Discord Community
+    url: http://discord.floorp.app/
+    about: Questions about Floorp Browser or the Docs? Ask here.

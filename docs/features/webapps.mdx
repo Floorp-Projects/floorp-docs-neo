@@ -5,33 +5,38 @@ description: Learn how to use the Web Apps feature in Floorp
 
 import Support from "@Components/Support.js";
 
-:::note
+import EnableWebApps from "@img/features/webapps/0.webp";
+import WebAppPopup from "@img/features/webapps/1.webp";
+import InstalledWebAppLinux from "@img/features/webapps/2.webp";
+import RunningWebApp from "@img/features/webapps/3.webp";
 
-This document is under construction. Some information may be missing.
 
-:::
+### What are Web Apps
 
-### Keep Your Favorite Websites at Hand
-
-The Windows version of Floorp supports Progressive Web Apps (PWAs).\
-With PWAs, you can install websites on your PC and use them just like desktop applications. This makes it easy to open frequently used sites, such as video platforms or social networks, as if they were apps—helping to improve your workflow. Regular websites can also be installed with just a few clicks.
-
-Installed websites can be pinned to the taskbar or launched from the Start menu, just like other apps.\
-At the same time, some Firefox add-ons available in the regular browser can also be used, creating a unique experience that feels "like an app, but also like a browser."
+Web Apps are websites installed as standalone applications. Once installed, a website can be pinned to the taskbar or launched from the Start menu, just like any other native app. Because Web Apps still run inside Floorp under the hood, your installed add-ons can influence them as well.
 
 <hr />
 
-### How to Use Web Apps
+### Enabling Web Apps
 
-:::warning
+Support for Web Apps can be enabled from **Floorp Hub > Web Apps** (`about:hub#/features/webapps`).
 
-Web apps may work partially on Linux and macOS, but full functionality is not guaranteed.
+From this page you can also choose whether a toolbar is shown inside Web App windows, as well as review and uninstall any Web Apps you've already installed.
 
-Additionally, at this time, the Floorp browser must be running in order for Web Apps to function. We recognize there is room for improvement in this behavior.
+<img src={EnableWebApps} alt="Web Apps settings in Floorp Hub"/>
 
-:::
+### Installing and Using a Web App
 
-The Web Apps feature can be enabled by navigating to **Floorp Hub > Web Apps** (`about:hub#/features/webapps`).\
-On this page, you can also toggle whether to display a toolbar in Web App windows and uninstall any installed Web Apps.
+To install a website as a Web App, open a site that supports this installation method. When it does, a new icon appears in the address bar. Clicking that icon brings up a pop-up offering to install the site as a Web App.
+
+<img src={WebAppPopup} alt="Web App install popup"/>
+
+After you click **Install Application**, the site is installed as a Web App in your operating system. From then on, it launches in its own window whenever you open the corresponding shortcut.
+
+<img src={InstalledWebAppLinux} alt="Installed Web App on Linux"/>
+
+<img src={RunningWebApp} alt="Web App running in a standalone window"/>
+
+*Example of a Web App running on Linux.*
 
 <Support />

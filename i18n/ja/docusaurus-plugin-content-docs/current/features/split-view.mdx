@@ -4,6 +4,7 @@ description: Floorp で強化された分割ビューを学ぶ
 ---
 
 import Support from "@Components/Support.js";
+import DropZone from "@img/features/split-view/drop.webp";
 import GridView from "@img/features/split-view/grid.webp";
 
 ### Firefox には分割ビュー機能があります
@@ -12,9 +13,15 @@ import GridView from "@img/features/split-view/grid.webp";
 
 Firefox の分割ビューについて、詳しくは [Mozilla サポート](https://support.mozilla.org/kb/split-view-firefox)をご確認ください。
 
-### 3 つ以上のタブを分割する
+### Floorp で強化された分割ビュー
 
-Floorp では Firefox の分割ビュー機能をさらに発展させ、より多くのタブを同時に分割して表示することができます。
+Floorp では Firefox の分割ビュー機能をさらに発展させ、より直感的に分割したり、より多くのタブを同時に分割して表示することができます。
+
+タブをウェブページの領域までドラッグすると、分割ビューを開始するためのオーバーレイが表示されます。
+
+上下左右のいずれかでドロップすると、ページはその方向に分割して表示されます。ページの領域の中央に表示されるエリアでドロップすると、そのタブは新しいウィンドウに移動します。
+
+<img src={DropZone} width="100%" alt="この状態でマウスボタンを離すと、タブは左右に分割して表示されます"/>
 
 分割ビュー状態のタブを選択すると、アドレスバーに専用のボタンが表示されます。このボタンをクリックすることで、さらに区分けを追加したり、分割ビューの並べ方を変更したりできます。
 

@@ -4,6 +4,7 @@ description: Learn about the enhanced Split View feature in Floorp
 ---
 
 import Support from "@Components/Support.js";
+import DropZone from "@img/features/split-view/drop.webp";
 import GridView from "@img/features/split-view/grid.webp";
 
 ### Firefox Includes Built-in Split View
@@ -12,9 +13,15 @@ Floorp previously featured its own custom Split View implementation. However, fo
 
 For more information regarding Firefox's native split view, please refer to [Mozilla Support](https://support.mozilla.org/kb/split-view-firefox).
 
-### Splitting Three or More Tabs
+### Enhanced Split View in Floorp
 
-Floorp builds upon Firefox's native split view, allowing you to display even more tabs simultaneously.
+Floorp builds upon Firefox's native split view, allowing you to split pages more intuitively and display even more tabs simultaneously.
+
+Dragging a tab into the web page area brings up an overlay to initiate Split View.
+
+Dropping the tab on the top, bottom, left, or right side will split the page in that direction. Dropping it in the center area will move the tab to a new window.
+
+<img src={DropZone} width="100%" alt="Releasing the mouse button in this state will split the tabs side by side"/>
 
 When you select a tab that is already in split view, a dedicated button appears in the address bar. Clicking this button allows you to add more subdivisions or change how your split views are arranged.
 

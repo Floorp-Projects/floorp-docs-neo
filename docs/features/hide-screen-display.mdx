@@ -1,11 +1,11 @@
 ---
-title: Share Mode and Zen Mode
+title: Hide Screen Display
 description: Learn how to hide clutter and focus on what matters in Floorp
 ---
 
 import Support from "@Components/Support.js";
-import ShareDisabled from "@img/features/share-and-zen-modes/share-disabled.webp";
-import ShareEnabled from "@img/features/share-and-zen-modes/share-enabled.webp";
+import ShareDisabled from "@img/features/hide-screen-display/share-disabled.webp";
+import ShareEnabled from "@img/features/hide-screen-display/share-enabled.webp";
 import ReactPlayer from 'react-player';
 
 ### Hiding for Others, Hiding for Yourself
@@ -16,7 +16,7 @@ While that's not incorrect, did you know that Floorp also provides built-in ways
 For instance, you might need to show your screen to someone else, only to realize that your open tabs and bookmark bar are filled with personal information.\
 Or perhaps you want to focus on writing, but the other tabs visible on your screen keep distracting you.
 
-In this article, we will introduce two features designed to help you focus on what matters while respecting your privacy.
+In this article, we will introduce four features designed to help you focus on what matters while respecting your privacy.
 
 ### Using Share Mode
 
@@ -28,6 +28,8 @@ Once enabled, Share Mode hides your tabs, bookmark bar, and extension icons on t
 
 <img src={ShareEnabled} width="100%" alt="Example with Share Mode enabled"/>
 
+*When Share Mode is enabled, the interface changes from the top image to the bottom image.*
+
 ### Using Zen Mode
 
 In addition to **Menu Bar > Tools**, Zen Mode can also be toggled via [keyboard shortcuts](/docs/features/shortcuts-and-palette), [mouse gestures](/docs/features/mouse-gestures), and the [command palette](/docs/features/shortcuts-and-palette).
@@ -38,5 +40,25 @@ When Zen Mode is active, clutter like the tab bar, toolbar, and Panel Sidebar ar
   style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
   src='https://www.youtube.com/watch?v=YiTI6Qi9GWw'
 />
+
+### Using Rest Mode
+
+Break Mode can be enabled via [keyboard shortcuts](/docs/features/shortcuts-and-palette), [mouse gestures](/docs/features/mouse-gestures), and the [command palette](/docs/features/shortcuts-and-palette).
+
+When Rest Mode is active, everything visible in the window is hidden. You can resume browsing by clicking the button displayed on the screen or pressing the `esc` key.
+
+:::note
+
+Entering Rest Mode unloads all currently open websites. They will be reloaded when you try to access them after resuming.
+
+:::
+
+### Hide Interface / Toggle Navigation Bar
+
+Like Rest Mode, these features can be enabled via [keyboard shortcuts](/docs/features/shortcuts-and-palette), [mouse gestures](/docs/features/mouse-gestures), and the [command palette](/docs/features/shortcuts-and-palette).
+
+Enabling "Toggle Navigation Panel" hides the section containing the address bar and the unified extensions button.
+
+Enabling "Hide Interface" hides the horizontal tab bar in addition to the navigation panel. Some elements, such as the Panel Sidebar and the status bar, remain visible even with this feature enabled.
 
 <Support />

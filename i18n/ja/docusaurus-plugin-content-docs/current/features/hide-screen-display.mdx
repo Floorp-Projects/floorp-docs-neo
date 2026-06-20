@@ -1,0 +1,64 @@
+---
+title: 画面表示を隠す
+description: Floorp で余分な情報を隠す方法を学ぶ
+---
+
+import Support from "@Components/Support.js";
+import ShareDisabled from "@img/features/hide-screen-display/share-disabled.webp";
+import ShareEnabled from "@img/features/hide-screen-display/share-enabled.webp";
+import ReactPlayer from 'react-player';
+
+### 人のために隠す、自分のために隠す
+
+Floorp は情報量の多いブラウザーである、という印象をお持ちの人は多いかもしれません。\
+それも間違いではありませんが、実は情報量を減らす方法も用意されていることはご存知でしょうか？
+
+たとえば、人にウェブサイトの画面を見せる必要があるのに、タブやブックマークが個人情報まみれであることに気づくかもしれません。\
+あるいは、執筆に集中したいのに、画面に表示される他のタブが気になって仕方ないかもしれません。
+
+この記事では、必要な情報に集中し、自分のプライバシーを尊重できる 4 つの機能をご紹介します。
+
+### 共有モードを使う
+
+共有モードは、Floorp の **メニューバー > ツール** から有効にできます。
+
+共有モードを有効にすると、タブ、ブックマークツールバー、ツールバーの拡張機能の情報が隠されます。
+
+<img src={ShareDisabled} width="100%" alt="共有モードが無効の状態の例"/>
+
+<img src={ShareEnabled} width="100%" alt="共有モードが有効の状態の例"/>
+
+*共有モードを有効にすると、インターフェイスは上の画像から下の画像のように変化します。*
+
+### 禅モードを使う
+
+禅モードは、Floorp の **メニューバー > ツール** に加えて、[キーボードショートカット](/docs/features/shortcuts-and-palette)、[マウスジェスチャー](/docs/features/mouse-gestures)、[コマンドパレット](/docs/features/shortcuts-and-palette)でも有効にできます。
+
+禅モードを有効にすると、タブバーやツールバー、パネルサイドバーなどの情報が隠され、カーソルを合わせている間だけ再表示されるようになります。一部の要素には禅モードが適用されないことがあります。
+
+<ReactPlayer
+  style={{ width: '100%', height: 'auto', aspectRatio: '16/10' }}
+  src='https://www.youtube.com/watch?v=YiTI6Qi9GWw'
+/>
+
+### 休憩モードを使う
+
+休憩モードは、Floorp の[キーボードショートカット](/docs/features/shortcuts-and-palette)、[マウスジェスチャー](/docs/features/mouse-gestures)、[コマンドパレット](/docs/features/shortcuts-and-palette)から有効にできます。
+
+休憩モードを有効にすると、ウィンドウに映っているものがすべて非表示になります。画面に表示されるボタンをクリックするか、`esc` キーで復帰できます。
+
+:::note
+
+休憩モードに入ると、開いていたウェブサイトはすべて解放されます。復帰後に開こうとしたウェブサイトは再読み込みされます。
+
+:::
+
+### インターフェイスを隠す / ナビゲーションパネルの表示を切り替える
+
+これらの機能は休憩モードと同じく、Floorp の[キーボードショートカット](/docs/features/shortcuts-and-palette)、[マウスジェスチャー](/docs/features/mouse-gestures)、[コマンドパレット](/docs/features/shortcuts-and-palette)から有効にできます。
+
+「ナビゲーションパネルの表示を切り替える」を有効にすると、アドレスバーや統合拡張機能ボタンなどが表示されている部分が非表示になります。
+
+「インターフェイスを隠す」を有効にすると、ナビゲーションパネルに加えて、水平タブバーも非表示になります。パネルサイドバーやステータスバーなど、この機能によって非表示にならないものもあります。
+
+<Support />

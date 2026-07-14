@@ -55,8 +55,8 @@ importers:
         specifier: 3.10.1
         version: 3.10.1(postcss@8.5.18)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@docusaurus/types':
-        specifier: 3.10.1
-        version: 3.10.1(postcss@8.5.18)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: 3.10.2
+        version: 3.10.2(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.18))(html-minifier-terser@7.2.0)(postcss@8.5.18)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0

@@ -8,7 +8,7 @@ sidebar_position: 1
 
 ### Floorp ユーザードキュメントへようこそ！
 
-このドキュメントでは新しく追加された Floorp の機能や、試験的機能の利用方法を閲覧することができます。
+このドキュメントでは、Floorp ブラウザーの機能の利用方法や、Floorp プロジェクトなどについて確認できます。
 
 ### 問題を解決する
 
@@ -18,6 +18,7 @@ sidebar_position: 1
 ### その他のリソース
 
 - **Floorp コミュニティ**:
-  - [Reddit: r/Floorp](https://www.reddit.com/r/Floorp/)
   - [Floorp Projects Discord](https://discord.floorp.app/)
-- **Floorp 公式サイト**: [floorp.app](https://floorp.app/) をご覧ください。
+  - [Reddit: r/Floorp](https://www.reddit.com/r/Floorp/)
+- **Floorp 公式サイト**: [floorp.app](https://floorp.app/)
+- **Floorp ブログ**: [blog.floorp.app](https://blog.floorp.app/)

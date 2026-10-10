@@ -26,14 +26,6 @@ You can build your custom shortcut combination by selecting the modifier keys us
 
 Depending on your operating system and configuration, the modifier key labels may appear as generic terms.
 
-- **Modifier keys on macOS**
-
-    On macOS, the `Alt` key corresponds to the `Option` key, and the `Meta` key corresponds to the `Command` key.
-
-- **Modifier keys on Windows**
-
-    On Windows, the `Meta` key corresponds to the `Windows` key.
-
 <img src={Customize} width="100%" alt="Configuring custom keyboard shortcuts in Floorp Hub"/>
 
 :::tip
@@ -44,15 +36,17 @@ This means that most actions you can assign to a keyboard shortcut can also be t
 
 :::
 
-#### Configuring via Experimental Firefox Features
+#### Configuring via Firefox Features
 
-Firefox is currently testing its own native keyboard shortcut customization feature.
+Firefox officially provides a feature to customize keyboard shortcuts.
 
-You can access this by navigating to `about:keyboard`, which displays a list of customizable actions. Click "Change" to type a new shortcut combination, or click "Clear" to reset it to its default state.
+Look for **Settings > Tabs and browsing > Keyboard shortcuts**, or type `about:keyboard` directly into the address bar to open a list of actions whose keyboard shortcuts can be configured.
 
-:::warning
+:::info
 
-The `about:keyboard` page may conflict with Floorp's built-in keyboard shortcut system. If an action is available in both Floorp Hub and `about:keyboard`, we strongly recommend using only one of them to avoid unexpected behavior.
+Shortcuts for Floorp-specific features are only provided in Floorp Hub's Keyboard Shortcut settings.
+
+The `about:keyboard` page may conflict with Floorp's keyboard shortcut feature. If a setting exists in both `about:keyboard` and Floorp Hub, please use only one of them.
 
 :::
 
@@ -69,7 +63,7 @@ Simply type to search for an action, navigate through the results using the arro
 
 The Command Palette offers a wide variety of functions. Here, we'll introduce some of its standout commands.
 
-- Navigation
+- **Navigation**
 
   Manage tabs, open URLs, select recently closed windows, search browsing history, and more.
 
@@ -79,8 +73,18 @@ The Command Palette offers a wide variety of functions. Here, we'll introduce so
 
   :::
 
-- Floorp Features
+- **Floorp Features**
 
   Open Floorp Hub, open in Split View, switch workspaces, copy URLs in Markdown format, and more.
+
+### Configuring the Command Palette
+
+- **Category Priority**
+
+  Reorder the display priority of commands by category when opening the Command Palette.
+
+- **Dynamic Search**
+
+  Select which items appear as suggestions while typing in the Command Palette.
 
 <Support />

@@ -9,7 +9,7 @@ This documentation is under construction. Some information may be missing or inc
 
 ### Welcome to the Floorp User Documentation!
 
-In this documentation, you can learn how to use Floorp Browser features, explore the Floorp project, and find useful resources.
+In this documentation, you can learn how to use Floorp Browser features, explore the Floorp Projects, and find useful resources.
 
 ### How to Troubleshoot
 

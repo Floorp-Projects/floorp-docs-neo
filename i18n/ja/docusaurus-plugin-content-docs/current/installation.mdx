@@ -22,13 +22,15 @@ import Support from "@Components/Support.js";
 
 - **インストーラーと Portable**
 
-  1. [公式サイト](https://floorp.app/ja/download)を開き、いずれかの Windows 版インストーラーまたは Portable 版をダウンロードします。
+  1. [公式サイト](https://floorp.app/download)を開き、いずれかの Windows 版インストーラーまたは Portable 版をダウンロードします。
   2. Portable 版はこの段階で使用できます。インストーラーの場合は、これを起動して画面の指示に従います。
 
 :::tip[これらの違い]
+
 - **オンラインインストーラー**は、ネットワークからインストーラーをダウンロードしてインストールします。
 - **オフラインインストーラー**は、ネットワーク接続がなくても Floorp をインストールすることができます。
 - **Portable 版**はダウンロードするだけで使用できますが、いくつかの制約があります。
+
 :::
 
 - **Winget**
@@ -39,10 +41,12 @@ import Support from "@Components/Support.js";
 
   **[@Hibi_10000](https://github.com/Hibi-10000)** によって提供されています。
 - **Scoop**
+
   ```shell
   scoop bucket add extras
   scoop install extras/floorp
   ```
+
   **[@SegoCode](https://github.com/SegoCode)** によって提供されています。
 
 ## Mac
@@ -111,7 +115,6 @@ Flatpak 版は「サンドボックス」の影響で独自の問題が発生す
 ## Floorp Daylight とはなんですか？
 
  現在の Floorp Daylight は、開発者向けのデバッグ用ビルドの名前です。Floorp ブラウザーの開発にご興味がある方は、公式リポジトリの [`CONTRIBUTING.md`](https://github.com/Floorp-Projects/Floorp/blob/main/.github/CONTRIBUTING.md) を参照してください。
-
 
 かつての Floorp Daylight は、一般向けに公開されたベータ版ビルドの名前でした。現在は安定版 Floorp に実験的機能を段階的にロールアウトする仕組み ([Floorp Flasco](https://docs.floorp.app/ja/docs/features/glossary/#floorp-flasco-フラスコ)) を導入し、新たにブラウザーをインストールせずとも新機能を試せるようになっています。
 

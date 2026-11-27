@@ -4,4 +4,23 @@ title: Building
 
 import DocCardList from '@theme/DocCardList';
 
+Floorp のビルドは Firefox のソースコードをコンパイルするものではありません。ビルドシステム（`feles-build`）がプラットフォーム向けのビルド済み Floorp Runtime をダウンロードし、その上に Floorp 自体のアセットをビルドして起動します。そのため、GitHub トークンや Mozilla のビルドツールチェーンは必要ありません。
+
+## 共通の要件
+
+- [git](https://git-scm.com/downloads)
+- [Deno](https://deno.com/) 2.x
+
+## よく使うコマンド
+
+```bash
+deno install --allow-scripts                        # 依存関係のインストール
+deno task feles-build dev                           # HMR 付きの開発モード
+deno task feles-build stage                         # 本番アセットをビルドし、開発モードでブラウザーを起動
+deno task feles-build build --phase before-mach     # 本番アセットのビルド
+deno task feles-build build --phase after-mach      # ビルド後のインジェクション
+deno task test                                      # ブラウザー上で実行されるユニットテスト
+deno task dev-tool                                  # ブラウザー検査 CLI（Marionette）
+```
+
 <DocCardList />

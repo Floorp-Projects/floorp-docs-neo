@@ -4,7 +4,7 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Документация Floorp",
+    "message": "Логотип Floorp",
     "description": "The alt text of navbar logo"
   }
 }

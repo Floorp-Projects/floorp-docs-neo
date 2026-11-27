@@ -1,49 +1,42 @@
 ---
-title: Ограничения воспроизведения DRM-контента
+title: DRM (проблемы воспроизведения медиа)
+description: Трекер проблем с воспроизведением медиа в Floorp
 ---
 
-import Support from "@Components/Support.js"
+import Support from "@Components/Support.js";
 
-### Основные положения
+### Что такое DRM?
 
-**DRM (Digital Rights Management)** — технология защиты цифрового контента от несанкционированного использования.  
-Большинство стриминговых платформ (Netflix, Spotify и др.) используют систему Widevine от Google.
+DRM (Digital Rights Management, управление цифровыми правами) — механизм защиты авторских прав. Когда вы пытаетесь воспроизвести контент, защищённый DRM, сайт проверяет, доступно ли необходимое DRM-программное обеспечение. Большинство браузеров используют [Widevine](https://www.widevine.com/) — DRM-технологию, разработанную Google.
 
-### Причины ограничений
+Floorp сейчас не предоставляет официальную поддержку Widevine. Поэтому видео и музыку, защищённые DRM, в настоящее время в Floorp воспроизвести нельзя.
 
-1. **Отсутствие лицензии Widevine**  
-   Floorp не имеет коммерческой лицензии из-за:
-   - Высокой стоимости лицензирования (от $5000)
-   - Некоммерческого статуса проекта Floorp
+### Текущее состояние
 
-2. **Уровни безопасности**  
-   Реализация Widevine в Floorp соответствует базовому уровню L3, что ограничивает:
-   - Качество воспроизводимого видео
-   - Доступ к премиум-контенту
+Floorp Projects сейчас работает над официальной поддержкой Widevine и начал процесс обращения к Widevine по поводу требований для интеграции Widevine в Floorp.
 
-### Рекомендуемые решения
+Интеграция Widevine требует юридического и технического подключения к Google, а также, возможно, специфичных для продукта требований к подписи, валидации, распространению и безопасности. Поскольку эти требования и процесс утверждения контролирует Widevine, мы сейчас не можем назвать предполагаемую дату выпуска или гарантировать, что поддержка Widevine будет одобрена.
 
-Для работы с DRM-защищёнными сервисами:
-1. Используйте браузеры с лицензией Widevine:
-   - [Mozilla Firefox](https://www.mozilla.org/firefox)
-   - [Google Chrome](https://www.google.com/chrome)
-2. Включите DRM в настройках Floorp:
-   ```Настройки → Общие → Прокрутка вниз → Включить DRM```
+Мы обновим эту страницу, когда появится подтверждённый прогресс, которым можно поделиться публично.
 
-:::danger
-Активация DRM в Floorp не гарантирует работу с защищённым контентом!
-:::
+### Как воспроизводить контент с DRM-защитой
 
-### Связанные кейсы
+Можно использовать крупные браузеры, такие как Firefox или Chrome, у которых есть необходимые лицензии.
 
-Зафиксированы в тикетах:
-- [#204](https://github.com/Floorp-Projects/Floorp/issues/204) — Ошибка S6007 на Tidal  
-- [#272](https://github.com/Floorp-Projects/Floorp/issues/272) — Сбои воспроизведения  
-- [#584](https://github.com/Floorp-Projects/Floorp/issues/584) — Пропуск треков в Spotify  
-- [#761](https://github.com/Floorp-Projects/Floorp/issues/761) — Блокировка Netflix/Hotstar  
+### Связанные проблемы
+- HBO Max, Netflix:
+  - Проблема [#272](https://github.com/Floorp-Projects/Floorp/issues/272): видео не воспроизводятся (связано с DRM)
+- Tidal:
+  - Проблема [#204](https://github.com/Floorp-Projects/Floorp/issues/204): ошибка S6007 в Tidal
+- Spotify:
+  - Проблема [#584](https://github.com/Floorp-Projects/Floorp/issues/584): Spotify пропускает треки
+  - Проблема [#650](https://github.com/Floorp-Projects/Floorp/issues/650): проблемы с веб-плеером Spotify
+- Netflix, Disney+ Hotstar:
+  - Проблема [#761](https://github.com/Floorp-Projects/Floorp/issues/761): проблемы с Netflix и Hotstar в Floorp
 
-### Затронутые платформы
 
-HBO Max, Netflix, Tidal, Spotify, Disney+ Hotstar, Amazon Prime Video
+### Связанные сервисы
+
+HBO Max, Netflix, Tidal, Spotify, Disney+ Hotstar, Amazon Prime Video и др.
 
 <Support />

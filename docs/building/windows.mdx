@@ -45,39 +45,13 @@ git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-4. Set up GitHub Token:
-
-GITHUB_TOKEN is required to download artifacts from GitHub Actions.
-
-Choose one of the following methods:
-
-**Option 1: Using .env file (recommended)**
-Create a `.env` file in the repository root and add:
-
-```
-GITHUB_TOKEN=your_token_here
-```
-
-**Option 2: Using environment variable**
+4. Install dependencies:
 
 ```bash
-$env:GITHUB_TOKEN="your_token_here"
+deno install --allow-scripts
 ```
 
-    **How to create a GitHub Token:**
-
-    1. Go to https://github.com/settings/tokens
-    2. Click "Generate new token (classic)"
-    3. Select the `public_repo` scope (or `repo` for private repositories)
-    4. Copy the generated token and set it as described above
-
-5. Install dependencies:
-
-```bash
-deno install
-```
-
-6. Build Floorp:
+5. Build Floorp:
 
 ```bash
 deno task feles-build dev

@@ -45,39 +45,13 @@ git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-4. Настройте GitHub Token:
-
-GITHUB_TOKEN необходим для загрузки артефактов из GitHub Actions.
-
-Выберите один из следующих способов:
-
-**Вариант 1: файл .env (рекомендуется)**
-Создайте файл `.env` в корне репозитория и добавьте:
-
-```
-GITHUB_TOKEN=your_token_here
-```
-
-**Вариант 2: переменная окружения**
+4. Установите зависимости:
 
 ```bash
-$env:GITHUB_TOKEN="your_token_here"
+deno install --allow-scripts
 ```
 
-    **Как создать GitHub Token:**
-
-    1. Перейдите на https://github.com/settings/tokens
-    2. Нажмите «Generate new token (classic)»
-    3. Выберите область `public_repo` (или `repo` для приватных репозиториев)
-    4. Скопируйте созданный токен и задайте его, как описано выше
-
-5. Установите зависимости:
-
-```bash
-deno install
-```
-
-6. Соберите Floorp:
+5. Соберите Floorp:
 
 ```bash
 deno task feles-build dev

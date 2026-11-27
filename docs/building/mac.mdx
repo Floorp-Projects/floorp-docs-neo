@@ -17,7 +17,7 @@ Please understand this before proceeding with the following steps.
 
 ### Required Tools
 
-- [git](https://git-scm.com/download/linux)
+- [git](https://git-scm.com/download/mac)
 - [deno](https://deno.com/)
 
 ## Installation steps
@@ -39,39 +39,13 @@ git clone https://github.com/Floorp-Projects/Floorp
 cd Floorp
 ```
 
-3. Set up GitHub Token:
-
-GITHUB_TOKEN is required to download artifacts from GitHub Actions.
-
-Choose one of the following methods:
-
-**Option 1: Using .env file (recommended)**
-Create a `.env` file in the repository root and add:
-
-```
-GITHUB_TOKEN=your_token_here
-```
-
-**Option 2: Using environment variable**
+3. Install dependencies:
 
 ```bash
-export GITHUB_TOKEN=your_token_here
+deno install --allow-scripts
 ```
 
-**How to create a GitHub Token:**
-
-1. Go to https://github.com/settings/tokens
-2. Click "Generate new token (classic)"
-3. Select the `public_repo` scope (or `repo` for private repositories)
-4. Copy the generated token and set it as described above
-
-5. Install dependencies:
-
-```bash
-deno install
-```
-
-6. Build Floorp:
+4. Build Floorp:
 
 ```bash
 deno task feles-build dev

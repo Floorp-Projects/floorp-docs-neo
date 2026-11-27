@@ -4,4 +4,23 @@ title: Building
 
 import DocCardList from '@theme/DocCardList';
 
+Building Floorp does not compile Firefox from source. The build system (`feles-build`) downloads a prebuilt Floorp Runtime for your platform, builds Floorp's own assets on top of it, and launches the result — so no GitHub token or Mozilla build toolchain is required.
+
+## Common requirements
+
+- [git](https://git-scm.com/downloads)
+- [Deno](https://deno.com/) 2.x
+
+## Useful commands
+
+```bash
+deno install --allow-scripts                        # Install dependencies
+deno task feles-build dev                           # Dev mode with HMR
+deno task feles-build stage                         # Production assets, browser in dev mode
+deno task feles-build build --phase before-mach     # Production assets
+deno task feles-build build --phase after-mach      # Post-build injection
+deno task test                                      # Browser-integrated unit tests
+deno task dev-tool                                  # Browser inspection CLI (Marionette)
+```
+
 <DocCardList />

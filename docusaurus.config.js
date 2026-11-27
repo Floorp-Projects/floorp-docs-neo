@@ -4,15 +4,24 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { themes as prismThemes } from 'prism-react-renderer';
 
-const path = require('path');
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+const siteDir = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Floorp Docs',
   tagline: 'Documentation for the Floorp Browser',
   favicon: 'img/favicon.png',
+
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
 
   // Set the production url of your site here
   url: 'https://docs.floorp.app',
@@ -25,13 +34,15 @@ const config = {
   organizationName: 'Floorp-Projects', // Usually your GitHub org/user name.
   projectName: 'floorp-docs-neo', // Usually your repo name.
 
+  onBrokenLinks: 'throw',
+
   plugins: [
     [
       'docusaurus-plugin-module-alias',
       {
         alias: {
-          '@Components': path.resolve(__dirname, 'src/components/MarkdownComponents'),
-          '@img': path.resolve(__dirname, 'static/img'),
+          '@Components': path.resolve(siteDir, 'src/components/MarkdownComponents'),
+          '@img': path.resolve(siteDir, 'static/img'),
         },
       },
     ],
@@ -75,7 +86,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: ['./src/css/custom.css'],
+          customCss: './src/css/custom.css',
         }
       }),
     ],
@@ -86,6 +97,9 @@ const config = {
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'Floorp Docs',
         logo: {

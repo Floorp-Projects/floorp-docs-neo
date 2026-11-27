@@ -23,11 +23,11 @@
     "docusaurus-lunr-search": "^3.6.0",
     "docusaurus-plugin-module-alias": "^0.0.2",
     "lunr": "^2.3.9",
-    "lunr-languages": "^1.21.0",
-    "path-to-regexp": "^8.4.2",
+    "lunr-languages": "^1.24.0",
+    "path-to-regexp": "^9.0.0",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-player": "^3.4.0"
   },
   "devDependencies": {
@@ -49,11 +49,6 @@
   },
   "engines": {
     "node": ">=18.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "webpackbar": "^7.0.0"
-    }
   },
   "packageManager": "pnpm@11.13.0"
 }
